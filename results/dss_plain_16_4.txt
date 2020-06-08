@@ -1,0 +1,30 @@
+DSS_plain_16_4.th
+DSS_plain(
+  (dconv1): Dconv2d(1->16, 1, [3, 3], dilations=[1, 1, 2, 3], pad_mode=constant)
+  (dconv2): Dconv2d(16->16, 3, [3, 3], dilations=[1, 1, 2, 3], pad_mode=constant)
+  (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+  (dconv3): Dconv2d(16->32, 3, [3, 3], dilations=[1, 1, 2, 3], pad_mode=constant)
+  (dconv4): Dconv2d(32->32, 3, [3, 3], dilations=[1, 1, 2, 3], pad_mode=constant)
+  (avg_pool2): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+  (upsample): Upsample(scale_factor=4.0, mode=nearest)
+  (fc): Linear(in_features=1568, out_features=10, bias=True)
+)
+Number of parameters =  64218
+Bessel scales: [0.3125     1.015625   2.59765625]
+MNIST scaled by 1
+        Test Accuracy = 0.9557
+MNIST scaled by 0.909
+        Test Accuracy = 0.9204
+        Equivariance error when scaled by 0.909 =  0.002409448796324432
+MNIST scaled by 0.667
+        Test Accuracy = 0.6026
+        Equivariance error when scaled by 0.667 =  0.002651736730959806
+MNIST scaled by 0.500
+        Test Accuracy = 0.3321
+        Equivariance error when scaled by 0.500 =  0.0033225469160377812
+MNIST scaled by 0.400
+        Test Accuracy = 0.1784
+        Equivariance error when scaled by 0.400 =  0.0035147773681371065
+MNIST scaled by 0.333
+        Test Accuracy = 0.1311
+        Equivariance error when scaled by 0.333 =  0.0036223630430510445

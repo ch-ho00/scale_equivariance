@@ -1,0 +1,4066 @@
+Namespace(base=1.3, batch_size=16, channel=16, dataset='MNIST', decay=0.005, epoch=100, gamma=0.7, init_rate=0.005, interaction=1, io_scale=4, model='dss_v2', n_scale=4, save_dir='models/dss_cityscapes_seg.th', step_size=10)
+MNIST 16 dss_v2 1.2 [4, 4] 4 1 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_1_16_4_4_seg.th ===========
+Bessel scales: [0.11     0.2684   0.496496]
+Writing TensorBoard events locally to /tmp/tmp3_wo9mrl
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 1, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 1, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  33850
+Epoch: 1
+	Train Accuracy : 8269 /10000 || Loss = 350
+	Test Accuracy : 8723 / 10000
+Epoch: 2
+	Train Accuracy : 8913 /10000 || Loss = 216
+	Test Accuracy : 8964 / 10000
+Epoch: 3
+	Train Accuracy : 9125 /10000 || Loss = 176
+	Test Accuracy : 9121 / 10000
+Epoch: 4
+	Train Accuracy : 9140 /10000 || Loss = 166
+	Test Accuracy : 9149 / 10000
+Epoch: 5
+	Train Accuracy : 9211 /10000 || Loss = 156
+	Test Accuracy : 9210 / 10000
+Epoch: 6
+	Train Accuracy : 9254 /10000 || Loss = 145
+	Test Accuracy : 9249 / 10000
+Epoch: 7
+	Train Accuracy : 9301 /10000 || Loss = 137
+	Test Accuracy : 9278 / 10000
+Epoch: 8
+	Train Accuracy : 9293 /10000 || Loss = 135
+	Test Accuracy : 9217 / 10000
+Epoch: 9
+	Train Accuracy : 9331 /10000 || Loss = 128
+	Test Accuracy : 9293 / 10000
+Epoch: 10
+	Train Accuracy : 9373 /10000 || Loss = 127
+	Test Accuracy : 9347 / 10000
+Epoch: 11
+	Train Accuracy : 9379 /10000 || Loss = 121
+	Test Accuracy : 9374 / 10000
+Epoch: 12
+	Train Accuracy : 9404 /10000 || Loss = 120
+	Test Accuracy : 9330 / 10000
+Epoch: 13
+	Train Accuracy : 9424 /10000 || Loss = 117
+	Test Accuracy : 9369 / 10000
+Epoch: 14
+	Train Accuracy : 9395 /10000 || Loss = 123
+	Test Accuracy : 9350 / 10000
+Epoch: 15
+	Train Accuracy : 9431 /10000 || Loss = 114
+	Test Accuracy : 9400 / 10000
+Epoch: 16
+	Train Accuracy : 9388 /10000 || Loss = 119
+	Test Accuracy : 9390 / 10000
+Epoch: 17
+	Train Accuracy : 9396 /10000 || Loss = 120
+	Test Accuracy : 9300 / 10000
+Epoch: 18
+	Train Accuracy : 9445 /10000 || Loss = 108
+	Test Accuracy : 9395 / 10000
+Epoch: 19
+	Train Accuracy : 9439 /10000 || Loss = 111
+	Test Accuracy : 9258 / 10000
+Epoch: 20
+	Train Accuracy : 9442 /10000 || Loss = 105
+	Test Accuracy : 9265 / 10000
+Epoch: 21
+	Train Accuracy : 9480 /10000 || Loss = 106
+	Test Accuracy : 9370 / 10000
+Epoch: 22
+	Train Accuracy : 9457 /10000 || Loss = 106
+	Test Accuracy : 9382 / 10000
+Epoch: 23
+	Train Accuracy : 9477 /10000 || Loss = 97
+	Test Accuracy : 9390 / 10000
+Epoch: 24
+	Train Accuracy : 9472 /10000 || Loss = 103
+	Test Accuracy : 9364 / 10000
+Epoch: 25
+	Train Accuracy : 9440 /10000 || Loss = 109
+	Test Accuracy : 9377 / 10000
+Epoch: 26
+	Train Accuracy : 9496 /10000 || Loss = 100
+	Test Accuracy : 9409 / 10000
+Epoch: 27
+	Train Accuracy : 9498 /10000 || Loss = 101
+	Test Accuracy : 9332 / 10000
+Epoch: 28
+	Train Accuracy : 9513 /10000 || Loss = 97
+	Test Accuracy : 9294 / 10000
+Epoch: 29
+	Train Accuracy : 9471 /10000 || Loss = 103
+	Test Accuracy : 9413 / 10000
+Epoch: 30
+	Train Accuracy : 9543 /10000 || Loss = 95
+	Test Accuracy : 9406 / 10000
+Epoch: 31
+	Train Accuracy : 9549 /10000 || Loss = 95
+	Test Accuracy : 9387 / 10000
+Epoch: 32
+	Train Accuracy : 9526 /10000 || Loss = 93
+	Test Accuracy : 9389 / 10000
+Epoch: 33
+	Train Accuracy : 9525 /10000 || Loss = 96
+	Test Accuracy : 9431 / 10000
+Epoch: 34
+	Train Accuracy : 9520 /10000 || Loss = 93
+	Test Accuracy : 9416 / 10000
+Epoch: 35
+	Train Accuracy : 9482 /10000 || Loss = 98
+	Test Accuracy : 9373 / 10000
+Epoch: 36
+	Train Accuracy : 9539 /10000 || Loss = 92
+	Test Accuracy : 9439 / 10000
+Epoch: 37
+	Train Accuracy : 9517 /10000 || Loss = 92
+	Test Accuracy : 9357 / 10000
+Epoch: 38
+	Train Accuracy : 9552 /10000 || Loss = 90
+	Test Accuracy : 9398 / 10000
+Epoch: 39
+	Train Accuracy : 9543 /10000 || Loss = 91
+	Test Accuracy : 9410 / 10000
+Epoch: 40
+	Train Accuracy : 9548 /10000 || Loss = 90
+	Test Accuracy : 9458 / 10000
+Epoch: 41
+	Train Accuracy : 9539 /10000 || Loss = 89
+	Test Accuracy : 9447 / 10000
+Epoch: 42
+	Train Accuracy : 9554 /10000 || Loss = 90
+	Test Accuracy : 9390 / 10000
+Epoch: 43
+	Train Accuracy : 9565 /10000 || Loss = 88
+	Test Accuracy : 9410 / 10000
+Epoch: 44
+	Train Accuracy : 9551 /10000 || Loss = 87
+	Test Accuracy : 9430 / 10000
+Epoch: 45
+	Train Accuracy : 9577 /10000 || Loss = 85
+	Test Accuracy : 9374 / 10000
+Epoch: 46
+	Train Accuracy : 9572 /10000 || Loss = 84
+	Test Accuracy : 9490 / 10000
+Epoch: 47
+	Train Accuracy : 9531 /10000 || Loss = 90
+	Test Accuracy : 9475 / 10000
+Epoch: 48
+	Train Accuracy : 9547 /10000 || Loss = 86
+	Test Accuracy : 9437 / 10000
+Epoch: 49
+	Train Accuracy : 9567 /10000 || Loss = 85
+	Test Accuracy : 9501 / 10000
+Epoch: 50
+	Train Accuracy : 9544 /10000 || Loss = 86
+	Test Accuracy : 9459 / 10000
+Epoch: 51
+	Train Accuracy : 9586 /10000 || Loss = 82
+	Test Accuracy : 9459 / 10000
+Epoch: 52
+	Train Accuracy : 9584 /10000 || Loss = 84
+	Test Accuracy : 9421 / 10000
+Epoch: 53
+	Train Accuracy : 9583 /10000 || Loss = 84
+	Test Accuracy : 9436 / 10000
+Epoch: 54
+	Train Accuracy : 9581 /10000 || Loss = 84
+	Test Accuracy : 9492 / 10000
+Epoch: 55
+	Train Accuracy : 9593 /10000 || Loss = 79
+	Test Accuracy : 9453 / 10000
+Epoch: 56
+	Train Accuracy : 9572 /10000 || Loss = 83
+	Test Accuracy : 9525 / 10000
+Epoch: 57
+	Train Accuracy : 9553 /10000 || Loss = 84
+	Test Accuracy : 9489 / 10000
+Epoch: 58
+	Train Accuracy : 9575 /10000 || Loss = 83
+	Test Accuracy : 9502 / 10000
+Epoch: 59
+	Train Accuracy : 9557 /10000 || Loss = 83
+	Test Accuracy : 9441 / 10000
+Epoch: 60
+	Train Accuracy : 9562 /10000 || Loss = 83
+	Test Accuracy : 9497 / 10000
+Epoch: 61
+	Train Accuracy : 9596 /10000 || Loss = 76
+	Test Accuracy : 9466 / 10000
+Epoch: 62
+	Train Accuracy : 9575 /10000 || Loss = 84
+	Test Accuracy : 9497 / 10000
+Epoch: 63
+	Train Accuracy : 9570 /10000 || Loss = 84
+	Test Accuracy : 9427 / 10000
+Epoch: 64
+	Train Accuracy : 9574 /10000 || Loss = 81
+	Test Accuracy : 9440 / 10000
+Epoch: 65
+	Train Accuracy : 9635 /10000 || Loss = 76
+	Test Accuracy : 9439 / 10000
+Epoch: 66
+	Train Accuracy : 9596 /10000 || Loss = 77
+	Test Accuracy : 9440 / 10000
+Epoch: 67
+	Train Accuracy : 9595 /10000 || Loss = 81
+	Test Accuracy : 9402 / 10000
+Epoch: 68
+	Train Accuracy : 9601 /10000 || Loss = 78
+	Test Accuracy : 9453 / 10000
+Epoch: 69
+	Train Accuracy : 9609 /10000 || Loss = 78
+	Test Accuracy : 9452 / 10000
+Epoch: 70
+	Train Accuracy : 9601 /10000 || Loss = 77
+	Test Accuracy : 9503 / 10000
+Epoch: 71
+	Train Accuracy : 9622 /10000 || Loss = 76
+	Test Accuracy : 9483 / 10000
+Epoch: 72
+	Train Accuracy : 9602 /10000 || Loss = 78
+	Test Accuracy : 9506 / 10000
+Epoch: 73
+	Train Accuracy : 9604 /10000 || Loss = 74
+	Test Accuracy : 9398 / 10000
+Epoch: 74
+	Train Accuracy : 9577 /10000 || Loss = 82
+	Test Accuracy : 9359 / 10000
+Epoch: 75
+	Train Accuracy : 9601 /10000 || Loss = 77
+	Test Accuracy : 9446 / 10000
+Epoch: 76
+	Train Accuracy : 9592 /10000 || Loss = 79
+	Test Accuracy : 9448 / 10000
+Epoch: 77
+	Train Accuracy : 9639 /10000 || Loss = 74
+	Test Accuracy : 9456 / 10000
+Epoch: 78
+	Train Accuracy : 9579 /10000 || Loss = 81
+	Test Accuracy : 9407 / 10000
+Epoch: 79
+	Train Accuracy : 9585 /10000 || Loss = 80
+	Test Accuracy : 9478 / 10000
+Epoch: 80
+	Train Accuracy : 9606 /10000 || Loss = 77
+	Test Accuracy : 9458 / 10000
+Epoch: 81
+	Train Accuracy : 9607 /10000 || Loss = 75
+	Test Accuracy : 9466 / 10000
+Epoch: 82
+	Train Accuracy : 9625 /10000 || Loss = 71
+	Test Accuracy : 9436 / 10000
+Epoch: 83
+	Train Accuracy : 9574 /10000 || Loss = 80
+	Test Accuracy : 9479 / 10000
+Epoch: 84
+	Train Accuracy : 9624 /10000 || Loss = 77
+	Test Accuracy : 9464 / 10000
+Epoch: 85
+	Train Accuracy : 9619 /10000 || Loss = 76
+	Test Accuracy : 9422 / 10000
+Epoch: 86
+	Train Accuracy : 9635 /10000 || Loss = 71
+	Test Accuracy : 9489 / 10000
+Epoch: 87
+	Train Accuracy : 9616 /10000 || Loss = 76
+	Test Accuracy : 9494 / 10000
+Epoch: 88
+	Train Accuracy : 9623 /10000 || Loss = 72
+	Test Accuracy : 9480 / 10000
+Epoch: 89
+	Train Accuracy : 9623 /10000 || Loss = 75
+	Test Accuracy : 9428 / 10000
+Epoch: 90
+	Train Accuracy : 9618 /10000 || Loss = 72
+	Test Accuracy : 9473 / 10000
+Epoch: 91
+	Train Accuracy : 9600 /10000 || Loss = 76
+	Test Accuracy : 9513 / 10000
+Epoch: 92
+	Train Accuracy : 9633 /10000 || Loss = 73
+	Test Accuracy : 9472 / 10000
+Epoch: 93
+	Train Accuracy : 9603 /10000 || Loss = 76
+	Test Accuracy : 9441 / 10000
+Epoch: 94
+	Train Accuracy : 9608 /10000 || Loss = 75
+	Test Accuracy : 9507 / 10000
+Epoch: 95
+	Train Accuracy : 9627 /10000 || Loss = 72
+	Test Accuracy : 9486 / 10000
+Epoch: 96
+	Train Accuracy : 9610 /10000 || Loss = 75
+	Test Accuracy : 9498 / 10000
+Epoch: 97
+	Train Accuracy : 9616 /10000 || Loss = 75
+	Test Accuracy : 9532 / 10000
+Epoch: 98
+	Train Accuracy : 9622 /10000 || Loss = 75
+	Test Accuracy : 9444 / 10000
+Epoch: 99
+	Train Accuracy : 9607 /10000 || Loss = 75
+	Test Accuracy : 9471 / 10000
+Epoch: 100
+	Train Accuracy : 9623 /10000 || Loss = 74
+	Test Accuracy : 9471 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9526 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9635 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9678 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9604 / 10000
+Test for scale by 0.400
+	Test Accuracy : 9242 / 10000
+Test for scale by 0.333
+	Test Accuracy : 8362 / 10000
+Average time taken for one epoch = 37.69643931388855
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/a2f46832f74e450b8c26de07a6fb1a1e/artifacts/events
+MNIST 16 dss_v2 1.2 [4, 4] 8 1 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_1_16_4_8_seg.th ===========
+Bessel scales: [0.11       0.2684     0.496496   0.82495424 1.29793411 1.97902511
+ 2.95979616]
+Writing TensorBoard events locally to /tmp/tmprpjrax4m
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 1, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 1, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  33850
+Epoch: 1
+	Train Accuracy : 8076 /10000 || Loss = 381
+	Test Accuracy : 8771 / 10000
+Epoch: 2
+	Train Accuracy : 8886 /10000 || Loss = 224
+	Test Accuracy : 8878 / 10000
+Epoch: 3
+	Train Accuracy : 9078 /10000 || Loss = 184
+	Test Accuracy : 9080 / 10000
+Epoch: 4
+	Train Accuracy : 9126 /10000 || Loss = 177
+	Test Accuracy : 9179 / 10000
+Epoch: 5
+	Train Accuracy : 9226 /10000 || Loss = 158
+	Test Accuracy : 9184 / 10000
+Epoch: 6
+	Train Accuracy : 9234 /10000 || Loss = 156
+	Test Accuracy : 9264 / 10000
+Epoch: 7
+	Train Accuracy : 9260 /10000 || Loss = 144
+	Test Accuracy : 9139 / 10000
+Epoch: 8
+	Train Accuracy : 9296 /10000 || Loss = 140
+	Test Accuracy : 9175 / 10000
+Epoch: 9
+	Train Accuracy : 9330 /10000 || Loss = 131
+	Test Accuracy : 9236 / 10000
+Epoch: 10
+	Train Accuracy : 9349 /10000 || Loss = 133
+	Test Accuracy : 9268 / 10000
+Epoch: 11
+	Train Accuracy : 9367 /10000 || Loss = 124
+	Test Accuracy : 9307 / 10000
+Epoch: 12
+	Train Accuracy : 9333 /10000 || Loss = 128
+	Test Accuracy : 9276 / 10000
+Epoch: 13
+	Train Accuracy : 9379 /10000 || Loss = 118
+	Test Accuracy : 9278 / 10000
+Epoch: 14
+	Train Accuracy : 9379 /10000 || Loss = 124
+	Test Accuracy : 9302 / 10000
+Epoch: 15
+	Train Accuracy : 9441 /10000 || Loss = 112
+	Test Accuracy : 9333 / 10000
+Epoch: 16
+	Train Accuracy : 9400 /10000 || Loss = 123
+	Test Accuracy : 9407 / 10000
+Epoch: 17
+	Train Accuracy : 9414 /10000 || Loss = 116
+	Test Accuracy : 9295 / 10000
+Epoch: 18
+	Train Accuracy : 9427 /10000 || Loss = 112
+	Test Accuracy : 9354 / 10000
+Epoch: 19
+	Train Accuracy : 9455 /10000 || Loss = 111
+	Test Accuracy : 9346 / 10000
+Epoch: 20
+	Train Accuracy : 9419 /10000 || Loss = 112
+	Test Accuracy : 9422 / 10000
+Epoch: 21
+	Train Accuracy : 9494 /10000 || Loss = 103
+	Test Accuracy : 9307 / 10000
+Epoch: 22
+	Train Accuracy : 9439 /10000 || Loss = 111
+	Test Accuracy : 9374 / 10000
+Epoch: 23
+	Train Accuracy : 9450 /10000 || Loss = 109
+	Test Accuracy : 9412 / 10000
+Epoch: 24
+	Train Accuracy : 9489 /10000 || Loss = 102
+	Test Accuracy : 9355 / 10000
+Epoch: 25
+	Train Accuracy : 9479 /10000 || Loss = 102
+	Test Accuracy : 9379 / 10000
+Epoch: 26
+	Train Accuracy : 9480 /10000 || Loss = 106
+	Test Accuracy : 9349 / 10000
+Epoch: 27
+	Train Accuracy : 9488 /10000 || Loss = 103
+	Test Accuracy : 9444 / 10000
+Epoch: 28
+	Train Accuracy : 9477 /10000 || Loss = 98
+	Test Accuracy : 9299 / 10000
+Epoch: 29
+	Train Accuracy : 9480 /10000 || Loss = 103
+	Test Accuracy : 9388 / 10000
+Epoch: 30
+	Train Accuracy : 9469 /10000 || Loss = 101
+	Test Accuracy : 9333 / 10000
+Epoch: 31
+	Train Accuracy : 9489 /10000 || Loss = 101
+	Test Accuracy : 9329 / 10000
+Epoch: 32
+	Train Accuracy : 9482 /10000 || Loss = 98
+	Test Accuracy : 9399 / 10000
+Epoch: 33
+	Train Accuracy : 9485 /10000 || Loss = 103
+	Test Accuracy : 9409 / 10000
+Epoch: 34
+	Train Accuracy : 9473 /10000 || Loss = 99
+	Test Accuracy : 9441 / 10000
+Epoch: 35
+	Train Accuracy : 9503 /10000 || Loss = 98
+	Test Accuracy : 9391 / 10000
+Epoch: 36
+	Train Accuracy : 9503 /10000 || Loss = 93
+	Test Accuracy : 9454 / 10000
+Epoch: 37
+	Train Accuracy : 9556 /10000 || Loss = 91
+	Test Accuracy : 9356 / 10000
+Epoch: 38
+	Train Accuracy : 9526 /10000 || Loss = 90
+	Test Accuracy : 9416 / 10000
+Epoch: 39
+	Train Accuracy : 9538 /10000 || Loss = 93
+	Test Accuracy : 9422 / 10000
+Epoch: 40
+	Train Accuracy : 9538 /10000 || Loss = 89
+	Test Accuracy : 9439 / 10000
+Epoch: 41
+	Train Accuracy : 9526 /10000 || Loss = 89
+	Test Accuracy : 9433 / 10000
+Epoch: 42
+	Train Accuracy : 9518 /10000 || Loss = 92
+	Test Accuracy : 9418 / 10000
+Epoch: 43
+	Train Accuracy : 9564 /10000 || Loss = 85
+	Test Accuracy : 9421 / 10000
+Epoch: 44
+	Train Accuracy : 9539 /10000 || Loss = 88
+	Test Accuracy : 9451 / 10000
+Epoch: 45
+	Train Accuracy : 9516 /10000 || Loss = 92
+	Test Accuracy : 9431 / 10000
+Epoch: 46
+	Train Accuracy : 9547 /10000 || Loss = 86
+	Test Accuracy : 9414 / 10000
+Epoch: 47
+	Train Accuracy : 9556 /10000 || Loss = 88
+	Test Accuracy : 9464 / 10000
+Epoch: 48
+	Train Accuracy : 9565 /10000 || Loss = 87
+	Test Accuracy : 9343 / 10000
+Epoch: 49
+	Train Accuracy : 9570 /10000 || Loss = 83
+	Test Accuracy : 9435 / 10000
+Epoch: 50
+	Train Accuracy : 9550 /10000 || Loss = 87
+	Test Accuracy : 9377 / 10000
+Epoch: 51
+	Train Accuracy : 9557 /10000 || Loss = 89
+	Test Accuracy : 9331 / 10000
+Epoch: 52
+	Train Accuracy : 9586 /10000 || Loss = 80
+	Test Accuracy : 9386 / 10000
+Epoch: 53
+	Train Accuracy : 9576 /10000 || Loss = 80
+	Test Accuracy : 9453 / 10000
+Epoch: 54
+	Train Accuracy : 9561 /10000 || Loss = 86
+	Test Accuracy : 9452 / 10000
+Epoch: 55
+	Train Accuracy : 9575 /10000 || Loss = 84
+	Test Accuracy : 9444 / 10000
+Epoch: 56
+	Train Accuracy : 9576 /10000 || Loss = 83
+	Test Accuracy : 9407 / 10000
+Epoch: 57
+	Train Accuracy : 9564 /10000 || Loss = 87
+	Test Accuracy : 9422 / 10000
+Epoch: 58
+	Train Accuracy : 9572 /10000 || Loss = 82
+	Test Accuracy : 9431 / 10000
+Epoch: 59
+	Train Accuracy : 9572 /10000 || Loss = 85
+	Test Accuracy : 9525 / 10000
+Epoch: 60
+	Train Accuracy : 9590 /10000 || Loss = 79
+	Test Accuracy : 9390 / 10000
+Epoch: 61
+	Train Accuracy : 9578 /10000 || Loss = 81
+	Test Accuracy : 9489 / 10000
+Epoch: 62
+	Train Accuracy : 9568 /10000 || Loss = 82
+	Test Accuracy : 9427 / 10000
+Epoch: 63
+	Train Accuracy : 9552 /10000 || Loss = 87
+	Test Accuracy : 9448 / 10000
+Epoch: 64
+	Train Accuracy : 9589 /10000 || Loss = 81
+	Test Accuracy : 9435 / 10000
+Epoch: 65
+	Train Accuracy : 9598 /10000 || Loss = 81
+	Test Accuracy : 9459 / 10000
+Epoch: 66
+	Train Accuracy : 9567 /10000 || Loss = 81
+	Test Accuracy : 9384 / 10000
+Epoch: 67
+	Train Accuracy : 9571 /10000 || Loss = 82
+	Test Accuracy : 9429 / 10000
+Epoch: 68
+	Train Accuracy : 9534 /10000 || Loss = 91
+	Test Accuracy : 9474 / 10000
+Epoch: 69
+	Train Accuracy : 9591 /10000 || Loss = 78
+	Test Accuracy : 9473 / 10000
+Epoch: 70
+	Train Accuracy : 9574 /10000 || Loss = 82
+	Test Accuracy : 9390 / 10000
+Epoch: 71
+	Train Accuracy : 9615 /10000 || Loss = 77
+	Test Accuracy : 9433 / 10000
+Epoch: 72
+	Train Accuracy : 9621 /10000 || Loss = 73
+	Test Accuracy : 9436 / 10000
+Epoch: 73
+	Train Accuracy : 9581 /10000 || Loss = 79
+	Test Accuracy : 9448 / 10000
+Epoch: 74
+	Train Accuracy : 9615 /10000 || Loss = 78
+	Test Accuracy : 9484 / 10000
+Epoch: 75
+	Train Accuracy : 9603 /10000 || Loss = 80
+	Test Accuracy : 9426 / 10000
+Epoch: 76
+	Train Accuracy : 9599 /10000 || Loss = 79
+	Test Accuracy : 9450 / 10000
+Epoch: 77
+	Train Accuracy : 9617 /10000 || Loss = 72
+	Test Accuracy : 9383 / 10000
+Epoch: 78
+	Train Accuracy : 9581 /10000 || Loss = 79
+	Test Accuracy : 9475 / 10000
+Epoch: 79
+	Train Accuracy : 9588 /10000 || Loss = 75
+	Test Accuracy : 9437 / 10000
+Epoch: 80
+	Train Accuracy : 9585 /10000 || Loss = 78
+	Test Accuracy : 9437 / 10000
+Epoch: 81
+	Train Accuracy : 9544 /10000 || Loss = 83
+	Test Accuracy : 9465 / 10000
+Epoch: 82
+	Train Accuracy : 9590 /10000 || Loss = 76
+	Test Accuracy : 9474 / 10000
+Epoch: 83
+	Train Accuracy : 9605 /10000 || Loss = 79
+	Test Accuracy : 9442 / 10000
+Epoch: 84
+	Train Accuracy : 9612 /10000 || Loss = 75
+	Test Accuracy : 9482 / 10000
+Epoch: 85
+	Train Accuracy : 9578 /10000 || Loss = 82
+	Test Accuracy : 9407 / 10000
+Epoch: 86
+	Train Accuracy : 9604 /10000 || Loss = 79
+	Test Accuracy : 9465 / 10000
+Epoch: 87
+	Train Accuracy : 9627 /10000 || Loss = 75
+	Test Accuracy : 9457 / 10000
+Epoch: 88
+	Train Accuracy : 9613 /10000 || Loss = 77
+	Test Accuracy : 9473 / 10000
+Epoch: 89
+	Train Accuracy : 9615 /10000 || Loss = 76
+	Test Accuracy : 9531 / 10000
+Epoch: 90
+	Train Accuracy : 9609 /10000 || Loss = 77
+	Test Accuracy : 9447 / 10000
+Epoch: 91
+	Train Accuracy : 9611 /10000 || Loss = 74
+	Test Accuracy : 9469 / 10000
+Epoch: 92
+	Train Accuracy : 9610 /10000 || Loss = 73
+	Test Accuracy : 9459 / 10000
+Epoch: 93
+	Train Accuracy : 9587 /10000 || Loss = 81
+	Test Accuracy : 9480 / 10000
+Epoch: 94
+	Train Accuracy : 9595 /10000 || Loss = 80
+	Test Accuracy : 9478 / 10000
+Epoch: 95
+	Train Accuracy : 9604 /10000 || Loss = 77
+	Test Accuracy : 9448 / 10000
+Epoch: 96
+	Train Accuracy : 9597 /10000 || Loss = 75
+	Test Accuracy : 9470 / 10000
+Epoch: 97
+	Train Accuracy : 9610 /10000 || Loss = 76
+	Test Accuracy : 9471 / 10000
+Epoch: 98
+	Train Accuracy : 9603 /10000 || Loss = 77
+	Test Accuracy : 9407 / 10000
+Epoch: 99
+	Train Accuracy : 9624 /10000 || Loss = 74
+	Test Accuracy : 9456 / 10000
+Epoch: 100
+	Train Accuracy : 9613 /10000 || Loss = 74
+	Test Accuracy : 9490 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9517 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9650 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9703 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9625 / 10000
+Test for scale by 0.400
+	Test Accuracy : 9225 / 10000
+Test for scale by 0.333
+	Test Accuracy : 8258 / 10000
+Average time taken for one epoch = 38.54143794298172
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/16da6e430ec6482d97c54af759a5d564/artifacts/events
+MNIST 16 dss_v2 1.2 [4, 4] 4 2 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_2_16_4_4_seg.th ===========
+Bessel scales: [0.11     0.2684   0.496496]
+Writing TensorBoard events locally to /tmp/tmpk6fpc3zd
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 2, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 2, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  36298
+Epoch: 1
+	Train Accuracy : 8191 /10000 || Loss = 362
+	Test Accuracy : 8918 / 10000
+Epoch: 2
+	Train Accuracy : 9002 /10000 || Loss = 209
+	Test Accuracy : 9114 / 10000
+Epoch: 3
+	Train Accuracy : 9140 /10000 || Loss = 175
+	Test Accuracy : 9070 / 10000
+Epoch: 4
+	Train Accuracy : 9216 /10000 || Loss = 161
+	Test Accuracy : 8994 / 10000
+Epoch: 5
+	Train Accuracy : 9258 /10000 || Loss = 147
+	Test Accuracy : 9167 / 10000
+Epoch: 6
+	Train Accuracy : 9283 /10000 || Loss = 146
+	Test Accuracy : 9337 / 10000
+Epoch: 7
+	Train Accuracy : 9294 /10000 || Loss = 138
+	Test Accuracy : 9090 / 10000
+Epoch: 8
+	Train Accuracy : 9325 /10000 || Loss = 130
+	Test Accuracy : 9297 / 10000
+Epoch: 9
+	Train Accuracy : 9343 /10000 || Loss = 132
+	Test Accuracy : 9250 / 10000
+Epoch: 10
+	Train Accuracy : 9375 /10000 || Loss = 119
+	Test Accuracy : 9371 / 10000
+Epoch: 11
+	Train Accuracy : 9433 /10000 || Loss = 116
+	Test Accuracy : 9282 / 10000
+Epoch: 12
+	Train Accuracy : 9399 /10000 || Loss = 122
+	Test Accuracy : 9288 / 10000
+Epoch: 13
+	Train Accuracy : 9393 /10000 || Loss = 115
+	Test Accuracy : 9257 / 10000
+Epoch: 14
+	Train Accuracy : 9447 /10000 || Loss = 115
+	Test Accuracy : 9297 / 10000
+Epoch: 15
+	Train Accuracy : 9475 /10000 || Loss = 111
+	Test Accuracy : 9283 / 10000
+Epoch: 16
+	Train Accuracy : 9458 /10000 || Loss = 104
+	Test Accuracy : 9315 / 10000
+Epoch: 17
+	Train Accuracy : 9462 /10000 || Loss = 111
+	Test Accuracy : 9304 / 10000
+Epoch: 18
+	Train Accuracy : 9456 /10000 || Loss = 104
+	Test Accuracy : 9296 / 10000
+Epoch: 19
+	Train Accuracy : 9449 /10000 || Loss = 107
+	Test Accuracy : 9338 / 10000
+Epoch: 20
+	Train Accuracy : 9503 /10000 || Loss = 98
+	Test Accuracy : 9422 / 10000
+Epoch: 21
+	Train Accuracy : 9480 /10000 || Loss = 102
+	Test Accuracy : 9310 / 10000
+Epoch: 22
+	Train Accuracy : 9489 /10000 || Loss = 100
+	Test Accuracy : 9358 / 10000
+Epoch: 23
+	Train Accuracy : 9467 /10000 || Loss = 100
+	Test Accuracy : 9378 / 10000
+Epoch: 24
+	Train Accuracy : 9543 /10000 || Loss = 95
+	Test Accuracy : 9322 / 10000
+Epoch: 25
+	Train Accuracy : 9536 /10000 || Loss = 96
+	Test Accuracy : 9424 / 10000
+Epoch: 26
+	Train Accuracy : 9494 /10000 || Loss = 101
+	Test Accuracy : 9410 / 10000
+Epoch: 27
+	Train Accuracy : 9536 /10000 || Loss = 93
+	Test Accuracy : 9345 / 10000
+Epoch: 28
+	Train Accuracy : 9521 /10000 || Loss = 96
+	Test Accuracy : 9296 / 10000
+Epoch: 29
+	Train Accuracy : 9528 /10000 || Loss = 94
+	Test Accuracy : 9335 / 10000
+Epoch: 30
+	Train Accuracy : 9526 /10000 || Loss = 93
+	Test Accuracy : 9421 / 10000
+Epoch: 31
+	Train Accuracy : 9504 /10000 || Loss = 94
+	Test Accuracy : 9327 / 10000
+Epoch: 32
+	Train Accuracy : 9541 /10000 || Loss = 86
+	Test Accuracy : 9335 / 10000
+Epoch: 33
+	Train Accuracy : 9552 /10000 || Loss = 89
+	Test Accuracy : 9277 / 10000
+Epoch: 34
+	Train Accuracy : 9533 /10000 || Loss = 92
+	Test Accuracy : 9386 / 10000
+Epoch: 35
+	Train Accuracy : 9542 /10000 || Loss = 91
+	Test Accuracy : 9394 / 10000
+Epoch: 36
+	Train Accuracy : 9530 /10000 || Loss = 91
+	Test Accuracy : 9272 / 10000
+Epoch: 37
+	Train Accuracy : 9553 /10000 || Loss = 88
+	Test Accuracy : 9403 / 10000
+Epoch: 38
+	Train Accuracy : 9553 /10000 || Loss = 84
+	Test Accuracy : 9415 / 10000
+Epoch: 39
+	Train Accuracy : 9583 /10000 || Loss = 84
+	Test Accuracy : 9402 / 10000
+Epoch: 40
+	Train Accuracy : 9545 /10000 || Loss = 90
+	Test Accuracy : 9359 / 10000
+Epoch: 41
+	Train Accuracy : 9531 /10000 || Loss = 93
+	Test Accuracy : 9357 / 10000
+Epoch: 42
+	Train Accuracy : 9596 /10000 || Loss = 83
+	Test Accuracy : 9373 / 10000
+Epoch: 43
+	Train Accuracy : 9554 /10000 || Loss = 86
+	Test Accuracy : 9447 / 10000
+Epoch: 44
+	Train Accuracy : 9563 /10000 || Loss = 85
+	Test Accuracy : 9479 / 10000
+Epoch: 45
+	Train Accuracy : 9584 /10000 || Loss = 84
+	Test Accuracy : 9340 / 10000
+Epoch: 46
+	Train Accuracy : 9573 /10000 || Loss = 86
+	Test Accuracy : 9402 / 10000
+Epoch: 47
+	Train Accuracy : 9553 /10000 || Loss = 86
+	Test Accuracy : 9384 / 10000
+Epoch: 48
+	Train Accuracy : 9590 /10000 || Loss = 81
+	Test Accuracy : 9266 / 10000
+Epoch: 49
+	Train Accuracy : 9579 /10000 || Loss = 84
+	Test Accuracy : 9436 / 10000
+Epoch: 50
+	Train Accuracy : 9579 /10000 || Loss = 80
+	Test Accuracy : 9457 / 10000
+Epoch: 51
+	Train Accuracy : 9603 /10000 || Loss = 77
+	Test Accuracy : 9414 / 10000
+Epoch: 52
+	Train Accuracy : 9548 /10000 || Loss = 84
+	Test Accuracy : 9431 / 10000
+Epoch: 53
+	Train Accuracy : 9587 /10000 || Loss = 84
+	Test Accuracy : 9443 / 10000
+Epoch: 54
+	Train Accuracy : 9582 /10000 || Loss = 81
+	Test Accuracy : 9446 / 10000
+Epoch: 55
+	Train Accuracy : 9577 /10000 || Loss = 84
+	Test Accuracy : 9356 / 10000
+Epoch: 56
+	Train Accuracy : 9594 /10000 || Loss = 78
+	Test Accuracy : 9332 / 10000
+Epoch: 57
+	Train Accuracy : 9570 /10000 || Loss = 83
+	Test Accuracy : 9426 / 10000
+Epoch: 58
+	Train Accuracy : 9615 /10000 || Loss = 78
+	Test Accuracy : 9430 / 10000
+Epoch: 59
+	Train Accuracy : 9602 /10000 || Loss = 81
+	Test Accuracy : 9376 / 10000
+Epoch: 60
+	Train Accuracy : 9582 /10000 || Loss = 79
+	Test Accuracy : 9445 / 10000
+Epoch: 61
+	Train Accuracy : 9613 /10000 || Loss = 79
+	Test Accuracy : 9433 / 10000
+Epoch: 62
+	Train Accuracy : 9570 /10000 || Loss = 84
+	Test Accuracy : 9432 / 10000
+Epoch: 63
+	Train Accuracy : 9575 /10000 || Loss = 81
+	Test Accuracy : 9345 / 10000
+Epoch: 64
+	Train Accuracy : 9568 /10000 || Loss = 82
+	Test Accuracy : 9335 / 10000
+Epoch: 65
+	Train Accuracy : 9613 /10000 || Loss = 75
+	Test Accuracy : 9377 / 10000
+Epoch: 66
+	Train Accuracy : 9605 /10000 || Loss = 75
+	Test Accuracy : 9444 / 10000
+Epoch: 67
+	Train Accuracy : 9607 /10000 || Loss = 77
+	Test Accuracy : 9419 / 10000
+Epoch: 68
+	Train Accuracy : 9609 /10000 || Loss = 76
+	Test Accuracy : 9395 / 10000
+Epoch: 69
+	Train Accuracy : 9598 /10000 || Loss = 79
+	Test Accuracy : 9447 / 10000
+Epoch: 70
+	Train Accuracy : 9597 /10000 || Loss = 80
+	Test Accuracy : 9411 / 10000
+Epoch: 71
+	Train Accuracy : 9621 /10000 || Loss = 77
+	Test Accuracy : 9390 / 10000
+Epoch: 72
+	Train Accuracy : 9612 /10000 || Loss = 79
+	Test Accuracy : 9425 / 10000
+Epoch: 73
+	Train Accuracy : 9586 /10000 || Loss = 79
+	Test Accuracy : 9394 / 10000
+Epoch: 74
+	Train Accuracy : 9606 /10000 || Loss = 77
+	Test Accuracy : 9384 / 10000
+Epoch: 75
+	Train Accuracy : 9607 /10000 || Loss = 75
+	Test Accuracy : 9408 / 10000
+Epoch: 76
+	Train Accuracy : 9581 /10000 || Loss = 76
+	Test Accuracy : 9367 / 10000
+Epoch: 77
+	Train Accuracy : 9593 /10000 || Loss = 81
+	Test Accuracy : 9416 / 10000
+Epoch: 78
+	Train Accuracy : 9634 /10000 || Loss = 74
+	Test Accuracy : 9463 / 10000
+Epoch: 79
+	Train Accuracy : 9624 /10000 || Loss = 71
+	Test Accuracy : 9453 / 10000
+Epoch: 80
+	Train Accuracy : 9624 /10000 || Loss = 75
+	Test Accuracy : 9429 / 10000
+Epoch: 81
+	Train Accuracy : 9612 /10000 || Loss = 74
+	Test Accuracy : 9442 / 10000
+Epoch: 82
+	Train Accuracy : 9610 /10000 || Loss = 78
+	Test Accuracy : 9391 / 10000
+Epoch: 83
+	Train Accuracy : 9616 /10000 || Loss = 74
+	Test Accuracy : 9454 / 10000
+Epoch: 84
+	Train Accuracy : 9598 /10000 || Loss = 77
+	Test Accuracy : 9447 / 10000
+Epoch: 85
+	Train Accuracy : 9608 /10000 || Loss = 76
+	Test Accuracy : 9349 / 10000
+Epoch: 86
+	Train Accuracy : 9614 /10000 || Loss = 73
+	Test Accuracy : 9482 / 10000
+Epoch: 87
+	Train Accuracy : 9618 /10000 || Loss = 72
+	Test Accuracy : 9324 / 10000
+Epoch: 88
+	Train Accuracy : 9594 /10000 || Loss = 81
+	Test Accuracy : 9463 / 10000
+Epoch: 89
+	Train Accuracy : 9642 /10000 || Loss = 76
+	Test Accuracy : 9474 / 10000
+Epoch: 90
+	Train Accuracy : 9643 /10000 || Loss = 70
+	Test Accuracy : 9424 / 10000
+Epoch: 91
+	Train Accuracy : 9630 /10000 || Loss = 74
+	Test Accuracy : 9441 / 10000
+Epoch: 92
+	Train Accuracy : 9631 /10000 || Loss = 73
+	Test Accuracy : 9397 / 10000
+Epoch: 93
+	Train Accuracy : 9629 /10000 || Loss = 72
+	Test Accuracy : 9364 / 10000
+Epoch: 94
+	Train Accuracy : 9611 /10000 || Loss = 76
+	Test Accuracy : 9435 / 10000
+Epoch: 95
+	Train Accuracy : 9652 /10000 || Loss = 67
+	Test Accuracy : 9387 / 10000
+Epoch: 96
+	Train Accuracy : 9628 /10000 || Loss = 72
+	Test Accuracy : 9408 / 10000
+Epoch: 97
+	Train Accuracy : 9602 /10000 || Loss = 74
+	Test Accuracy : 9401 / 10000
+Epoch: 98
+	Train Accuracy : 9671 /10000 || Loss = 67
+	Test Accuracy : 9452 / 10000
+Epoch: 99
+	Train Accuracy : 9620 /10000 || Loss = 70
+	Test Accuracy : 9381 / 10000
+Epoch: 100
+	Train Accuracy : 9644 /10000 || Loss = 72
+	Test Accuracy : 9489 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9548 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9633 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9668 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9589 / 10000
+Test for scale by 0.400
+	Test Accuracy : 9224 / 10000
+Test for scale by 0.333
+	Test Accuracy : 8030 / 10000
+Average time taken for one epoch = 38.379150569438934
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/d9d26bb888054dbcbf623721b571abf3/artifacts/events
+MNIST 16 dss_v2 1.2 [4, 4] 8 2 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_2_16_4_8_seg.th ===========
+Bessel scales: [0.11       0.2684     0.496496   0.82495424 1.29793411 1.97902511
+ 2.95979616]
+Writing TensorBoard events locally to /tmp/tmp7mrys1uk
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 2, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 2, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  36298
+Epoch: 1
+	Train Accuracy : 8103 /10000 || Loss = 390
+	Test Accuracy : 8692 / 10000
+Epoch: 2
+	Train Accuracy : 8908 /10000 || Loss = 221
+	Test Accuracy : 9030 / 10000
+Epoch: 3
+	Train Accuracy : 9013 /10000 || Loss = 196
+	Test Accuracy : 9180 / 10000
+Epoch: 4
+	Train Accuracy : 9173 /10000 || Loss = 166
+	Test Accuracy : 9064 / 10000
+Epoch: 5
+	Train Accuracy : 9198 /10000 || Loss = 158
+	Test Accuracy : 9215 / 10000
+Epoch: 6
+	Train Accuracy : 9270 /10000 || Loss = 150
+	Test Accuracy : 9147 / 10000
+Epoch: 7
+	Train Accuracy : 9298 /10000 || Loss = 142
+	Test Accuracy : 9185 / 10000
+Epoch: 8
+	Train Accuracy : 9322 /10000 || Loss = 135
+	Test Accuracy : 9143 / 10000
+Epoch: 9
+	Train Accuracy : 9316 /10000 || Loss = 130
+	Test Accuracy : 9270 / 10000
+Epoch: 10
+	Train Accuracy : 9318 /10000 || Loss = 133
+	Test Accuracy : 9278 / 10000
+Epoch: 11
+	Train Accuracy : 9361 /10000 || Loss = 126
+	Test Accuracy : 9277 / 10000
+Epoch: 12
+	Train Accuracy : 9342 /10000 || Loss = 128
+	Test Accuracy : 9362 / 10000
+Epoch: 13
+	Train Accuracy : 9387 /10000 || Loss = 119
+	Test Accuracy : 9311 / 10000
+Epoch: 14
+	Train Accuracy : 9407 /10000 || Loss = 116
+	Test Accuracy : 9296 / 10000
+Epoch: 15
+	Train Accuracy : 9402 /10000 || Loss = 115
+	Test Accuracy : 9279 / 10000
+Epoch: 16
+	Train Accuracy : 9432 /10000 || Loss = 111
+	Test Accuracy : 9269 / 10000
+Epoch: 17
+	Train Accuracy : 9454 /10000 || Loss = 112
+	Test Accuracy : 9348 / 10000
+Epoch: 18
+	Train Accuracy : 9442 /10000 || Loss = 109
+	Test Accuracy : 9293 / 10000
+Epoch: 19
+	Train Accuracy : 9406 /10000 || Loss = 118
+	Test Accuracy : 9360 / 10000
+Epoch: 20
+	Train Accuracy : 9462 /10000 || Loss = 109
+	Test Accuracy : 9293 / 10000
+Epoch: 21
+	Train Accuracy : 9436 /10000 || Loss = 106
+	Test Accuracy : 9258 / 10000
+Epoch: 22
+	Train Accuracy : 9505 /10000 || Loss = 104
+	Test Accuracy : 9231 / 10000
+Epoch: 23
+	Train Accuracy : 9473 /10000 || Loss = 105
+	Test Accuracy : 9267 / 10000
+Epoch: 24
+	Train Accuracy : 9506 /10000 || Loss = 97
+	Test Accuracy : 9287 / 10000
+Epoch: 25
+	Train Accuracy : 9521 /10000 || Loss = 96
+	Test Accuracy : 9311 / 10000
+Epoch: 26
+	Train Accuracy : 9472 /10000 || Loss = 104
+	Test Accuracy : 9324 / 10000
+Epoch: 27
+	Train Accuracy : 9524 /10000 || Loss = 99
+	Test Accuracy : 9406 / 10000
+Epoch: 28
+	Train Accuracy : 9502 /10000 || Loss = 96
+	Test Accuracy : 9337 / 10000
+Epoch: 29
+	Train Accuracy : 9528 /10000 || Loss = 95
+	Test Accuracy : 9337 / 10000
+Epoch: 30
+	Train Accuracy : 9510 /10000 || Loss = 100
+	Test Accuracy : 9263 / 10000
+Epoch: 31
+	Train Accuracy : 9466 /10000 || Loss = 103
+	Test Accuracy : 9332 / 10000
+Epoch: 32
+	Train Accuracy : 9520 /10000 || Loss = 93
+	Test Accuracy : 9302 / 10000
+Epoch: 33
+	Train Accuracy : 9560 /10000 || Loss = 91
+	Test Accuracy : 9348 / 10000
+Epoch: 34
+	Train Accuracy : 9519 /10000 || Loss = 91
+	Test Accuracy : 9318 / 10000
+Epoch: 35
+	Train Accuracy : 9514 /10000 || Loss = 96
+	Test Accuracy : 9310 / 10000
+Epoch: 36
+	Train Accuracy : 9508 /10000 || Loss = 92
+	Test Accuracy : 9206 / 10000
+Epoch: 37
+	Train Accuracy : 9507 /10000 || Loss = 96
+	Test Accuracy : 9387 / 10000
+Epoch: 38
+	Train Accuracy : 9506 /10000 || Loss = 95
+	Test Accuracy : 9383 / 10000
+Epoch: 39
+	Train Accuracy : 9520 /10000 || Loss = 92
+	Test Accuracy : 9378 / 10000
+Epoch: 40
+	Train Accuracy : 9544 /10000 || Loss = 86
+	Test Accuracy : 9298 / 10000
+Epoch: 41
+	Train Accuracy : 9559 /10000 || Loss = 86
+	Test Accuracy : 9350 / 10000
+Epoch: 42
+	Train Accuracy : 9561 /10000 || Loss = 88
+	Test Accuracy : 9409 / 10000
+Epoch: 43
+	Train Accuracy : 9529 /10000 || Loss = 88
+	Test Accuracy : 9331 / 10000
+Epoch: 44
+	Train Accuracy : 9534 /10000 || Loss = 88
+	Test Accuracy : 9299 / 10000
+Epoch: 45
+	Train Accuracy : 9530 /10000 || Loss = 93
+	Test Accuracy : 9399 / 10000
+Epoch: 46
+	Train Accuracy : 9529 /10000 || Loss = 90
+	Test Accuracy : 9315 / 10000
+Epoch: 47
+	Train Accuracy : 9574 /10000 || Loss = 85
+	Test Accuracy : 9410 / 10000
+Epoch: 48
+	Train Accuracy : 9573 /10000 || Loss = 81
+	Test Accuracy : 9381 / 10000
+Epoch: 49
+	Train Accuracy : 9547 /10000 || Loss = 88
+	Test Accuracy : 9284 / 10000
+Epoch: 50
+	Train Accuracy : 9560 /10000 || Loss = 86
+	Test Accuracy : 9371 / 10000
+Epoch: 51
+	Train Accuracy : 9552 /10000 || Loss = 83
+	Test Accuracy : 9382 / 10000
+Epoch: 52
+	Train Accuracy : 9555 /10000 || Loss = 86
+	Test Accuracy : 9346 / 10000
+Epoch: 53
+	Train Accuracy : 9564 /10000 || Loss = 84
+	Test Accuracy : 9384 / 10000
+Epoch: 54
+	Train Accuracy : 9543 /10000 || Loss = 87
+	Test Accuracy : 9282 / 10000
+Epoch: 55
+	Train Accuracy : 9582 /10000 || Loss = 85
+	Test Accuracy : 9343 / 10000
+Epoch: 56
+	Train Accuracy : 9608 /10000 || Loss = 80
+	Test Accuracy : 9325 / 10000
+Epoch: 57
+	Train Accuracy : 9560 /10000 || Loss = 83
+	Test Accuracy : 9212 / 10000
+Epoch: 58
+	Train Accuracy : 9553 /10000 || Loss = 85
+	Test Accuracy : 9393 / 10000
+Epoch: 59
+	Train Accuracy : 9583 /10000 || Loss = 83
+	Test Accuracy : 9318 / 10000
+Epoch: 60
+	Train Accuracy : 9563 /10000 || Loss = 88
+	Test Accuracy : 9360 / 10000
+Epoch: 61
+	Train Accuracy : 9573 /10000 || Loss = 81
+	Test Accuracy : 9368 / 10000
+Epoch: 62
+	Train Accuracy : 9570 /10000 || Loss = 85
+	Test Accuracy : 9438 / 10000
+Epoch: 63
+	Train Accuracy : 9591 /10000 || Loss = 80
+	Test Accuracy : 9367 / 10000
+Epoch: 64
+	Train Accuracy : 9584 /10000 || Loss = 82
+	Test Accuracy : 9364 / 10000
+Epoch: 65
+	Train Accuracy : 9610 /10000 || Loss = 81
+	Test Accuracy : 9372 / 10000
+Epoch: 66
+	Train Accuracy : 9613 /10000 || Loss = 78
+	Test Accuracy : 9349 / 10000
+Epoch: 67
+	Train Accuracy : 9601 /10000 || Loss = 78
+	Test Accuracy : 9387 / 10000
+Epoch: 68
+	Train Accuracy : 9595 /10000 || Loss = 80
+	Test Accuracy : 9426 / 10000
+Epoch: 69
+	Train Accuracy : 9605 /10000 || Loss = 75
+	Test Accuracy : 9381 / 10000
+Epoch: 70
+	Train Accuracy : 9608 /10000 || Loss = 78
+	Test Accuracy : 9334 / 10000
+Epoch: 71
+	Train Accuracy : 9575 /10000 || Loss = 84
+	Test Accuracy : 9327 / 10000
+Epoch: 72
+	Train Accuracy : 9601 /10000 || Loss = 79
+	Test Accuracy : 9406 / 10000
+Epoch: 73
+	Train Accuracy : 9614 /10000 || Loss = 77
+	Test Accuracy : 9359 / 10000
+Epoch: 74
+	Train Accuracy : 9588 /10000 || Loss = 79
+	Test Accuracy : 9366 / 10000
+Epoch: 75
+	Train Accuracy : 9584 /10000 || Loss = 78
+	Test Accuracy : 9412 / 10000
+Epoch: 76
+	Train Accuracy : 9583 /10000 || Loss = 78
+	Test Accuracy : 9414 / 10000
+Epoch: 77
+	Train Accuracy : 9591 /10000 || Loss = 79
+	Test Accuracy : 9391 / 10000
+Epoch: 78
+	Train Accuracy : 9581 /10000 || Loss = 82
+	Test Accuracy : 9375 / 10000
+Epoch: 79
+	Train Accuracy : 9599 /10000 || Loss = 81
+	Test Accuracy : 9327 / 10000
+Epoch: 80
+	Train Accuracy : 9580 /10000 || Loss = 80
+	Test Accuracy : 9420 / 10000
+Epoch: 81
+	Train Accuracy : 9594 /10000 || Loss = 81
+	Test Accuracy : 9448 / 10000
+Epoch: 82
+	Train Accuracy : 9576 /10000 || Loss = 80
+	Test Accuracy : 9396 / 10000
+Epoch: 83
+	Train Accuracy : 9592 /10000 || Loss = 81
+	Test Accuracy : 9372 / 10000
+Epoch: 84
+	Train Accuracy : 9609 /10000 || Loss = 77
+	Test Accuracy : 9379 / 10000
+Epoch: 85
+	Train Accuracy : 9594 /10000 || Loss = 80
+	Test Accuracy : 9382 / 10000
+Epoch: 86
+	Train Accuracy : 9620 /10000 || Loss = 76
+	Test Accuracy : 9422 / 10000
+Epoch: 87
+	Train Accuracy : 9597 /10000 || Loss = 76
+	Test Accuracy : 9281 / 10000
+Epoch: 88
+	Train Accuracy : 9607 /10000 || Loss = 78
+	Test Accuracy : 9400 / 10000
+Epoch: 89
+	Train Accuracy : 9615 /10000 || Loss = 73
+	Test Accuracy : 9447 / 10000
+Epoch: 90
+	Train Accuracy : 9649 /10000 || Loss = 74
+	Test Accuracy : 9357 / 10000
+Epoch: 91
+	Train Accuracy : 9645 /10000 || Loss = 71
+	Test Accuracy : 9397 / 10000
+Epoch: 92
+	Train Accuracy : 9629 /10000 || Loss = 76
+	Test Accuracy : 9331 / 10000
+Epoch: 93
+	Train Accuracy : 9614 /10000 || Loss = 75
+	Test Accuracy : 9369 / 10000
+Epoch: 94
+	Train Accuracy : 9616 /10000 || Loss = 75
+	Test Accuracy : 9314 / 10000
+Epoch: 95
+	Train Accuracy : 9570 /10000 || Loss = 83
+	Test Accuracy : 9393 / 10000
+Epoch: 96
+	Train Accuracy : 9595 /10000 || Loss = 81
+	Test Accuracy : 9345 / 10000
+Epoch: 97
+	Train Accuracy : 9599 /10000 || Loss = 77
+	Test Accuracy : 9291 / 10000
+Epoch: 98
+	Train Accuracy : 9574 /10000 || Loss = 82
+	Test Accuracy : 9344 / 10000
+Epoch: 99
+	Train Accuracy : 9646 /10000 || Loss = 71
+	Test Accuracy : 9386 / 10000
+Epoch: 100
+	Train Accuracy : 9594 /10000 || Loss = 78
+	Test Accuracy : 9385 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9513 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9633 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9589 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9460 / 10000
+Test for scale by 0.400
+	Test Accuracy : 8998 / 10000
+Test for scale by 0.333
+	Test Accuracy : 7830 / 10000
+Average time taken for one epoch = 39.03698138475418
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/e719b9b73ff243f2a71821a4eb9002b9/artifacts/events
+MNIST 16 dss_v2 1.2 [4, 4] 4 4 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_4_16_4_4_seg.th ===========
+Bessel scales: [0.11     0.2684   0.496496]
+Writing TensorBoard events locally to /tmp/tmp5_ignyje
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 4, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 4, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  41194
+Epoch: 1
+	Train Accuracy : 8041 /10000 || Loss = 389
+	Test Accuracy : 8249 / 10000
+Epoch: 2
+	Train Accuracy : 8877 /10000 || Loss = 224
+	Test Accuracy : 8875 / 10000
+Epoch: 3
+	Train Accuracy : 9034 /10000 || Loss = 190
+	Test Accuracy : 8924 / 10000
+Epoch: 4
+	Train Accuracy : 9126 /10000 || Loss = 171
+	Test Accuracy : 9162 / 10000
+Epoch: 5
+	Train Accuracy : 9229 /10000 || Loss = 155
+	Test Accuracy : 9196 / 10000
+Epoch: 6
+	Train Accuracy : 9244 /10000 || Loss = 150
+	Test Accuracy : 9116 / 10000
+Epoch: 7
+	Train Accuracy : 9273 /10000 || Loss = 144
+	Test Accuracy : 9129 / 10000
+Epoch: 8
+	Train Accuracy : 9267 /10000 || Loss = 145
+	Test Accuracy : 9155 / 10000
+Epoch: 9
+	Train Accuracy : 9285 /10000 || Loss = 142
+	Test Accuracy : 9065 / 10000
+Epoch: 10
+	Train Accuracy : 9389 /10000 || Loss = 129
+	Test Accuracy : 9080 / 10000
+Epoch: 11
+	Train Accuracy : 9325 /10000 || Loss = 133
+	Test Accuracy : 9187 / 10000
+Epoch: 12
+	Train Accuracy : 9354 /10000 || Loss = 125
+	Test Accuracy : 9158 / 10000
+Epoch: 13
+	Train Accuracy : 9414 /10000 || Loss = 119
+	Test Accuracy : 9265 / 10000
+Epoch: 14
+	Train Accuracy : 9398 /10000 || Loss = 119
+	Test Accuracy : 9137 / 10000
+Epoch: 15
+	Train Accuracy : 9415 /10000 || Loss = 116
+	Test Accuracy : 9243 / 10000
+Epoch: 16
+	Train Accuracy : 9421 /10000 || Loss = 113
+	Test Accuracy : 9213 / 10000
+Epoch: 17
+	Train Accuracy : 9418 /10000 || Loss = 116
+	Test Accuracy : 9271 / 10000
+Epoch: 18
+	Train Accuracy : 9416 /10000 || Loss = 112
+	Test Accuracy : 9209 / 10000
+Epoch: 19
+	Train Accuracy : 9440 /10000 || Loss = 112
+	Test Accuracy : 9291 / 10000
+Epoch: 20
+	Train Accuracy : 9433 /10000 || Loss = 112
+	Test Accuracy : 9262 / 10000
+Epoch: 21
+	Train Accuracy : 9469 /10000 || Loss = 108
+	Test Accuracy : 9131 / 10000
+Epoch: 22
+	Train Accuracy : 9469 /10000 || Loss = 108
+	Test Accuracy : 9189 / 10000
+Epoch: 23
+	Train Accuracy : 9479 /10000 || Loss = 104
+	Test Accuracy : 9105 / 10000
+Epoch: 24
+	Train Accuracy : 9493 /10000 || Loss = 100
+	Test Accuracy : 9311 / 10000
+Epoch: 25
+	Train Accuracy : 9480 /10000 || Loss = 101
+	Test Accuracy : 9282 / 10000
+Epoch: 26
+	Train Accuracy : 9538 /10000 || Loss = 94
+	Test Accuracy : 9286 / 10000
+Epoch: 27
+	Train Accuracy : 9483 /10000 || Loss = 102
+	Test Accuracy : 9260 / 10000
+Epoch: 28
+	Train Accuracy : 9472 /10000 || Loss = 102
+	Test Accuracy : 9293 / 10000
+Epoch: 29
+	Train Accuracy : 9505 /10000 || Loss = 96
+	Test Accuracy : 9334 / 10000
+Epoch: 30
+	Train Accuracy : 9472 /10000 || Loss = 103
+	Test Accuracy : 9173 / 10000
+Epoch: 31
+	Train Accuracy : 9498 /10000 || Loss = 97
+	Test Accuracy : 9373 / 10000
+Epoch: 32
+	Train Accuracy : 9485 /10000 || Loss = 99
+	Test Accuracy : 9205 / 10000
+Epoch: 33
+	Train Accuracy : 9520 /10000 || Loss = 93
+	Test Accuracy : 9190 / 10000
+Epoch: 34
+	Train Accuracy : 9522 /10000 || Loss = 98
+	Test Accuracy : 9248 / 10000
+Epoch: 35
+	Train Accuracy : 9511 /10000 || Loss = 94
+	Test Accuracy : 9285 / 10000
+Epoch: 36
+	Train Accuracy : 9496 /10000 || Loss = 96
+	Test Accuracy : 9330 / 10000
+Epoch: 37
+	Train Accuracy : 9516 /10000 || Loss = 97
+	Test Accuracy : 9282 / 10000
+Epoch: 38
+	Train Accuracy : 9529 /10000 || Loss = 95
+	Test Accuracy : 9278 / 10000
+Epoch: 39
+	Train Accuracy : 9508 /10000 || Loss = 96
+	Test Accuracy : 9267 / 10000
+Epoch: 40
+	Train Accuracy : 9534 /10000 || Loss = 90
+	Test Accuracy : 9354 / 10000
+Epoch: 41
+	Train Accuracy : 9494 /10000 || Loss = 95
+	Test Accuracy : 9347 / 10000
+Epoch: 42
+	Train Accuracy : 9537 /10000 || Loss = 92
+	Test Accuracy : 9269 / 10000
+Epoch: 43
+	Train Accuracy : 9514 /10000 || Loss = 93
+	Test Accuracy : 9242 / 10000
+Epoch: 44
+	Train Accuracy : 9536 /10000 || Loss = 96
+	Test Accuracy : 9271 / 10000
+Epoch: 45
+	Train Accuracy : 9499 /10000 || Loss = 96
+	Test Accuracy : 9218 / 10000
+Epoch: 46
+	Train Accuracy : 9556 /10000 || Loss = 87
+	Test Accuracy : 9313 / 10000
+Epoch: 47
+	Train Accuracy : 9546 /10000 || Loss = 91
+	Test Accuracy : 9350 / 10000
+Epoch: 48
+	Train Accuracy : 9503 /10000 || Loss = 90
+	Test Accuracy : 9298 / 10000
+Epoch: 49
+	Train Accuracy : 9524 /10000 || Loss = 90
+	Test Accuracy : 9296 / 10000
+Epoch: 50
+	Train Accuracy : 9521 /10000 || Loss = 94
+	Test Accuracy : 9323 / 10000
+Epoch: 51
+	Train Accuracy : 9521 /10000 || Loss = 92
+	Test Accuracy : 9283 / 10000
+Epoch: 52
+	Train Accuracy : 9577 /10000 || Loss = 81
+	Test Accuracy : 9162 / 10000
+Epoch: 53
+	Train Accuracy : 9552 /10000 || Loss = 93
+	Test Accuracy : 9341 / 10000
+Epoch: 54
+	Train Accuracy : 9545 /10000 || Loss = 89
+	Test Accuracy : 9327 / 10000
+Epoch: 55
+	Train Accuracy : 9532 /10000 || Loss = 93
+	Test Accuracy : 9360 / 10000
+Epoch: 56
+	Train Accuracy : 9576 /10000 || Loss = 81
+	Test Accuracy : 9270 / 10000
+Epoch: 57
+	Train Accuracy : 9556 /10000 || Loss = 89
+	Test Accuracy : 9274 / 10000
+Epoch: 58
+	Train Accuracy : 9549 /10000 || Loss = 86
+	Test Accuracy : 9351 / 10000
+Epoch: 59
+	Train Accuracy : 9562 /10000 || Loss = 90
+	Test Accuracy : 9360 / 10000
+Epoch: 60
+	Train Accuracy : 9513 /10000 || Loss = 93
+	Test Accuracy : 9316 / 10000
+Epoch: 61
+	Train Accuracy : 9539 /10000 || Loss = 92
+	Test Accuracy : 9386 / 10000
+Epoch: 62
+	Train Accuracy : 9556 /10000 || Loss = 86
+	Test Accuracy : 9320 / 10000
+Epoch: 63
+	Train Accuracy : 9516 /10000 || Loss = 94
+	Test Accuracy : 9101 / 10000
+Epoch: 64
+	Train Accuracy : 9535 /10000 || Loss = 90
+	Test Accuracy : 9286 / 10000
+Epoch: 65
+	Train Accuracy : 9530 /10000 || Loss = 91
+	Test Accuracy : 9305 / 10000
+Epoch: 66
+	Train Accuracy : 9552 /10000 || Loss = 86
+	Test Accuracy : 9103 / 10000
+Epoch: 67
+	Train Accuracy : 9550 /10000 || Loss = 88
+	Test Accuracy : 9274 / 10000
+Epoch: 68
+	Train Accuracy : 9551 /10000 || Loss = 92
+	Test Accuracy : 9321 / 10000
+Epoch: 69
+	Train Accuracy : 9545 /10000 || Loss = 89
+	Test Accuracy : 9312 / 10000
+Epoch: 70
+	Train Accuracy : 9573 /10000 || Loss = 86
+	Test Accuracy : 9357 / 10000
+Epoch: 71
+	Train Accuracy : 9557 /10000 || Loss = 85
+	Test Accuracy : 9321 / 10000
+Epoch: 72
+	Train Accuracy : 9551 /10000 || Loss = 89
+	Test Accuracy : 9364 / 10000
+Epoch: 73
+	Train Accuracy : 9553 /10000 || Loss = 88
+	Test Accuracy : 9283 / 10000
+Epoch: 74
+	Train Accuracy : 9587 /10000 || Loss = 82
+	Test Accuracy : 9318 / 10000
+Epoch: 75
+	Train Accuracy : 9547 /10000 || Loss = 90
+	Test Accuracy : 9256 / 10000
+Epoch: 76
+	Train Accuracy : 9563 /10000 || Loss = 86
+	Test Accuracy : 9332 / 10000
+Epoch: 77
+	Train Accuracy : 9566 /10000 || Loss = 86
+	Test Accuracy : 9327 / 10000
+Epoch: 78
+	Train Accuracy : 9550 /10000 || Loss = 87
+	Test Accuracy : 9204 / 10000
+Epoch: 79
+	Train Accuracy : 9592 /10000 || Loss = 83
+	Test Accuracy : 9242 / 10000
+Epoch: 80
+	Train Accuracy : 9541 /10000 || Loss = 88
+	Test Accuracy : 9329 / 10000
+Epoch: 81
+	Train Accuracy : 9574 /10000 || Loss = 80
+	Test Accuracy : 9256 / 10000
+Epoch: 82
+	Train Accuracy : 9573 /10000 || Loss = 80
+	Test Accuracy : 9275 / 10000
+Epoch: 83
+	Train Accuracy : 9564 /10000 || Loss = 86
+	Test Accuracy : 9352 / 10000
+Epoch: 84
+	Train Accuracy : 9558 /10000 || Loss = 88
+	Test Accuracy : 9240 / 10000
+Epoch: 85
+	Train Accuracy : 9550 /10000 || Loss = 86
+	Test Accuracy : 9220 / 10000
+Epoch: 86
+	Train Accuracy : 9516 /10000 || Loss = 94
+	Test Accuracy : 9221 / 10000
+Epoch: 87
+	Train Accuracy : 9535 /10000 || Loss = 90
+	Test Accuracy : 9306 / 10000
+Epoch: 88
+	Train Accuracy : 9533 /10000 || Loss = 90
+	Test Accuracy : 9145 / 10000
+Epoch: 89
+	Train Accuracy : 9587 /10000 || Loss = 86
+	Test Accuracy : 9320 / 10000
+Epoch: 90
+	Train Accuracy : 9585 /10000 || Loss = 85
+	Test Accuracy : 9317 / 10000
+Epoch: 91
+	Train Accuracy : 9578 /10000 || Loss = 88
+	Test Accuracy : 9270 / 10000
+Epoch: 92
+	Train Accuracy : 9542 /10000 || Loss = 87
+	Test Accuracy : 9275 / 10000
+Epoch: 93
+	Train Accuracy : 9579 /10000 || Loss = 82
+	Test Accuracy : 9241 / 10000
+Epoch: 94
+	Train Accuracy : 9569 /10000 || Loss = 82
+	Test Accuracy : 9287 / 10000
+Epoch: 95
+	Train Accuracy : 9563 /10000 || Loss = 86
+	Test Accuracy : 9336 / 10000
+Epoch: 96
+	Train Accuracy : 9559 /10000 || Loss = 84
+	Test Accuracy : 9198 / 10000
+Epoch: 97
+	Train Accuracy : 9561 /10000 || Loss = 87
+	Test Accuracy : 9260 / 10000
+Epoch: 98
+	Train Accuracy : 9565 /10000 || Loss = 85
+	Test Accuracy : 9344 / 10000
+Epoch: 99
+	Train Accuracy : 9568 /10000 || Loss = 83
+	Test Accuracy : 9298 / 10000
+Epoch: 100
+	Train Accuracy : 9558 /10000 || Loss = 87
+	Test Accuracy : 9317 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9481 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9584 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9597 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9530 / 10000
+Test for scale by 0.400
+	Test Accuracy : 8779 / 10000
+Test for scale by 0.333
+	Test Accuracy : 7412 / 10000
+Average time taken for one epoch = 38.926226119995114
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/9a943e3554c04f4499d5e25db6e913ca/artifacts/events
+MNIST 16 dss_v2 1.2 [4, 4] 8 4 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_4_16_4_8_seg.th ===========
+Bessel scales: [0.11       0.2684     0.496496   0.82495424 1.29793411 1.97902511
+ 2.95979616]
+Writing TensorBoard events locally to /tmp/tmp6go6_d1j
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 4, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 4, [3, 3], downscale=[1, 1, 1, 1], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=3136, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  41194
+Epoch: 1
+	Train Accuracy : 8070 /10000 || Loss = 385
+	Test Accuracy : 8434 / 10000
+Epoch: 2
+	Train Accuracy : 8869 /10000 || Loss = 227
+	Test Accuracy : 8835 / 10000
+Epoch: 3
+	Train Accuracy : 9011 /10000 || Loss = 193
+	Test Accuracy : 8930 / 10000
+Epoch: 4
+	Train Accuracy : 9113 /10000 || Loss = 172
+	Test Accuracy : 8961 / 10000
+Epoch: 5
+	Train Accuracy : 9177 /10000 || Loss = 164
+	Test Accuracy : 8846 / 10000
+Epoch: 6
+	Train Accuracy : 9182 /10000 || Loss = 157
+	Test Accuracy : 9059 / 10000
+Epoch: 7
+	Train Accuracy : 9236 /10000 || Loss = 150
+	Test Accuracy : 9134 / 10000
+Epoch: 8
+	Train Accuracy : 9312 /10000 || Loss = 145
+	Test Accuracy : 9069 / 10000
+Epoch: 9
+	Train Accuracy : 9318 /10000 || Loss = 135
+	Test Accuracy : 9106 / 10000
+Epoch: 10
+	Train Accuracy : 9329 /10000 || Loss = 132
+	Test Accuracy : 9036 / 10000
+Epoch: 11
+	Train Accuracy : 9357 /10000 || Loss = 128
+	Test Accuracy : 9112 / 10000
+Epoch: 12
+	Train Accuracy : 9376 /10000 || Loss = 123
+	Test Accuracy : 9036 / 10000
+Epoch: 13
+	Train Accuracy : 9354 /10000 || Loss = 127
+	Test Accuracy : 9167 / 10000
+Epoch: 14
+	Train Accuracy : 9402 /10000 || Loss = 117
+	Test Accuracy : 9089 / 10000
+Epoch: 15
+	Train Accuracy : 9418 /10000 || Loss = 116
+	Test Accuracy : 9129 / 10000
+Epoch: 16
+	Train Accuracy : 9421 /10000 || Loss = 117
+	Test Accuracy : 9045 / 10000
+Epoch: 17
+	Train Accuracy : 9444 /10000 || Loss = 113
+	Test Accuracy : 9124 / 10000
+Epoch: 18
+	Train Accuracy : 9442 /10000 || Loss = 113
+	Test Accuracy : 9228 / 10000
+Epoch: 19
+	Train Accuracy : 9424 /10000 || Loss = 114
+	Test Accuracy : 9103 / 10000
+Epoch: 20
+	Train Accuracy : 9447 /10000 || Loss = 107
+	Test Accuracy : 9022 / 10000
+Epoch: 21
+	Train Accuracy : 9442 /10000 || Loss = 110
+	Test Accuracy : 9094 / 10000
+Epoch: 22
+	Train Accuracy : 9450 /10000 || Loss = 109
+	Test Accuracy : 9140 / 10000
+Epoch: 23
+	Train Accuracy : 9453 /10000 || Loss = 108
+	Test Accuracy : 9210 / 10000
+Epoch: 24
+	Train Accuracy : 9463 /10000 || Loss = 107
+	Test Accuracy : 9219 / 10000
+Epoch: 25
+	Train Accuracy : 9472 /10000 || Loss = 106
+	Test Accuracy : 9115 / 10000
+Epoch: 26
+	Train Accuracy : 9488 /10000 || Loss = 101
+	Test Accuracy : 9249 / 10000
+Epoch: 27
+	Train Accuracy : 9482 /10000 || Loss = 107
+	Test Accuracy : 9146 / 10000
+Epoch: 28
+	Train Accuracy : 9492 /10000 || Loss = 99
+	Test Accuracy : 9134 / 10000
+Epoch: 29
+	Train Accuracy : 9537 /10000 || Loss = 95
+	Test Accuracy : 9171 / 10000
+Epoch: 30
+	Train Accuracy : 9520 /10000 || Loss = 98
+	Test Accuracy : 9223 / 10000
+Epoch: 31
+	Train Accuracy : 9502 /10000 || Loss = 99
+	Test Accuracy : 9240 / 10000
+Epoch: 32
+	Train Accuracy : 9511 /10000 || Loss = 92
+	Test Accuracy : 9124 / 10000
+Epoch: 33
+	Train Accuracy : 9495 /10000 || Loss = 100
+	Test Accuracy : 9136 / 10000
+Epoch: 34
+	Train Accuracy : 9504 /10000 || Loss = 99
+	Test Accuracy : 9227 / 10000
+Epoch: 35
+	Train Accuracy : 9527 /10000 || Loss = 95
+	Test Accuracy : 9288 / 10000
+Epoch: 36
+	Train Accuracy : 9492 /10000 || Loss = 97
+	Test Accuracy : 9215 / 10000
+Epoch: 37
+	Train Accuracy : 9519 /10000 || Loss = 99
+	Test Accuracy : 9212 / 10000
+Epoch: 38
+	Train Accuracy : 9517 /10000 || Loss = 94
+	Test Accuracy : 9230 / 10000
+Epoch: 39
+	Train Accuracy : 9528 /10000 || Loss = 93
+	Test Accuracy : 9269 / 10000
+Epoch: 40
+	Train Accuracy : 9550 /10000 || Loss = 84
+	Test Accuracy : 9237 / 10000
+Epoch: 41
+	Train Accuracy : 9548 /10000 || Loss = 91
+	Test Accuracy : 9231 / 10000
+Epoch: 42
+	Train Accuracy : 9536 /10000 || Loss = 92
+	Test Accuracy : 9106 / 10000
+Epoch: 43
+	Train Accuracy : 9533 /10000 || Loss = 98
+	Test Accuracy : 9254 / 10000
+Epoch: 44
+	Train Accuracy : 9554 /10000 || Loss = 86
+	Test Accuracy : 9314 / 10000
+Epoch: 45
+	Train Accuracy : 9520 /10000 || Loss = 89
+	Test Accuracy : 9265 / 10000
+Epoch: 46
+	Train Accuracy : 9513 /10000 || Loss = 94
+	Test Accuracy : 9261 / 10000
+Epoch: 47
+	Train Accuracy : 9576 /10000 || Loss = 88
+	Test Accuracy : 9191 / 10000
+Epoch: 48
+	Train Accuracy : 9539 /10000 || Loss = 88
+	Test Accuracy : 9135 / 10000
+Epoch: 49
+	Train Accuracy : 9552 /10000 || Loss = 88
+	Test Accuracy : 9238 / 10000
+Epoch: 50
+	Train Accuracy : 9569 /10000 || Loss = 88
+	Test Accuracy : 9190 / 10000
+Epoch: 51
+	Train Accuracy : 9556 /10000 || Loss = 87
+	Test Accuracy : 9226 / 10000
+Epoch: 52
+	Train Accuracy : 9524 /10000 || Loss = 93
+	Test Accuracy : 9281 / 10000
+Epoch: 53
+	Train Accuracy : 9556 /10000 || Loss = 90
+	Test Accuracy : 9288 / 10000
+Epoch: 54
+	Train Accuracy : 9547 /10000 || Loss = 86
+	Test Accuracy : 9196 / 10000
+Epoch: 55
+	Train Accuracy : 9575 /10000 || Loss = 85
+	Test Accuracy : 9232 / 10000
+Epoch: 56
+	Train Accuracy : 9589 /10000 || Loss = 80
+	Test Accuracy : 9197 / 10000
+Epoch: 57
+	Train Accuracy : 9582 /10000 || Loss = 83
+	Test Accuracy : 9259 / 10000
+Epoch: 58
+	Train Accuracy : 9564 /10000 || Loss = 88
+	Test Accuracy : 9271 / 10000
+Epoch: 59
+	Train Accuracy : 9530 /10000 || Loss = 90
+	Test Accuracy : 9305 / 10000
+Epoch: 60
+	Train Accuracy : 9567 /10000 || Loss = 84
+	Test Accuracy : 9302 / 10000
+Epoch: 61
+	Train Accuracy : 9575 /10000 || Loss = 83
+	Test Accuracy : 9330 / 10000
+Epoch: 62
+	Train Accuracy : 9604 /10000 || Loss = 82
+	Test Accuracy : 9216 / 10000
+Epoch: 63
+	Train Accuracy : 9558 /10000 || Loss = 85
+	Test Accuracy : 9219 / 10000
+Epoch: 64
+	Train Accuracy : 9561 /10000 || Loss = 87
+	Test Accuracy : 9273 / 10000
+Epoch: 65
+	Train Accuracy : 9548 /10000 || Loss = 84
+	Test Accuracy : 9252 / 10000
+Epoch: 66
+	Train Accuracy : 9611 /10000 || Loss = 81
+	Test Accuracy : 9297 / 10000
+Epoch: 67
+	Train Accuracy : 9608 /10000 || Loss = 79
+	Test Accuracy : 9320 / 10000
+Epoch: 68
+	Train Accuracy : 9593 /10000 || Loss = 80
+	Test Accuracy : 9260 / 10000
+Epoch: 69
+	Train Accuracy : 9559 /10000 || Loss = 86
+	Test Accuracy : 9269 / 10000
+Epoch: 70
+	Train Accuracy : 9573 /10000 || Loss = 82
+	Test Accuracy : 9262 / 10000
+Epoch: 71
+	Train Accuracy : 9580 /10000 || Loss = 81
+	Test Accuracy : 9308 / 10000
+Epoch: 72
+	Train Accuracy : 9556 /10000 || Loss = 84
+	Test Accuracy : 9363 / 10000
+Epoch: 73
+	Train Accuracy : 9588 /10000 || Loss = 81
+	Test Accuracy : 9262 / 10000
+Epoch: 74
+	Train Accuracy : 9594 /10000 || Loss = 81
+	Test Accuracy : 9330 / 10000
+Epoch: 75
+	Train Accuracy : 9584 /10000 || Loss = 81
+	Test Accuracy : 9315 / 10000
+Epoch: 76
+	Train Accuracy : 9616 /10000 || Loss = 77
+	Test Accuracy : 9253 / 10000
+Epoch: 77
+	Train Accuracy : 9604 /10000 || Loss = 83
+	Test Accuracy : 9269 / 10000
+Epoch: 78
+	Train Accuracy : 9597 /10000 || Loss = 80
+	Test Accuracy : 9282 / 10000
+Epoch: 79
+	Train Accuracy : 9579 /10000 || Loss = 83
+	Test Accuracy : 9239 / 10000
+Epoch: 80
+	Train Accuracy : 9606 /10000 || Loss = 79
+	Test Accuracy : 9219 / 10000
+Epoch: 81
+	Train Accuracy : 9607 /10000 || Loss = 78
+	Test Accuracy : 9238 / 10000
+Epoch: 82
+	Train Accuracy : 9595 /10000 || Loss = 81
+	Test Accuracy : 9037 / 10000
+Epoch: 83
+	Train Accuracy : 9549 /10000 || Loss = 82
+	Test Accuracy : 9250 / 10000
+Epoch: 84
+	Train Accuracy : 9615 /10000 || Loss = 77
+	Test Accuracy : 9377 / 10000
+Epoch: 85
+	Train Accuracy : 9564 /10000 || Loss = 82
+	Test Accuracy : 9283 / 10000
+Epoch: 86
+	Train Accuracy : 9580 /10000 || Loss = 82
+	Test Accuracy : 9323 / 10000
+Epoch: 87
+	Train Accuracy : 9594 /10000 || Loss = 78
+	Test Accuracy : 9157 / 10000
+Epoch: 88
+	Train Accuracy : 9528 /10000 || Loss = 91
+	Test Accuracy : 9286 / 10000
+Epoch: 89
+	Train Accuracy : 9560 /10000 || Loss = 87
+	Test Accuracy : 9281 / 10000
+Epoch: 90
+	Train Accuracy : 9519 /10000 || Loss = 92
+	Test Accuracy : 9117 / 10000
+Epoch: 91
+	Train Accuracy : 9584 /10000 || Loss = 82
+	Test Accuracy : 9183 / 10000
+Epoch: 92
+	Train Accuracy : 9568 /10000 || Loss = 85
+	Test Accuracy : 9289 / 10000
+Epoch: 93
+	Train Accuracy : 9577 /10000 || Loss = 79
+	Test Accuracy : 9091 / 10000
+Epoch: 94
+	Train Accuracy : 9596 /10000 || Loss = 82
+	Test Accuracy : 9187 / 10000
+Epoch: 95
+	Train Accuracy : 9602 /10000 || Loss = 79
+	Test Accuracy : 9283 / 10000
+Epoch: 96
+	Train Accuracy : 9540 /10000 || Loss = 86
+	Test Accuracy : 9075 / 10000
+Epoch: 97
+	Train Accuracy : 9569 /10000 || Loss = 82
+	Test Accuracy : 9201 / 10000
+Epoch: 98
+	Train Accuracy : 9596 /10000 || Loss = 81
+	Test Accuracy : 9261 / 10000
+Epoch: 99
+	Train Accuracy : 9560 /10000 || Loss = 85
+	Test Accuracy : 9199 / 10000
+Epoch: 100
+	Train Accuracy : 9615 /10000 || Loss = 78
+	Test Accuracy : 9259 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9437 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9558 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9533 / 10000
+Test for scale by 0.500
+	Test Accuracy : 9372 / 10000
+Test for scale by 0.400
+	Test Accuracy : 8868 / 10000
+Test for scale by 0.333
+	Test Accuracy : 7519 / 10000
+Average time taken for one epoch = 39.67947952508926
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/5362a853b69246a9a7f4db7d3754b311/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 4 1 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_1_16_4_4_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225]
+Writing TensorBoard events locally to /tmp/tmpgmg6g53j
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 1, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 1, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  3930
+Epoch: 1
+	Train Accuracy : 6748 /10000 || Loss = 621
+	Test Accuracy : 7586 / 10000
+Epoch: 2
+	Train Accuracy : 8018 /10000 || Loss = 386
+	Test Accuracy : 8428 / 10000
+Epoch: 3
+	Train Accuracy : 8285 /10000 || Loss = 337
+	Test Accuracy : 8303 / 10000
+Epoch: 4
+	Train Accuracy : 8388 /10000 || Loss = 317
+	Test Accuracy : 7768 / 10000
+Epoch: 5
+	Train Accuracy : 8442 /10000 || Loss = 312
+	Test Accuracy : 8228 / 10000
+Epoch: 6
+	Train Accuracy : 8565 /10000 || Loss = 287
+	Test Accuracy : 8496 / 10000
+Epoch: 7
+	Train Accuracy : 8576 /10000 || Loss = 285
+	Test Accuracy : 8613 / 10000
+Epoch: 8
+	Train Accuracy : 8606 /10000 || Loss = 275
+	Test Accuracy : 8731 / 10000
+Epoch: 9
+	Train Accuracy : 8685 /10000 || Loss = 260
+	Test Accuracy : 8576 / 10000
+Epoch: 10
+	Train Accuracy : 8621 /10000 || Loss = 274
+	Test Accuracy : 8723 / 10000
+Epoch: 11
+	Train Accuracy : 8701 /10000 || Loss = 260
+	Test Accuracy : 8373 / 10000
+Epoch: 12
+	Train Accuracy : 8691 /10000 || Loss = 258
+	Test Accuracy : 8584 / 10000
+Epoch: 13
+	Train Accuracy : 8691 /10000 || Loss = 264
+	Test Accuracy : 8795 / 10000
+Epoch: 14
+	Train Accuracy : 8791 /10000 || Loss = 246
+	Test Accuracy : 8730 / 10000
+Epoch: 15
+	Train Accuracy : 8768 /10000 || Loss = 247
+	Test Accuracy : 8817 / 10000
+Epoch: 16
+	Train Accuracy : 8749 /10000 || Loss = 246
+	Test Accuracy : 8791 / 10000
+Epoch: 17
+	Train Accuracy : 8725 /10000 || Loss = 251
+	Test Accuracy : 8851 / 10000
+Epoch: 18
+	Train Accuracy : 8792 /10000 || Loss = 240
+	Test Accuracy : 8764 / 10000
+Epoch: 19
+	Train Accuracy : 8832 /10000 || Loss = 239
+	Test Accuracy : 8908 / 10000
+Epoch: 20
+	Train Accuracy : 8816 /10000 || Loss = 240
+	Test Accuracy : 8727 / 10000
+Epoch: 21
+	Train Accuracy : 8836 /10000 || Loss = 236
+	Test Accuracy : 8797 / 10000
+Epoch: 22
+	Train Accuracy : 8830 /10000 || Loss = 239
+	Test Accuracy : 8628 / 10000
+Epoch: 23
+	Train Accuracy : 8812 /10000 || Loss = 234
+	Test Accuracy : 8878 / 10000
+Epoch: 24
+	Train Accuracy : 8821 /10000 || Loss = 232
+	Test Accuracy : 8775 / 10000
+Epoch: 25
+	Train Accuracy : 8809 /10000 || Loss = 234
+	Test Accuracy : 8692 / 10000
+Epoch: 26
+	Train Accuracy : 8840 /10000 || Loss = 227
+	Test Accuracy : 8789 / 10000
+Epoch: 27
+	Train Accuracy : 8856 /10000 || Loss = 230
+	Test Accuracy : 8488 / 10000
+Epoch: 28
+	Train Accuracy : 8865 /10000 || Loss = 227
+	Test Accuracy : 8590 / 10000
+Epoch: 29
+	Train Accuracy : 8879 /10000 || Loss = 228
+	Test Accuracy : 8763 / 10000
+Epoch: 30
+	Train Accuracy : 8844 /10000 || Loss = 227
+	Test Accuracy : 8491 / 10000
+Epoch: 31
+	Train Accuracy : 8938 /10000 || Loss = 220
+	Test Accuracy : 8543 / 10000
+Epoch: 32
+	Train Accuracy : 8833 /10000 || Loss = 227
+	Test Accuracy : 8748 / 10000
+Epoch: 33
+	Train Accuracy : 8860 /10000 || Loss = 225
+	Test Accuracy : 8658 / 10000
+Epoch: 34
+	Train Accuracy : 8879 /10000 || Loss = 223
+	Test Accuracy : 8606 / 10000
+Epoch: 35
+	Train Accuracy : 8916 /10000 || Loss = 218
+	Test Accuracy : 8797 / 10000
+Epoch: 36
+	Train Accuracy : 8874 /10000 || Loss = 219
+	Test Accuracy : 8921 / 10000
+Epoch: 37
+	Train Accuracy : 8862 /10000 || Loss = 225
+	Test Accuracy : 8734 / 10000
+Epoch: 38
+	Train Accuracy : 8893 /10000 || Loss = 222
+	Test Accuracy : 8726 / 10000
+Epoch: 39
+	Train Accuracy : 8870 /10000 || Loss = 223
+	Test Accuracy : 8873 / 10000
+Epoch: 40
+	Train Accuracy : 8929 /10000 || Loss = 221
+	Test Accuracy : 8915 / 10000
+Epoch: 41
+	Train Accuracy : 8907 /10000 || Loss = 222
+	Test Accuracy : 8760 / 10000
+Epoch: 42
+	Train Accuracy : 8902 /10000 || Loss = 224
+	Test Accuracy : 8711 / 10000
+Epoch: 43
+	Train Accuracy : 8875 /10000 || Loss = 218
+	Test Accuracy : 9007 / 10000
+Epoch: 44
+	Train Accuracy : 8911 /10000 || Loss = 221
+	Test Accuracy : 8778 / 10000
+Epoch: 45
+	Train Accuracy : 8891 /10000 || Loss = 220
+	Test Accuracy : 8712 / 10000
+Epoch: 46
+	Train Accuracy : 8923 /10000 || Loss = 209
+	Test Accuracy : 8638 / 10000
+Epoch: 47
+	Train Accuracy : 8913 /10000 || Loss = 219
+	Test Accuracy : 8798 / 10000
+Epoch: 48
+	Train Accuracy : 8887 /10000 || Loss = 225
+	Test Accuracy : 8805 / 10000
+Epoch: 49
+	Train Accuracy : 8858 /10000 || Loss = 226
+	Test Accuracy : 8718 / 10000
+Epoch: 50
+	Train Accuracy : 8878 /10000 || Loss = 225
+	Test Accuracy : 8874 / 10000
+Epoch: 51
+	Train Accuracy : 8896 /10000 || Loss = 217
+	Test Accuracy : 8821 / 10000
+Epoch: 52
+	Train Accuracy : 8893 /10000 || Loss = 218
+	Test Accuracy : 8500 / 10000
+Epoch: 53
+	Train Accuracy : 8899 /10000 || Loss = 217
+	Test Accuracy : 8647 / 10000
+Epoch: 54
+	Train Accuracy : 8915 /10000 || Loss = 213
+	Test Accuracy : 8757 / 10000
+Epoch: 55
+	Train Accuracy : 8911 /10000 || Loss = 218
+	Test Accuracy : 8750 / 10000
+Epoch: 56
+	Train Accuracy : 8898 /10000 || Loss = 217
+	Test Accuracy : 8928 / 10000
+Epoch: 57
+	Train Accuracy : 8886 /10000 || Loss = 217
+	Test Accuracy : 8791 / 10000
+Epoch: 58
+	Train Accuracy : 8927 /10000 || Loss = 219
+	Test Accuracy : 8813 / 10000
+Epoch: 59
+	Train Accuracy : 8940 /10000 || Loss = 217
+	Test Accuracy : 8641 / 10000
+Epoch: 60
+	Train Accuracy : 8917 /10000 || Loss = 217
+	Test Accuracy : 8935 / 10000
+Epoch: 61
+	Train Accuracy : 8947 /10000 || Loss = 207
+	Test Accuracy : 9055 / 10000
+Epoch: 62
+	Train Accuracy : 8906 /10000 || Loss = 215
+	Test Accuracy : 8535 / 10000
+Epoch: 63
+	Train Accuracy : 8948 /10000 || Loss = 212
+	Test Accuracy : 8791 / 10000
+Epoch: 64
+	Train Accuracy : 8923 /10000 || Loss = 218
+	Test Accuracy : 8872 / 10000
+Epoch: 65
+	Train Accuracy : 8905 /10000 || Loss = 218
+	Test Accuracy : 8984 / 10000
+Epoch: 66
+	Train Accuracy : 8922 /10000 || Loss = 216
+	Test Accuracy : 8763 / 10000
+Epoch: 67
+	Train Accuracy : 8916 /10000 || Loss = 217
+	Test Accuracy : 8924 / 10000
+Epoch: 68
+	Train Accuracy : 8964 /10000 || Loss = 209
+	Test Accuracy : 8697 / 10000
+Epoch: 69
+	Train Accuracy : 8946 /10000 || Loss = 208
+	Test Accuracy : 8990 / 10000
+Epoch: 70
+	Train Accuracy : 8900 /10000 || Loss = 215
+	Test Accuracy : 8736 / 10000
+Epoch: 71
+	Train Accuracy : 8944 /10000 || Loss = 211
+	Test Accuracy : 8787 / 10000
+Epoch: 72
+	Train Accuracy : 8902 /10000 || Loss = 215
+	Test Accuracy : 8744 / 10000
+Epoch: 73
+	Train Accuracy : 8926 /10000 || Loss = 208
+	Test Accuracy : 8823 / 10000
+Epoch: 74
+	Train Accuracy : 8966 /10000 || Loss = 212
+	Test Accuracy : 8933 / 10000
+Epoch: 75
+	Train Accuracy : 8952 /10000 || Loss = 211
+	Test Accuracy : 8945 / 10000
+Epoch: 76
+	Train Accuracy : 8948 /10000 || Loss = 211
+	Test Accuracy : 8792 / 10000
+Epoch: 77
+	Train Accuracy : 8929 /10000 || Loss = 212
+	Test Accuracy : 8940 / 10000
+Epoch: 78
+	Train Accuracy : 8909 /10000 || Loss = 216
+	Test Accuracy : 8791 / 10000
+Epoch: 79
+	Train Accuracy : 8962 /10000 || Loss = 205
+	Test Accuracy : 8989 / 10000
+Epoch: 80
+	Train Accuracy : 8958 /10000 || Loss = 209
+	Test Accuracy : 8715 / 10000
+Epoch: 81
+	Train Accuracy : 8909 /10000 || Loss = 213
+	Test Accuracy : 8700 / 10000
+Epoch: 82
+	Train Accuracy : 8909 /10000 || Loss = 215
+	Test Accuracy : 8852 / 10000
+Epoch: 83
+	Train Accuracy : 8974 /10000 || Loss = 207
+	Test Accuracy : 8859 / 10000
+Epoch: 84
+	Train Accuracy : 8921 /10000 || Loss = 213
+	Test Accuracy : 8653 / 10000
+Epoch: 85
+	Train Accuracy : 8939 /10000 || Loss = 214
+	Test Accuracy : 8800 / 10000
+Epoch: 86
+	Train Accuracy : 8963 /10000 || Loss = 206
+	Test Accuracy : 8705 / 10000
+Epoch: 87
+	Train Accuracy : 8923 /10000 || Loss = 215
+	Test Accuracy : 8710 / 10000
+Epoch: 88
+	Train Accuracy : 8924 /10000 || Loss = 219
+	Test Accuracy : 8778 / 10000
+Epoch: 89
+	Train Accuracy : 8950 /10000 || Loss = 208
+	Test Accuracy : 8823 / 10000
+Epoch: 90
+	Train Accuracy : 8949 /10000 || Loss = 209
+	Test Accuracy : 8730 / 10000
+Epoch: 91
+	Train Accuracy : 8959 /10000 || Loss = 209
+	Test Accuracy : 8744 / 10000
+Epoch: 92
+	Train Accuracy : 8991 /10000 || Loss = 201
+	Test Accuracy : 8791 / 10000
+Epoch: 93
+	Train Accuracy : 8970 /10000 || Loss = 206
+	Test Accuracy : 8840 / 10000
+Epoch: 94
+	Train Accuracy : 8975 /10000 || Loss = 203
+	Test Accuracy : 8442 / 10000
+Epoch: 95
+	Train Accuracy : 9023 /10000 || Loss = 203
+	Test Accuracy : 8587 / 10000
+Epoch: 96
+	Train Accuracy : 8954 /10000 || Loss = 209
+	Test Accuracy : 8767 / 10000
+Epoch: 97
+	Train Accuracy : 9000 /10000 || Loss = 202
+	Test Accuracy : 8894 / 10000
+Epoch: 98
+	Train Accuracy : 8979 /10000 || Loss = 209
+	Test Accuracy : 8722 / 10000
+Epoch: 99
+	Train Accuracy : 8956 /10000 || Loss = 209
+	Test Accuracy : 8985 / 10000
+Epoch: 100
+	Train Accuracy : 9005 /10000 || Loss = 200
+	Test Accuracy : 8771 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9319 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9420 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9212 / 10000
+Test for scale by 0.500
+	Test Accuracy : 8524 / 10000
+Test for scale by 0.400
+	Test Accuracy : 7680 / 10000
+Test for scale by 0.333
+	Test Accuracy : 6146 / 10000
+Average time taken for one epoch = 40.74905983686447
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/714f69d623a14f8d901222659462fcf1/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 8 1 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_1_16_4_8_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225 1.7893268  3.1964623  5.57452128
+ 9.59344096]
+Writing TensorBoard events locally to /tmp/tmpepju5a0q
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 1, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 1, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  3930
+Epoch: 1
+	Train Accuracy : 6928 /10000 || Loss = 585
+	Test Accuracy : 8032 / 10000
+Epoch: 2
+	Train Accuracy : 8059 /10000 || Loss = 380
+	Test Accuracy : 8273 / 10000
+Epoch: 3
+	Train Accuracy : 8278 /10000 || Loss = 331
+	Test Accuracy : 8390 / 10000
+Epoch: 4
+	Train Accuracy : 8396 /10000 || Loss = 309
+	Test Accuracy : 8367 / 10000
+Epoch: 5
+	Train Accuracy : 8520 /10000 || Loss = 295
+	Test Accuracy : 8338 / 10000
+Epoch: 6
+	Train Accuracy : 8524 /10000 || Loss = 285
+	Test Accuracy : 8558 / 10000
+Epoch: 7
+	Train Accuracy : 8628 /10000 || Loss = 270
+	Test Accuracy : 8551 / 10000
+Epoch: 8
+	Train Accuracy : 8682 /10000 || Loss = 260
+	Test Accuracy : 8542 / 10000
+Epoch: 9
+	Train Accuracy : 8656 /10000 || Loss = 264
+	Test Accuracy : 8615 / 10000
+Epoch: 10
+	Train Accuracy : 8642 /10000 || Loss = 258
+	Test Accuracy : 8547 / 10000
+Epoch: 11
+	Train Accuracy : 8736 /10000 || Loss = 252
+	Test Accuracy : 8687 / 10000
+Epoch: 12
+	Train Accuracy : 8721 /10000 || Loss = 252
+	Test Accuracy : 8620 / 10000
+Epoch: 13
+	Train Accuracy : 8753 /10000 || Loss = 244
+	Test Accuracy : 8382 / 10000
+Epoch: 14
+	Train Accuracy : 8777 /10000 || Loss = 244
+	Test Accuracy : 8731 / 10000
+Epoch: 15
+	Train Accuracy : 8732 /10000 || Loss = 238
+	Test Accuracy : 8620 / 10000
+Epoch: 16
+	Train Accuracy : 8780 /10000 || Loss = 235
+	Test Accuracy : 8596 / 10000
+Epoch: 17
+	Train Accuracy : 8804 /10000 || Loss = 236
+	Test Accuracy : 8692 / 10000
+Epoch: 18
+	Train Accuracy : 8814 /10000 || Loss = 233
+	Test Accuracy : 8593 / 10000
+Epoch: 19
+	Train Accuracy : 8824 /10000 || Loss = 237
+	Test Accuracy : 8691 / 10000
+Epoch: 20
+	Train Accuracy : 8832 /10000 || Loss = 225
+	Test Accuracy : 8751 / 10000
+Epoch: 21
+	Train Accuracy : 8824 /10000 || Loss = 233
+	Test Accuracy : 8809 / 10000
+Epoch: 22
+	Train Accuracy : 8868 /10000 || Loss = 226
+	Test Accuracy : 8777 / 10000
+Epoch: 23
+	Train Accuracy : 8855 /10000 || Loss = 226
+	Test Accuracy : 8636 / 10000
+Epoch: 24
+	Train Accuracy : 8877 /10000 || Loss = 228
+	Test Accuracy : 8631 / 10000
+Epoch: 25
+	Train Accuracy : 8855 /10000 || Loss = 227
+	Test Accuracy : 8782 / 10000
+Epoch: 26
+	Train Accuracy : 8825 /10000 || Loss = 231
+	Test Accuracy : 8686 / 10000
+Epoch: 27
+	Train Accuracy : 8854 /10000 || Loss = 222
+	Test Accuracy : 8822 / 10000
+Epoch: 28
+	Train Accuracy : 8852 /10000 || Loss = 226
+	Test Accuracy : 8805 / 10000
+Epoch: 29
+	Train Accuracy : 8862 /10000 || Loss = 227
+	Test Accuracy : 8738 / 10000
+Epoch: 30
+	Train Accuracy : 8860 /10000 || Loss = 221
+	Test Accuracy : 8816 / 10000
+Epoch: 31
+	Train Accuracy : 8905 /10000 || Loss = 217
+	Test Accuracy : 8735 / 10000
+Epoch: 32
+	Train Accuracy : 8859 /10000 || Loss = 217
+	Test Accuracy : 8723 / 10000
+Epoch: 33
+	Train Accuracy : 8902 /10000 || Loss = 216
+	Test Accuracy : 8688 / 10000
+Epoch: 34
+	Train Accuracy : 8889 /10000 || Loss = 219
+	Test Accuracy : 8740 / 10000
+Epoch: 35
+	Train Accuracy : 8850 /10000 || Loss = 218
+	Test Accuracy : 8852 / 10000
+Epoch: 36
+	Train Accuracy : 8867 /10000 || Loss = 224
+	Test Accuracy : 8678 / 10000
+Epoch: 37
+	Train Accuracy : 8842 /10000 || Loss = 228
+	Test Accuracy : 8784 / 10000
+Epoch: 38
+	Train Accuracy : 8875 /10000 || Loss = 220
+	Test Accuracy : 8754 / 10000
+Epoch: 39
+	Train Accuracy : 8866 /10000 || Loss = 224
+	Test Accuracy : 8780 / 10000
+Epoch: 40
+	Train Accuracy : 8945 /10000 || Loss = 213
+	Test Accuracy : 8761 / 10000
+Epoch: 41
+	Train Accuracy : 8852 /10000 || Loss = 219
+	Test Accuracy : 8825 / 10000
+Epoch: 42
+	Train Accuracy : 8953 /10000 || Loss = 204
+	Test Accuracy : 8909 / 10000
+Epoch: 43
+	Train Accuracy : 8940 /10000 || Loss = 211
+	Test Accuracy : 8887 / 10000
+Epoch: 44
+	Train Accuracy : 8941 /10000 || Loss = 207
+	Test Accuracy : 8669 / 10000
+Epoch: 45
+	Train Accuracy : 8961 /10000 || Loss = 206
+	Test Accuracy : 8851 / 10000
+Epoch: 46
+	Train Accuracy : 8985 /10000 || Loss = 200
+	Test Accuracy : 8674 / 10000
+Epoch: 47
+	Train Accuracy : 8892 /10000 || Loss = 218
+	Test Accuracy : 8701 / 10000
+Epoch: 48
+	Train Accuracy : 8912 /10000 || Loss = 212
+	Test Accuracy : 8688 / 10000
+Epoch: 49
+	Train Accuracy : 8972 /10000 || Loss = 214
+	Test Accuracy : 8811 / 10000
+Epoch: 50
+	Train Accuracy : 8956 /10000 || Loss = 208
+	Test Accuracy : 8766 / 10000
+Epoch: 51
+	Train Accuracy : 8945 /10000 || Loss = 205
+	Test Accuracy : 8814 / 10000
+Epoch: 52
+	Train Accuracy : 8946 /10000 || Loss = 212
+	Test Accuracy : 8712 / 10000
+Epoch: 53
+	Train Accuracy : 8935 /10000 || Loss = 206
+	Test Accuracy : 8564 / 10000
+Epoch: 54
+	Train Accuracy : 8978 /10000 || Loss = 202
+	Test Accuracy : 8693 / 10000
+Epoch: 55
+	Train Accuracy : 8947 /10000 || Loss = 213
+	Test Accuracy : 8920 / 10000
+Epoch: 56
+	Train Accuracy : 9001 /10000 || Loss = 201
+	Test Accuracy : 8839 / 10000
+Epoch: 57
+	Train Accuracy : 8959 /10000 || Loss = 206
+	Test Accuracy : 8814 / 10000
+Epoch: 58
+	Train Accuracy : 8931 /10000 || Loss = 213
+	Test Accuracy : 8526 / 10000
+Epoch: 59
+	Train Accuracy : 8975 /10000 || Loss = 203
+	Test Accuracy : 8868 / 10000
+Epoch: 60
+	Train Accuracy : 8988 /10000 || Loss = 204
+	Test Accuracy : 8788 / 10000
+Epoch: 61
+	Train Accuracy : 8937 /10000 || Loss = 209
+	Test Accuracy : 8962 / 10000
+Epoch: 62
+	Train Accuracy : 8981 /10000 || Loss = 201
+	Test Accuracy : 8807 / 10000
+Epoch: 63
+	Train Accuracy : 8962 /10000 || Loss = 202
+	Test Accuracy : 8837 / 10000
+Epoch: 64
+	Train Accuracy : 8925 /10000 || Loss = 212
+	Test Accuracy : 8889 / 10000
+Epoch: 65
+	Train Accuracy : 8985 /10000 || Loss = 200
+	Test Accuracy : 8917 / 10000
+Epoch: 66
+	Train Accuracy : 8990 /10000 || Loss = 198
+	Test Accuracy : 8673 / 10000
+Epoch: 67
+	Train Accuracy : 8994 /10000 || Loss = 200
+	Test Accuracy : 8836 / 10000
+Epoch: 68
+	Train Accuracy : 9000 /10000 || Loss = 203
+	Test Accuracy : 8843 / 10000
+Epoch: 69
+	Train Accuracy : 8993 /10000 || Loss = 201
+	Test Accuracy : 8918 / 10000
+Epoch: 70
+	Train Accuracy : 8954 /10000 || Loss = 205
+	Test Accuracy : 8870 / 10000
+Epoch: 71
+	Train Accuracy : 9012 /10000 || Loss = 198
+	Test Accuracy : 8823 / 10000
+Epoch: 72
+	Train Accuracy : 8973 /10000 || Loss = 198
+	Test Accuracy : 8758 / 10000
+Epoch: 73
+	Train Accuracy : 9015 /10000 || Loss = 200
+	Test Accuracy : 8865 / 10000
+Epoch: 74
+	Train Accuracy : 8999 /10000 || Loss = 199
+	Test Accuracy : 8752 / 10000
+Epoch: 75
+	Train Accuracy : 8991 /10000 || Loss = 196
+	Test Accuracy : 8839 / 10000
+Epoch: 76
+	Train Accuracy : 9013 /10000 || Loss = 203
+	Test Accuracy : 8683 / 10000
+Epoch: 77
+	Train Accuracy : 8987 /10000 || Loss = 200
+	Test Accuracy : 9015 / 10000
+Epoch: 78
+	Train Accuracy : 8964 /10000 || Loss = 203
+	Test Accuracy : 8986 / 10000
+Epoch: 79
+	Train Accuracy : 8987 /10000 || Loss = 203
+	Test Accuracy : 8888 / 10000
+Epoch: 80
+	Train Accuracy : 8961 /10000 || Loss = 203
+	Test Accuracy : 8824 / 10000
+Epoch: 81
+	Train Accuracy : 8994 /10000 || Loss = 197
+	Test Accuracy : 8731 / 10000
+Epoch: 82
+	Train Accuracy : 9010 /10000 || Loss = 193
+	Test Accuracy : 8772 / 10000
+Epoch: 83
+	Train Accuracy : 9050 /10000 || Loss = 196
+	Test Accuracy : 8853 / 10000
+Epoch: 84
+	Train Accuracy : 8984 /10000 || Loss = 203
+	Test Accuracy : 8892 / 10000
+Epoch: 85
+	Train Accuracy : 8983 /10000 || Loss = 194
+	Test Accuracy : 8648 / 10000
+Epoch: 86
+	Train Accuracy : 8960 /10000 || Loss = 202
+	Test Accuracy : 8704 / 10000
+Epoch: 87
+	Train Accuracy : 8979 /10000 || Loss = 196
+	Test Accuracy : 8997 / 10000
+Epoch: 88
+	Train Accuracy : 9006 /10000 || Loss = 195
+	Test Accuracy : 8808 / 10000
+Epoch: 89
+	Train Accuracy : 8927 /10000 || Loss = 203
+	Test Accuracy : 8782 / 10000
+Epoch: 90
+	Train Accuracy : 9052 /10000 || Loss = 192
+	Test Accuracy : 8981 / 10000
+Epoch: 91
+	Train Accuracy : 9036 /10000 || Loss = 195
+	Test Accuracy : 8866 / 10000
+Epoch: 92
+	Train Accuracy : 8973 /10000 || Loss = 198
+	Test Accuracy : 8906 / 10000
+Epoch: 93
+	Train Accuracy : 9052 /10000 || Loss = 191
+	Test Accuracy : 8606 / 10000
+Epoch: 94
+	Train Accuracy : 8985 /10000 || Loss = 198
+	Test Accuracy : 8777 / 10000
+Epoch: 95
+	Train Accuracy : 8998 /10000 || Loss = 197
+	Test Accuracy : 8583 / 10000
+Epoch: 96
+	Train Accuracy : 8975 /10000 || Loss = 199
+	Test Accuracy : 8849 / 10000
+Epoch: 97
+	Train Accuracy : 9038 /10000 || Loss = 194
+	Test Accuracy : 8787 / 10000
+Epoch: 98
+	Train Accuracy : 9023 /10000 || Loss = 198
+	Test Accuracy : 8659 / 10000
+Epoch: 99
+	Train Accuracy : 9025 /10000 || Loss = 194
+	Test Accuracy : 8825 / 10000
+Epoch: 100
+	Train Accuracy : 8981 /10000 || Loss = 200
+	Test Accuracy : 8872 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9215 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9387 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9333 / 10000
+Test for scale by 0.500
+	Test Accuracy : 8875 / 10000
+Test for scale by 0.400
+	Test Accuracy : 8108 / 10000
+Test for scale by 0.333
+	Test Accuracy : 6564 / 10000
+Average time taken for one epoch = 42.01924463272095
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/07de9e7f3f134673b777bc6a95ff73c2/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 4 2 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_2_16_4_4_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225]
+Writing TensorBoard events locally to /tmp/tmpgr20l2ct
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 2, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 2, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  6378
+Epoch: 1
+	Train Accuracy : 6786 /10000 || Loss = 611
+	Test Accuracy : 7592 / 10000
+Epoch: 2
+	Train Accuracy : 8010 /10000 || Loss = 385
+	Test Accuracy : 8034 / 10000
+Epoch: 3
+	Train Accuracy : 8229 /10000 || Loss = 341
+	Test Accuracy : 8466 / 10000
+Epoch: 4
+	Train Accuracy : 8417 /10000 || Loss = 311
+	Test Accuracy : 8414 / 10000
+Epoch: 5
+	Train Accuracy : 8570 /10000 || Loss = 278
+	Test Accuracy : 8384 / 10000
+Epoch: 6
+	Train Accuracy : 8556 /10000 || Loss = 281
+	Test Accuracy : 8576 / 10000
+Epoch: 7
+	Train Accuracy : 8649 /10000 || Loss = 267
+	Test Accuracy : 8637 / 10000
+Epoch: 8
+	Train Accuracy : 8681 /10000 || Loss = 261
+	Test Accuracy : 8527 / 10000
+Epoch: 9
+	Train Accuracy : 8639 /10000 || Loss = 263
+	Test Accuracy : 8760 / 10000
+Epoch: 10
+	Train Accuracy : 8667 /10000 || Loss = 257
+	Test Accuracy : 8124 / 10000
+Epoch: 11
+	Train Accuracy : 8752 /10000 || Loss = 250
+	Test Accuracy : 8545 / 10000
+Epoch: 12
+	Train Accuracy : 8800 /10000 || Loss = 235
+	Test Accuracy : 8761 / 10000
+Epoch: 13
+	Train Accuracy : 8760 /10000 || Loss = 244
+	Test Accuracy : 8772 / 10000
+Epoch: 14
+	Train Accuracy : 8753 /10000 || Loss = 245
+	Test Accuracy : 8719 / 10000
+Epoch: 15
+	Train Accuracy : 8765 /10000 || Loss = 241
+	Test Accuracy : 8558 / 10000
+Epoch: 16
+	Train Accuracy : 8773 /10000 || Loss = 236
+	Test Accuracy : 8677 / 10000
+Epoch: 17
+	Train Accuracy : 8793 /10000 || Loss = 239
+	Test Accuracy : 8562 / 10000
+Epoch: 18
+	Train Accuracy : 8801 /10000 || Loss = 239
+	Test Accuracy : 8409 / 10000
+Epoch: 19
+	Train Accuracy : 8796 /10000 || Loss = 238
+	Test Accuracy : 8741 / 10000
+Epoch: 20
+	Train Accuracy : 8796 /10000 || Loss = 238
+	Test Accuracy : 8559 / 10000
+Epoch: 21
+	Train Accuracy : 8792 /10000 || Loss = 240
+	Test Accuracy : 8703 / 10000
+Epoch: 22
+	Train Accuracy : 8826 /10000 || Loss = 227
+	Test Accuracy : 8607 / 10000
+Epoch: 23
+	Train Accuracy : 8810 /10000 || Loss = 233
+	Test Accuracy : 8730 / 10000
+Epoch: 24
+	Train Accuracy : 8868 /10000 || Loss = 228
+	Test Accuracy : 8522 / 10000
+Epoch: 25
+	Train Accuracy : 8839 /10000 || Loss = 226
+	Test Accuracy : 8695 / 10000
+Epoch: 26
+	Train Accuracy : 8872 /10000 || Loss = 223
+	Test Accuracy : 8579 / 10000
+Epoch: 27
+	Train Accuracy : 8913 /10000 || Loss = 219
+	Test Accuracy : 8717 / 10000
+Epoch: 28
+	Train Accuracy : 8850 /10000 || Loss = 226
+	Test Accuracy : 8739 / 10000
+Epoch: 29
+	Train Accuracy : 8860 /10000 || Loss = 214
+	Test Accuracy : 8672 / 10000
+Epoch: 30
+	Train Accuracy : 8914 /10000 || Loss = 215
+	Test Accuracy : 8465 / 10000
+Epoch: 31
+	Train Accuracy : 8928 /10000 || Loss = 212
+	Test Accuracy : 8841 / 10000
+Epoch: 32
+	Train Accuracy : 8864 /10000 || Loss = 220
+	Test Accuracy : 8786 / 10000
+Epoch: 33
+	Train Accuracy : 8894 /10000 || Loss = 224
+	Test Accuracy : 8667 / 10000
+Epoch: 34
+	Train Accuracy : 8897 /10000 || Loss = 217
+	Test Accuracy : 8781 / 10000
+Epoch: 35
+	Train Accuracy : 8917 /10000 || Loss = 215
+	Test Accuracy : 8782 / 10000
+Epoch: 36
+	Train Accuracy : 8993 /10000 || Loss = 205
+	Test Accuracy : 8612 / 10000
+Epoch: 37
+	Train Accuracy : 8970 /10000 || Loss = 211
+	Test Accuracy : 8662 / 10000
+Epoch: 38
+	Train Accuracy : 8912 /10000 || Loss = 210
+	Test Accuracy : 8676 / 10000
+Epoch: 39
+	Train Accuracy : 8945 /10000 || Loss = 214
+	Test Accuracy : 8580 / 10000
+Epoch: 40
+	Train Accuracy : 8899 /10000 || Loss = 222
+	Test Accuracy : 8781 / 10000
+Epoch: 41
+	Train Accuracy : 8991 /10000 || Loss = 203
+	Test Accuracy : 8911 / 10000
+Epoch: 42
+	Train Accuracy : 9003 /10000 || Loss = 200
+	Test Accuracy : 8796 / 10000
+Epoch: 43
+	Train Accuracy : 8956 /10000 || Loss = 203
+	Test Accuracy : 8599 / 10000
+Epoch: 44
+	Train Accuracy : 8931 /10000 || Loss = 208
+	Test Accuracy : 8828 / 10000
+Epoch: 45
+	Train Accuracy : 8957 /10000 || Loss = 205
+	Test Accuracy : 8754 / 10000
+Epoch: 46
+	Train Accuracy : 8952 /10000 || Loss = 207
+	Test Accuracy : 8689 / 10000
+Epoch: 47
+	Train Accuracy : 8944 /10000 || Loss = 213
+	Test Accuracy : 8693 / 10000
+Epoch: 48
+	Train Accuracy : 9003 /10000 || Loss = 204
+	Test Accuracy : 8722 / 10000
+Epoch: 49
+	Train Accuracy : 8951 /10000 || Loss = 208
+	Test Accuracy : 8738 / 10000
+Epoch: 50
+	Train Accuracy : 8984 /10000 || Loss = 203
+	Test Accuracy : 8647 / 10000
+Epoch: 51
+	Train Accuracy : 8982 /10000 || Loss = 200
+	Test Accuracy : 8718 / 10000
+Epoch: 52
+	Train Accuracy : 8959 /10000 || Loss = 209
+	Test Accuracy : 8694 / 10000
+Epoch: 53
+	Train Accuracy : 8982 /10000 || Loss = 201
+	Test Accuracy : 8650 / 10000
+Epoch: 54
+	Train Accuracy : 8912 /10000 || Loss = 210
+	Test Accuracy : 8705 / 10000
+Epoch: 55
+	Train Accuracy : 8925 /10000 || Loss = 208
+	Test Accuracy : 8713 / 10000
+Epoch: 56
+	Train Accuracy : 8988 /10000 || Loss = 205
+	Test Accuracy : 8726 / 10000
+Epoch: 57
+	Train Accuracy : 9003 /10000 || Loss = 201
+	Test Accuracy : 8803 / 10000
+Epoch: 58
+	Train Accuracy : 8992 /10000 || Loss = 205
+	Test Accuracy : 8703 / 10000
+Epoch: 59
+	Train Accuracy : 8995 /10000 || Loss = 202
+	Test Accuracy : 8756 / 10000
+Epoch: 60
+	Train Accuracy : 8966 /10000 || Loss = 203
+	Test Accuracy : 8758 / 10000
+Epoch: 61
+	Train Accuracy : 9050 /10000 || Loss = 184
+	Test Accuracy : 8662 / 10000
+Epoch: 62
+	Train Accuracy : 8990 /10000 || Loss = 206
+	Test Accuracy : 8683 / 10000
+Epoch: 63
+	Train Accuracy : 8994 /10000 || Loss = 202
+	Test Accuracy : 8776 / 10000
+Epoch: 64
+	Train Accuracy : 9011 /10000 || Loss = 200
+	Test Accuracy : 8849 / 10000
+Epoch: 65
+	Train Accuracy : 9007 /10000 || Loss = 196
+	Test Accuracy : 8823 / 10000
+Epoch: 66
+	Train Accuracy : 9065 /10000 || Loss = 193
+	Test Accuracy : 8858 / 10000
+Epoch: 67
+	Train Accuracy : 8984 /10000 || Loss = 198
+	Test Accuracy : 8685 / 10000
+Epoch: 68
+	Train Accuracy : 8987 /10000 || Loss = 201
+	Test Accuracy : 8828 / 10000
+Epoch: 69
+	Train Accuracy : 8974 /10000 || Loss = 201
+	Test Accuracy : 8783 / 10000
+Epoch: 70
+	Train Accuracy : 8988 /10000 || Loss = 198
+	Test Accuracy : 8621 / 10000
+Epoch: 71
+	Train Accuracy : 9006 /10000 || Loss = 198
+	Test Accuracy : 8637 / 10000
+Epoch: 72
+	Train Accuracy : 9007 /10000 || Loss = 200
+	Test Accuracy : 8836 / 10000
+Epoch: 73
+	Train Accuracy : 8990 /10000 || Loss = 198
+	Test Accuracy : 8670 / 10000
+Epoch: 74
+	Train Accuracy : 8959 /10000 || Loss = 199
+	Test Accuracy : 8715 / 10000
+Epoch: 75
+	Train Accuracy : 8990 /10000 || Loss = 198
+	Test Accuracy : 8811 / 10000
+Epoch: 76
+	Train Accuracy : 9036 /10000 || Loss = 197
+	Test Accuracy : 8712 / 10000
+Epoch: 77
+	Train Accuracy : 9004 /10000 || Loss = 194
+	Test Accuracy : 8699 / 10000
+Epoch: 78
+	Train Accuracy : 9050 /10000 || Loss = 193
+	Test Accuracy : 8479 / 10000
+Epoch: 79
+	Train Accuracy : 8964 /10000 || Loss = 203
+	Test Accuracy : 8603 / 10000
+Epoch: 80
+	Train Accuracy : 9021 /10000 || Loss = 192
+	Test Accuracy : 8414 / 10000
+Epoch: 81
+	Train Accuracy : 9022 /10000 || Loss = 191
+	Test Accuracy : 8735 / 10000
+Epoch: 82
+	Train Accuracy : 9015 /10000 || Loss = 200
+	Test Accuracy : 8755 / 10000
+Epoch: 83
+	Train Accuracy : 9046 /10000 || Loss = 189
+	Test Accuracy : 8767 / 10000
+Epoch: 84
+	Train Accuracy : 9072 /10000 || Loss = 193
+	Test Accuracy : 8777 / 10000
+Epoch: 85
+	Train Accuracy : 9054 /10000 || Loss = 188
+	Test Accuracy : 8833 / 10000
+Epoch: 86
+	Train Accuracy : 9018 /10000 || Loss = 199
+	Test Accuracy : 8632 / 10000
+Epoch: 87
+	Train Accuracy : 9021 /10000 || Loss = 193
+	Test Accuracy : 8643 / 10000
+Epoch: 88
+	Train Accuracy : 9002 /10000 || Loss = 198
+	Test Accuracy : 8657 / 10000
+Epoch: 89
+	Train Accuracy : 9021 /10000 || Loss = 194
+	Test Accuracy : 8736 / 10000
+Epoch: 90
+	Train Accuracy : 9022 /10000 || Loss = 198
+	Test Accuracy : 8806 / 10000
+Epoch: 91
+	Train Accuracy : 9037 /10000 || Loss = 188
+	Test Accuracy : 8564 / 10000
+Epoch: 92
+	Train Accuracy : 9013 /10000 || Loss = 196
+	Test Accuracy : 8690 / 10000
+Epoch: 93
+	Train Accuracy : 9037 /10000 || Loss = 196
+	Test Accuracy : 8815 / 10000
+Epoch: 94
+	Train Accuracy : 9022 /10000 || Loss = 196
+	Test Accuracy : 8827 / 10000
+Epoch: 95
+	Train Accuracy : 9014 /10000 || Loss = 196
+	Test Accuracy : 8597 / 10000
+Epoch: 96
+	Train Accuracy : 9019 /10000 || Loss = 193
+	Test Accuracy : 8697 / 10000
+Epoch: 97
+	Train Accuracy : 9040 /10000 || Loss = 190
+	Test Accuracy : 8797 / 10000
+Epoch: 98
+	Train Accuracy : 8989 /10000 || Loss = 195
+	Test Accuracy : 8801 / 10000
+Epoch: 99
+	Train Accuracy : 9050 /10000 || Loss = 186
+	Test Accuracy : 8858 / 10000
+Epoch: 100
+	Train Accuracy : 8999 /10000 || Loss = 197
+	Test Accuracy : 8815 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9152 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9314 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9312 / 10000
+Test for scale by 0.500
+	Test Accuracy : 8906 / 10000
+Test for scale by 0.400
+	Test Accuracy : 7636 / 10000
+Test for scale by 0.333
+	Test Accuracy : 5837 / 10000
+Average time taken for one epoch = 41.01942723512649
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/bed1306a8f69446bb53026a8992c7785/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 8 2 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_2_16_4_8_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225 1.7893268  3.1964623  5.57452128
+ 9.59344096]
+Writing TensorBoard events locally to /tmp/tmprcwlaouz
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 2, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 2, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  6378
+Epoch: 1
+	Train Accuracy : 6630 /10000 || Loss = 640
+	Test Accuracy : 7584 / 10000
+Epoch: 2
+	Train Accuracy : 7816 /10000 || Loss = 422
+	Test Accuracy : 8011 / 10000
+Epoch: 3
+	Train Accuracy : 8056 /10000 || Loss = 373
+	Test Accuracy : 8208 / 10000
+Epoch: 4
+	Train Accuracy : 8235 /10000 || Loss = 348
+	Test Accuracy : 8163 / 10000
+Epoch: 5
+	Train Accuracy : 8430 /10000 || Loss = 312
+	Test Accuracy : 8235 / 10000
+Epoch: 6
+	Train Accuracy : 8468 /10000 || Loss = 299
+	Test Accuracy : 8580 / 10000
+Epoch: 7
+	Train Accuracy : 8520 /10000 || Loss = 286
+	Test Accuracy : 8514 / 10000
+Epoch: 8
+	Train Accuracy : 8595 /10000 || Loss = 277
+	Test Accuracy : 8404 / 10000
+Epoch: 9
+	Train Accuracy : 8581 /10000 || Loss = 273
+	Test Accuracy : 8390 / 10000
+Epoch: 10
+	Train Accuracy : 8592 /10000 || Loss = 272
+	Test Accuracy : 8629 / 10000
+Epoch: 11
+	Train Accuracy : 8690 /10000 || Loss = 258
+	Test Accuracy : 8521 / 10000
+Epoch: 12
+	Train Accuracy : 8698 /10000 || Loss = 256
+	Test Accuracy : 8555 / 10000
+Epoch: 13
+	Train Accuracy : 8655 /10000 || Loss = 260
+	Test Accuracy : 8451 / 10000
+Epoch: 14
+	Train Accuracy : 8685 /10000 || Loss = 260
+	Test Accuracy : 8441 / 10000
+Epoch: 15
+	Train Accuracy : 8689 /10000 || Loss = 257
+	Test Accuracy : 8416 / 10000
+Epoch: 16
+	Train Accuracy : 8794 /10000 || Loss = 245
+	Test Accuracy : 8563 / 10000
+Epoch: 17
+	Train Accuracy : 8772 /10000 || Loss = 241
+	Test Accuracy : 8489 / 10000
+Epoch: 18
+	Train Accuracy : 8759 /10000 || Loss = 248
+	Test Accuracy : 8528 / 10000
+Epoch: 19
+	Train Accuracy : 8744 /10000 || Loss = 251
+	Test Accuracy : 8756 / 10000
+Epoch: 20
+	Train Accuracy : 8778 /10000 || Loss = 245
+	Test Accuracy : 8694 / 10000
+Epoch: 21
+	Train Accuracy : 8779 /10000 || Loss = 244
+	Test Accuracy : 8688 / 10000
+Epoch: 22
+	Train Accuracy : 8795 /10000 || Loss = 238
+	Test Accuracy : 8613 / 10000
+Epoch: 23
+	Train Accuracy : 8808 /10000 || Loss = 238
+	Test Accuracy : 8643 / 10000
+Epoch: 24
+	Train Accuracy : 8799 /10000 || Loss = 241
+	Test Accuracy : 8775 / 10000
+Epoch: 25
+	Train Accuracy : 8772 /10000 || Loss = 236
+	Test Accuracy : 8725 / 10000
+Epoch: 26
+	Train Accuracy : 8857 /10000 || Loss = 227
+	Test Accuracy : 8652 / 10000
+Epoch: 27
+	Train Accuracy : 8773 /10000 || Loss = 238
+	Test Accuracy : 8377 / 10000
+Epoch: 28
+	Train Accuracy : 8881 /10000 || Loss = 230
+	Test Accuracy : 8671 / 10000
+Epoch: 29
+	Train Accuracy : 8801 /10000 || Loss = 239
+	Test Accuracy : 8499 / 10000
+Epoch: 30
+	Train Accuracy : 8853 /10000 || Loss = 228
+	Test Accuracy : 8514 / 10000
+Epoch: 31
+	Train Accuracy : 8872 /10000 || Loss = 224
+	Test Accuracy : 8683 / 10000
+Epoch: 32
+	Train Accuracy : 8862 /10000 || Loss = 224
+	Test Accuracy : 8768 / 10000
+Epoch: 33
+	Train Accuracy : 8888 /10000 || Loss = 225
+	Test Accuracy : 8723 / 10000
+Epoch: 34
+	Train Accuracy : 8813 /10000 || Loss = 230
+	Test Accuracy : 8535 / 10000
+Epoch: 35
+	Train Accuracy : 8890 /10000 || Loss = 226
+	Test Accuracy : 8738 / 10000
+Epoch: 36
+	Train Accuracy : 8862 /10000 || Loss = 225
+	Test Accuracy : 8732 / 10000
+Epoch: 37
+	Train Accuracy : 8874 /10000 || Loss = 225
+	Test Accuracy : 8672 / 10000
+Epoch: 38
+	Train Accuracy : 8900 /10000 || Loss = 225
+	Test Accuracy : 8723 / 10000
+Epoch: 39
+	Train Accuracy : 8849 /10000 || Loss = 230
+	Test Accuracy : 8762 / 10000
+Epoch: 40
+	Train Accuracy : 8860 /10000 || Loss = 228
+	Test Accuracy : 8817 / 10000
+Epoch: 41
+	Train Accuracy : 8851 /10000 || Loss = 225
+	Test Accuracy : 8692 / 10000
+Epoch: 42
+	Train Accuracy : 8851 /10000 || Loss = 223
+	Test Accuracy : 8733 / 10000
+Epoch: 43
+	Train Accuracy : 8833 /10000 || Loss = 227
+	Test Accuracy : 8591 / 10000
+Epoch: 44
+	Train Accuracy : 8916 /10000 || Loss = 219
+	Test Accuracy : 8767 / 10000
+Epoch: 45
+	Train Accuracy : 8921 /10000 || Loss = 215
+	Test Accuracy : 8679 / 10000
+Epoch: 46
+	Train Accuracy : 8874 /10000 || Loss = 224
+	Test Accuracy : 8536 / 10000
+Epoch: 47
+	Train Accuracy : 8854 /10000 || Loss = 223
+	Test Accuracy : 8729 / 10000
+Epoch: 48
+	Train Accuracy : 8951 /10000 || Loss = 212
+	Test Accuracy : 8724 / 10000
+Epoch: 49
+	Train Accuracy : 8941 /10000 || Loss = 208
+	Test Accuracy : 8714 / 10000
+Epoch: 50
+	Train Accuracy : 8931 /10000 || Loss = 214
+	Test Accuracy : 8541 / 10000
+Epoch: 51
+	Train Accuracy : 8933 /10000 || Loss = 216
+	Test Accuracy : 8222 / 10000
+Epoch: 52
+	Train Accuracy : 8887 /10000 || Loss = 216
+	Test Accuracy : 8816 / 10000
+Epoch: 53
+	Train Accuracy : 8932 /10000 || Loss = 211
+	Test Accuracy : 8806 / 10000
+Epoch: 54
+	Train Accuracy : 8937 /10000 || Loss = 209
+	Test Accuracy : 8705 / 10000
+Epoch: 55
+	Train Accuracy : 8888 /10000 || Loss = 214
+	Test Accuracy : 8583 / 10000
+Epoch: 56
+	Train Accuracy : 8969 /10000 || Loss = 209
+	Test Accuracy : 8564 / 10000
+Epoch: 57
+	Train Accuracy : 8941 /10000 || Loss = 212
+	Test Accuracy : 8425 / 10000
+Epoch: 58
+	Train Accuracy : 8925 /10000 || Loss = 215
+	Test Accuracy : 8675 / 10000
+Epoch: 59
+	Train Accuracy : 8939 /10000 || Loss = 214
+	Test Accuracy : 8670 / 10000
+Epoch: 60
+	Train Accuracy : 8972 /10000 || Loss = 208
+	Test Accuracy : 8695 / 10000
+Epoch: 61
+	Train Accuracy : 8957 /10000 || Loss = 204
+	Test Accuracy : 8602 / 10000
+Epoch: 62
+	Train Accuracy : 8978 /10000 || Loss = 207
+	Test Accuracy : 8634 / 10000
+Epoch: 63
+	Train Accuracy : 8922 /10000 || Loss = 216
+	Test Accuracy : 8789 / 10000
+Epoch: 64
+	Train Accuracy : 8959 /10000 || Loss = 208
+	Test Accuracy : 8865 / 10000
+Epoch: 65
+	Train Accuracy : 8905 /10000 || Loss = 218
+	Test Accuracy : 8531 / 10000
+Epoch: 66
+	Train Accuracy : 8989 /10000 || Loss = 198
+	Test Accuracy : 8687 / 10000
+Epoch: 67
+	Train Accuracy : 8985 /10000 || Loss = 206
+	Test Accuracy : 8808 / 10000
+Epoch: 68
+	Train Accuracy : 8980 /10000 || Loss = 203
+	Test Accuracy : 8778 / 10000
+Epoch: 69
+	Train Accuracy : 8965 /10000 || Loss = 208
+	Test Accuracy : 8672 / 10000
+Epoch: 70
+	Train Accuracy : 8965 /10000 || Loss = 206
+	Test Accuracy : 8711 / 10000
+Epoch: 71
+	Train Accuracy : 9003 /10000 || Loss = 198
+	Test Accuracy : 8858 / 10000
+Epoch: 72
+	Train Accuracy : 8988 /10000 || Loss = 203
+	Test Accuracy : 8678 / 10000
+Epoch: 73
+	Train Accuracy : 8967 /10000 || Loss = 208
+	Test Accuracy : 8702 / 10000
+Epoch: 74
+	Train Accuracy : 8947 /10000 || Loss = 211
+	Test Accuracy : 8780 / 10000
+Epoch: 75
+	Train Accuracy : 9017 /10000 || Loss = 197
+	Test Accuracy : 8816 / 10000
+Epoch: 76
+	Train Accuracy : 8932 /10000 || Loss = 205
+	Test Accuracy : 8663 / 10000
+Epoch: 77
+	Train Accuracy : 8963 /10000 || Loss = 206
+	Test Accuracy : 8827 / 10000
+Epoch: 78
+	Train Accuracy : 8956 /10000 || Loss = 211
+	Test Accuracy : 8661 / 10000
+Epoch: 79
+	Train Accuracy : 9010 /10000 || Loss = 198
+	Test Accuracy : 8799 / 10000
+Epoch: 80
+	Train Accuracy : 8969 /10000 || Loss = 206
+	Test Accuracy : 8650 / 10000
+Epoch: 81
+	Train Accuracy : 8996 /10000 || Loss = 205
+	Test Accuracy : 8704 / 10000
+Epoch: 82
+	Train Accuracy : 8926 /10000 || Loss = 207
+	Test Accuracy : 8751 / 10000
+Epoch: 83
+	Train Accuracy : 8993 /10000 || Loss = 203
+	Test Accuracy : 8767 / 10000
+Epoch: 84
+	Train Accuracy : 8929 /10000 || Loss = 207
+	Test Accuracy : 8969 / 10000
+Epoch: 85
+	Train Accuracy : 8972 /10000 || Loss = 205
+	Test Accuracy : 8743 / 10000
+Epoch: 86
+	Train Accuracy : 9043 /10000 || Loss = 192
+	Test Accuracy : 8736 / 10000
+Epoch: 87
+	Train Accuracy : 8918 /10000 || Loss = 207
+	Test Accuracy : 8948 / 10000
+Epoch: 88
+	Train Accuracy : 8955 /10000 || Loss = 204
+	Test Accuracy : 8783 / 10000
+Epoch: 89
+	Train Accuracy : 9032 /10000 || Loss = 195
+	Test Accuracy : 8556 / 10000
+Epoch: 90
+	Train Accuracy : 9003 /10000 || Loss = 197
+	Test Accuracy : 8695 / 10000
+Epoch: 91
+	Train Accuracy : 9017 /10000 || Loss = 201
+	Test Accuracy : 8493 / 10000
+Epoch: 92
+	Train Accuracy : 9011 /10000 || Loss = 191
+	Test Accuracy : 8658 / 10000
+Epoch: 93
+	Train Accuracy : 9042 /10000 || Loss = 192
+	Test Accuracy : 8794 / 10000
+Epoch: 94
+	Train Accuracy : 9009 /10000 || Loss = 196
+	Test Accuracy : 8776 / 10000
+Epoch: 95
+	Train Accuracy : 8990 /10000 || Loss = 196
+	Test Accuracy : 8734 / 10000
+Epoch: 96
+	Train Accuracy : 9011 /10000 || Loss = 198
+	Test Accuracy : 8761 / 10000
+Epoch: 97
+	Train Accuracy : 8958 /10000 || Loss = 203
+	Test Accuracy : 8710 / 10000
+Epoch: 98
+	Train Accuracy : 8998 /10000 || Loss = 197
+	Test Accuracy : 8647 / 10000
+Epoch: 99
+	Train Accuracy : 9043 /10000 || Loss = 189
+	Test Accuracy : 8813 / 10000
+Epoch: 100
+	Train Accuracy : 9017 /10000 || Loss = 197
+	Test Accuracy : 8485 / 10000
+Test for scale by 1.000
+	Test Accuracy : 9116 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9208 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9181 / 10000
+Test for scale by 0.500
+	Test Accuracy : 8238 / 10000
+Test for scale by 0.400
+	Test Accuracy : 7265 / 10000
+Test for scale by 0.333
+	Test Accuracy : 6147 / 10000
+Average time taken for one epoch = 41.201582055091855
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/562bd9631b2f48fbb79ec07dc4156159/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 4 4 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_4_16_4_4_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225]
+Writing TensorBoard events locally to /tmp/tmp8es0qvfq
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 4, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 4, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  11274
+Epoch: 1
+	Train Accuracy : 6685 /10000 || Loss = 637
+	Test Accuracy : 7706 / 10000
+Epoch: 2
+	Train Accuracy : 7995 /10000 || Loss = 392
+	Test Accuracy : 8164 / 10000
+Epoch: 3
+	Train Accuracy : 8266 /10000 || Loss = 335
+	Test Accuracy : 8113 / 10000
+Epoch: 4
+	Train Accuracy : 8366 /10000 || Loss = 320
+	Test Accuracy : 8243 / 10000
+Epoch: 5
+	Train Accuracy : 8481 /10000 || Loss = 299
+	Test Accuracy : 8394 / 10000
+Epoch: 6
+	Train Accuracy : 8547 /10000 || Loss = 291
+	Test Accuracy : 8529 / 10000
+Epoch: 7
+	Train Accuracy : 8585 /10000 || Loss = 280
+	Test Accuracy : 8469 / 10000
+Epoch: 8
+	Train Accuracy : 8584 /10000 || Loss = 280
+	Test Accuracy : 8478 / 10000
+Epoch: 9
+	Train Accuracy : 8617 /10000 || Loss = 270
+	Test Accuracy : 8530 / 10000
+Epoch: 10
+	Train Accuracy : 8632 /10000 || Loss = 272
+	Test Accuracy : 8111 / 10000
+Epoch: 11
+	Train Accuracy : 8660 /10000 || Loss = 263
+	Test Accuracy : 7924 / 10000
+Epoch: 12
+	Train Accuracy : 8695 /10000 || Loss = 256
+	Test Accuracy : 8552 / 10000
+Epoch: 13
+	Train Accuracy : 8706 /10000 || Loss = 260
+	Test Accuracy : 8491 / 10000
+Epoch: 14
+	Train Accuracy : 8739 /10000 || Loss = 254
+	Test Accuracy : 8209 / 10000
+Epoch: 15
+	Train Accuracy : 8746 /10000 || Loss = 247
+	Test Accuracy : 8529 / 10000
+Epoch: 16
+	Train Accuracy : 8773 /10000 || Loss = 244
+	Test Accuracy : 8541 / 10000
+Epoch: 17
+	Train Accuracy : 8783 /10000 || Loss = 248
+	Test Accuracy : 8321 / 10000
+Epoch: 18
+	Train Accuracy : 8792 /10000 || Loss = 234
+	Test Accuracy : 8496 / 10000
+Epoch: 19
+	Train Accuracy : 8792 /10000 || Loss = 237
+	Test Accuracy : 8471 / 10000
+Epoch: 20
+	Train Accuracy : 8773 /10000 || Loss = 236
+	Test Accuracy : 8041 / 10000
+Epoch: 21
+	Train Accuracy : 8789 /10000 || Loss = 241
+	Test Accuracy : 8564 / 10000
+Epoch: 22
+	Train Accuracy : 8837 /10000 || Loss = 231
+	Test Accuracy : 8322 / 10000
+Epoch: 23
+	Train Accuracy : 8797 /10000 || Loss = 237
+	Test Accuracy : 8482 / 10000
+Epoch: 24
+	Train Accuracy : 8876 /10000 || Loss = 225
+	Test Accuracy : 8513 / 10000
+Epoch: 25
+	Train Accuracy : 8794 /10000 || Loss = 230
+	Test Accuracy : 8527 / 10000
+Epoch: 26
+	Train Accuracy : 8910 /10000 || Loss = 219
+	Test Accuracy : 8500 / 10000
+Epoch: 27
+	Train Accuracy : 8839 /10000 || Loss = 226
+	Test Accuracy : 8690 / 10000
+Epoch: 28
+	Train Accuracy : 8830 /10000 || Loss = 227
+	Test Accuracy : 8746 / 10000
+Epoch: 29
+	Train Accuracy : 8867 /10000 || Loss = 225
+	Test Accuracy : 8767 / 10000
+Epoch: 30
+	Train Accuracy : 8863 /10000 || Loss = 226
+	Test Accuracy : 8655 / 10000
+Epoch: 31
+	Train Accuracy : 8938 /10000 || Loss = 213
+	Test Accuracy : 8541 / 10000
+Epoch: 32
+	Train Accuracy : 8957 /10000 || Loss = 209
+	Test Accuracy : 8518 / 10000
+Epoch: 33
+	Train Accuracy : 8899 /10000 || Loss = 215
+	Test Accuracy : 8537 / 10000
+Epoch: 34
+	Train Accuracy : 8881 /10000 || Loss = 218
+	Test Accuracy : 8626 / 10000
+Epoch: 35
+	Train Accuracy : 8874 /10000 || Loss = 215
+	Test Accuracy : 8176 / 10000
+Epoch: 36
+	Train Accuracy : 8916 /10000 || Loss = 219
+	Test Accuracy : 8565 / 10000
+Epoch: 37
+	Train Accuracy : 8958 /10000 || Loss = 212
+	Test Accuracy : 8148 / 10000
+Epoch: 38
+	Train Accuracy : 8951 /10000 || Loss = 205
+	Test Accuracy : 8396 / 10000
+Epoch: 39
+	Train Accuracy : 8939 /10000 || Loss = 212
+	Test Accuracy : 8505 / 10000
+Epoch: 40
+	Train Accuracy : 8926 /10000 || Loss = 211
+	Test Accuracy : 8550 / 10000
+Epoch: 41
+	Train Accuracy : 8979 /10000 || Loss = 199
+	Test Accuracy : 8492 / 10000
+Epoch: 42
+	Train Accuracy : 8945 /10000 || Loss = 211
+	Test Accuracy : 8496 / 10000
+Epoch: 43
+	Train Accuracy : 8904 /10000 || Loss = 219
+	Test Accuracy : 8629 / 10000
+Epoch: 44
+	Train Accuracy : 8916 /10000 || Loss = 211
+	Test Accuracy : 8493 / 10000
+Epoch: 45
+	Train Accuracy : 8972 /10000 || Loss = 204
+	Test Accuracy : 8186 / 10000
+Epoch: 46
+	Train Accuracy : 8929 /10000 || Loss = 211
+	Test Accuracy : 8592 / 10000
+Epoch: 47
+	Train Accuracy : 8938 /10000 || Loss = 206
+	Test Accuracy : 8662 / 10000
+Epoch: 48
+	Train Accuracy : 8917 /10000 || Loss = 209
+	Test Accuracy : 8339 / 10000
+Epoch: 49
+	Train Accuracy : 8991 /10000 || Loss = 203
+	Test Accuracy : 8648 / 10000
+Epoch: 50
+	Train Accuracy : 8993 /10000 || Loss = 201
+	Test Accuracy : 8649 / 10000
+Epoch: 51
+	Train Accuracy : 8972 /10000 || Loss = 205
+	Test Accuracy : 8457 / 10000
+Epoch: 52
+	Train Accuracy : 8971 /10000 || Loss = 207
+	Test Accuracy : 8491 / 10000
+Epoch: 53
+	Train Accuracy : 9001 /10000 || Loss = 198
+	Test Accuracy : 8653 / 10000
+Epoch: 54
+	Train Accuracy : 8951 /10000 || Loss = 211
+	Test Accuracy : 8509 / 10000
+Epoch: 55
+	Train Accuracy : 8996 /10000 || Loss = 197
+	Test Accuracy : 8444 / 10000
+Epoch: 56
+	Train Accuracy : 8988 /10000 || Loss = 197
+	Test Accuracy : 8464 / 10000
+Epoch: 57
+	Train Accuracy : 8992 /10000 || Loss = 202
+	Test Accuracy : 8604 / 10000
+Epoch: 58
+	Train Accuracy : 9016 /10000 || Loss = 193
+	Test Accuracy : 8488 / 10000
+Epoch: 59
+	Train Accuracy : 9019 /10000 || Loss = 198
+	Test Accuracy : 8693 / 10000
+Epoch: 60
+	Train Accuracy : 9059 /10000 || Loss = 191
+	Test Accuracy : 8647 / 10000
+Epoch: 61
+	Train Accuracy : 8989 /10000 || Loss = 197
+	Test Accuracy : 8585 / 10000
+Epoch: 62
+	Train Accuracy : 8999 /10000 || Loss = 196
+	Test Accuracy : 8635 / 10000
+Epoch: 63
+	Train Accuracy : 9040 /10000 || Loss = 194
+	Test Accuracy : 8704 / 10000
+Epoch: 64
+	Train Accuracy : 9033 /10000 || Loss = 197
+	Test Accuracy : 8721 / 10000
+Epoch: 65
+	Train Accuracy : 9003 /10000 || Loss = 199
+	Test Accuracy : 8650 / 10000
+Epoch: 66
+	Train Accuracy : 9068 /10000 || Loss = 188
+	Test Accuracy : 8538 / 10000
+Epoch: 67
+	Train Accuracy : 9036 /10000 || Loss = 186
+	Test Accuracy : 8615 / 10000
+Epoch: 68
+	Train Accuracy : 9030 /10000 || Loss = 197
+	Test Accuracy : 8575 / 10000
+Epoch: 69
+	Train Accuracy : 9025 /10000 || Loss = 195
+	Test Accuracy : 8440 / 10000
+Epoch: 70
+	Train Accuracy : 9033 /10000 || Loss = 197
+	Test Accuracy : 8498 / 10000
+Epoch: 71
+	Train Accuracy : 9028 /10000 || Loss = 195
+	Test Accuracy : 8535 / 10000
+Epoch: 72
+	Train Accuracy : 9085 /10000 || Loss = 180
+	Test Accuracy : 8631 / 10000
+Epoch: 73
+	Train Accuracy : 9051 /10000 || Loss = 190
+	Test Accuracy : 8553 / 10000
+Epoch: 74
+	Train Accuracy : 9002 /10000 || Loss = 198
+	Test Accuracy : 8727 / 10000
+Epoch: 75
+	Train Accuracy : 9060 /10000 || Loss = 188
+	Test Accuracy : 8269 / 10000
+Epoch: 76
+	Train Accuracy : 9042 /10000 || Loss = 189
+	Test Accuracy : 8539 / 10000
+Epoch: 77
+	Train Accuracy : 9078 /10000 || Loss = 186
+	Test Accuracy : 8703 / 10000
+Epoch: 78
+	Train Accuracy : 9055 /10000 || Loss = 192
+	Test Accuracy : 8688 / 10000
+Epoch: 79
+	Train Accuracy : 9042 /10000 || Loss = 191
+	Test Accuracy : 8636 / 10000
+Epoch: 80
+	Train Accuracy : 9039 /10000 || Loss = 193
+	Test Accuracy : 8680 / 10000
+Epoch: 81
+	Train Accuracy : 9029 /10000 || Loss = 192
+	Test Accuracy : 8578 / 10000
+Epoch: 82
+	Train Accuracy : 9076 /10000 || Loss = 188
+	Test Accuracy : 8509 / 10000
+Epoch: 83
+	Train Accuracy : 8998 /10000 || Loss = 196
+	Test Accuracy : 8694 / 10000
+Epoch: 84
+	Train Accuracy : 9112 /10000 || Loss = 178
+	Test Accuracy : 8677 / 10000
+Epoch: 85
+	Train Accuracy : 9062 /10000 || Loss = 189
+	Test Accuracy : 8324 / 10000
+Epoch: 86
+	Train Accuracy : 9052 /10000 || Loss = 193
+	Test Accuracy : 8581 / 10000
+Epoch: 87
+	Train Accuracy : 9082 /10000 || Loss = 183
+	Test Accuracy : 8379 / 10000
+Epoch: 88
+	Train Accuracy : 9037 /10000 || Loss = 187
+	Test Accuracy : 8384 / 10000
+Epoch: 89
+	Train Accuracy : 9066 /10000 || Loss = 186
+	Test Accuracy : 8664 / 10000
+Epoch: 90
+	Train Accuracy : 9035 /10000 || Loss = 186
+	Test Accuracy : 8612 / 10000
+Epoch: 91
+	Train Accuracy : 9048 /10000 || Loss = 188
+	Test Accuracy : 8509 / 10000
+Epoch: 92
+	Train Accuracy : 9035 /10000 || Loss = 188
+	Test Accuracy : 8490 / 10000
+Epoch: 93
+	Train Accuracy : 9068 /10000 || Loss = 187
+	Test Accuracy : 8625 / 10000
+Epoch: 94
+	Train Accuracy : 9097 /10000 || Loss = 179
+	Test Accuracy : 8807 / 10000
+Epoch: 95
+	Train Accuracy : 9083 /10000 || Loss = 182
+	Test Accuracy : 8668 / 10000
+Epoch: 96
+	Train Accuracy : 9066 /10000 || Loss = 187
+	Test Accuracy : 8643 / 10000
+Epoch: 97
+	Train Accuracy : 9051 /10000 || Loss = 188
+	Test Accuracy : 8564 / 10000
+Epoch: 98
+	Train Accuracy : 9049 /10000 || Loss = 191
+	Test Accuracy : 8603 / 10000
+Epoch: 99
+	Train Accuracy : 9103 /10000 || Loss = 181
+	Test Accuracy : 8586 / 10000
+Epoch: 100
+	Train Accuracy : 9066 /10000 || Loss = 187
+	Test Accuracy : 8327 / 10000
+Test for scale by 1.000
+	Test Accuracy : 8918 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9116 / 10000
+Test for scale by 0.667
+	Test Accuracy : 9046 / 10000
+Test for scale by 0.500
+	Test Accuracy : 8135 / 10000
+Test for scale by 0.400
+	Test Accuracy : 7079 / 10000
+Test for scale by 0.333
+	Test Accuracy : 5194 / 10000
+Average time taken for one epoch = 40.5464570403099
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/0907da4e92b34071814b7459cb769837/artifacts/events
+MNIST 16 dss_v2 1.3 [4, 4] 8 4 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_4_16_4_8_seg.th ===========
+Bessel scales: [0.1725     0.464025   0.95670225 1.7893268  3.1964623  5.57452128
+ 9.59344096]
+Writing TensorBoard events locally to /tmp/tmp3knnsdib
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 4, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 4, [3, 3], downscale=[1, 1, 1, 2], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=144, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  11274
+Epoch: 1
+	Train Accuracy : 6639 /10000 || Loss = 636
+	Test Accuracy : 7804 / 10000
+Epoch: 2
+	Train Accuracy : 7907 /10000 || Loss = 406
+	Test Accuracy : 7440 / 10000
+Epoch: 3
+	Train Accuracy : 8269 /10000 || Loss = 335
+	Test Accuracy : 8066 / 10000
+Epoch: 4
+	Train Accuracy : 8400 /10000 || Loss = 315
+	Test Accuracy : 8131 / 10000
+Epoch: 5
+	Train Accuracy : 8438 /10000 || Loss = 304
+	Test Accuracy : 8160 / 10000
+Epoch: 6
+	Train Accuracy : 8571 /10000 || Loss = 282
+	Test Accuracy : 8106 / 10000
+Epoch: 7
+	Train Accuracy : 8588 /10000 || Loss = 276
+	Test Accuracy : 7874 / 10000
+Epoch: 8
+	Train Accuracy : 8630 /10000 || Loss = 271
+	Test Accuracy : 8251 / 10000
+Epoch: 9
+	Train Accuracy : 8679 /10000 || Loss = 261
+	Test Accuracy : 8592 / 10000
+Epoch: 10
+	Train Accuracy : 8670 /10000 || Loss = 265
+	Test Accuracy : 7989 / 10000
+Epoch: 11
+	Train Accuracy : 8740 /10000 || Loss = 252
+	Test Accuracy : 8024 / 10000
+Epoch: 12
+	Train Accuracy : 8744 /10000 || Loss = 257
+	Test Accuracy : 8155 / 10000
+Epoch: 13
+	Train Accuracy : 8771 /10000 || Loss = 245
+	Test Accuracy : 8153 / 10000
+Epoch: 14
+	Train Accuracy : 8727 /10000 || Loss = 258
+	Test Accuracy : 8089 / 10000
+Epoch: 15
+	Train Accuracy : 8763 /10000 || Loss = 249
+	Test Accuracy : 8209 / 10000
+Epoch: 16
+	Train Accuracy : 8738 /10000 || Loss = 250
+	Test Accuracy : 8316 / 10000
+Epoch: 17
+	Train Accuracy : 8768 /10000 || Loss = 240
+	Test Accuracy : 8234 / 10000
+Epoch: 18
+	Train Accuracy : 8834 /10000 || Loss = 236
+	Test Accuracy : 8101 / 10000
+Epoch: 19
+	Train Accuracy : 8794 /10000 || Loss = 233
+	Test Accuracy : 8359 / 10000
+Epoch: 20
+	Train Accuracy : 8847 /10000 || Loss = 235
+	Test Accuracy : 8415 / 10000
+Epoch: 21
+	Train Accuracy : 8868 /10000 || Loss = 228
+	Test Accuracy : 8187 / 10000
+Epoch: 22
+	Train Accuracy : 8843 /10000 || Loss = 231
+	Test Accuracy : 8444 / 10000
+Epoch: 23
+	Train Accuracy : 8848 /10000 || Loss = 226
+	Test Accuracy : 8441 / 10000
+Epoch: 24
+	Train Accuracy : 8885 /10000 || Loss = 222
+	Test Accuracy : 8038 / 10000
+Epoch: 25
+	Train Accuracy : 8803 /10000 || Loss = 234
+	Test Accuracy : 8164 / 10000
+Epoch: 26
+	Train Accuracy : 8917 /10000 || Loss = 215
+	Test Accuracy : 7675 / 10000
+Epoch: 27
+	Train Accuracy : 8905 /10000 || Loss = 216
+	Test Accuracy : 7850 / 10000
+Epoch: 28
+	Train Accuracy : 8947 /10000 || Loss = 210
+	Test Accuracy : 7841 / 10000
+Epoch: 29
+	Train Accuracy : 8835 /10000 || Loss = 230
+	Test Accuracy : 7820 / 10000
+Epoch: 30
+	Train Accuracy : 8872 /10000 || Loss = 229
+	Test Accuracy : 8125 / 10000
+Epoch: 31
+	Train Accuracy : 8826 /10000 || Loss = 235
+	Test Accuracy : 8359 / 10000
+Epoch: 32
+	Train Accuracy : 8909 /10000 || Loss = 216
+	Test Accuracy : 8033 / 10000
+Epoch: 33
+	Train Accuracy : 8926 /10000 || Loss = 215
+	Test Accuracy : 8470 / 10000
+Epoch: 34
+	Train Accuracy : 8848 /10000 || Loss = 224
+	Test Accuracy : 7980 / 10000
+Epoch: 35
+	Train Accuracy : 8910 /10000 || Loss = 220
+	Test Accuracy : 8056 / 10000
+Epoch: 36
+	Train Accuracy : 8895 /10000 || Loss = 215
+	Test Accuracy : 7858 / 10000
+Epoch: 37
+	Train Accuracy : 8888 /10000 || Loss = 218
+	Test Accuracy : 7881 / 10000
+Epoch: 38
+	Train Accuracy : 8964 /10000 || Loss = 204
+	Test Accuracy : 7697 / 10000
+Epoch: 39
+	Train Accuracy : 8935 /10000 || Loss = 209
+	Test Accuracy : 8112 / 10000
+Epoch: 40
+	Train Accuracy : 8953 /10000 || Loss = 209
+	Test Accuracy : 7958 / 10000
+Epoch: 41
+	Train Accuracy : 8928 /10000 || Loss = 215
+	Test Accuracy : 8233 / 10000
+Epoch: 42
+	Train Accuracy : 8924 /10000 || Loss = 214
+	Test Accuracy : 8056 / 10000
+Epoch: 43
+	Train Accuracy : 8936 /10000 || Loss = 209
+	Test Accuracy : 8225 / 10000
+Epoch: 44
+	Train Accuracy : 8897 /10000 || Loss = 218
+	Test Accuracy : 7637 / 10000
+Epoch: 45
+	Train Accuracy : 8879 /10000 || Loss = 225
+	Test Accuracy : 7767 / 10000
+Epoch: 46
+	Train Accuracy : 8842 /10000 || Loss = 226
+	Test Accuracy : 8007 / 10000
+Epoch: 47
+	Train Accuracy : 8880 /10000 || Loss = 224
+	Test Accuracy : 7758 / 10000
+Epoch: 48
+	Train Accuracy : 8854 /10000 || Loss = 227
+	Test Accuracy : 7770 / 10000
+Epoch: 49
+	Train Accuracy : 8822 /10000 || Loss = 231
+	Test Accuracy : 7833 / 10000
+Epoch: 50
+	Train Accuracy : 8906 /10000 || Loss = 217
+	Test Accuracy : 8139 / 10000
+Epoch: 51
+	Train Accuracy : 8902 /10000 || Loss = 219
+	Test Accuracy : 8210 / 10000
+Epoch: 52
+	Train Accuracy : 8908 /10000 || Loss = 214
+	Test Accuracy : 7987 / 10000
+Epoch: 53
+	Train Accuracy : 8907 /10000 || Loss = 221
+	Test Accuracy : 8106 / 10000
+Epoch: 54
+	Train Accuracy : 8893 /10000 || Loss = 220
+	Test Accuracy : 8032 / 10000
+Epoch: 55
+	Train Accuracy : 8943 /10000 || Loss = 209
+	Test Accuracy : 7918 / 10000
+Epoch: 56
+	Train Accuracy : 8912 /10000 || Loss = 221
+	Test Accuracy : 8028 / 10000
+Epoch: 57
+	Train Accuracy : 8907 /10000 || Loss = 216
+	Test Accuracy : 8172 / 10000
+Epoch: 58
+	Train Accuracy : 8923 /10000 || Loss = 213
+	Test Accuracy : 7612 / 10000
+Epoch: 59
+	Train Accuracy : 8907 /10000 || Loss = 213
+	Test Accuracy : 7979 / 10000
+Epoch: 60
+	Train Accuracy : 8924 /10000 || Loss = 210
+	Test Accuracy : 8158 / 10000
+Epoch: 61
+	Train Accuracy : 8909 /10000 || Loss = 215
+	Test Accuracy : 7847 / 10000
+Epoch: 62
+	Train Accuracy : 8923 /10000 || Loss = 210
+	Test Accuracy : 8422 / 10000
+Epoch: 63
+	Train Accuracy : 8913 /10000 || Loss = 209
+	Test Accuracy : 8090 / 10000
+Epoch: 64
+	Train Accuracy : 8943 /10000 || Loss = 211
+	Test Accuracy : 7618 / 10000
+Epoch: 65
+	Train Accuracy : 8908 /10000 || Loss = 217
+	Test Accuracy : 7978 / 10000
+Epoch: 66
+	Train Accuracy : 8914 /10000 || Loss = 216
+	Test Accuracy : 8152 / 10000
+Epoch: 67
+	Train Accuracy : 8971 /10000 || Loss = 206
+	Test Accuracy : 7774 / 10000
+Epoch: 68
+	Train Accuracy : 8945 /10000 || Loss = 211
+	Test Accuracy : 7866 / 10000
+Epoch: 69
+	Train Accuracy : 8989 /10000 || Loss = 205
+	Test Accuracy : 8024 / 10000
+Epoch: 70
+	Train Accuracy : 8951 /10000 || Loss = 207
+	Test Accuracy : 8073 / 10000
+Epoch: 71
+	Train Accuracy : 8915 /10000 || Loss = 212
+	Test Accuracy : 7980 / 10000
+Epoch: 72
+	Train Accuracy : 8971 /10000 || Loss = 205
+	Test Accuracy : 7853 / 10000
+Epoch: 73
+	Train Accuracy : 8947 /10000 || Loss = 207
+	Test Accuracy : 7812 / 10000
+Epoch: 74
+	Train Accuracy : 8972 /10000 || Loss = 204
+	Test Accuracy : 8190 / 10000
+Epoch: 75
+	Train Accuracy : 8941 /10000 || Loss = 213
+	Test Accuracy : 7742 / 10000
+Epoch: 76
+	Train Accuracy : 8898 /10000 || Loss = 219
+	Test Accuracy : 8276 / 10000
+Epoch: 77
+	Train Accuracy : 8983 /10000 || Loss = 202
+	Test Accuracy : 7711 / 10000
+Epoch: 78
+	Train Accuracy : 8938 /10000 || Loss = 215
+	Test Accuracy : 7952 / 10000
+Epoch: 79
+	Train Accuracy : 8958 /10000 || Loss = 207
+	Test Accuracy : 7883 / 10000
+Epoch: 80
+	Train Accuracy : 8916 /10000 || Loss = 212
+	Test Accuracy : 8080 / 10000
+Epoch: 81
+	Train Accuracy : 8986 /10000 || Loss = 205
+	Test Accuracy : 8227 / 10000
+Epoch: 82
+	Train Accuracy : 8982 /10000 || Loss = 210
+	Test Accuracy : 8256 / 10000
+Epoch: 83
+	Train Accuracy : 8934 /10000 || Loss = 211
+	Test Accuracy : 8335 / 10000
+Epoch: 84
+	Train Accuracy : 8975 /10000 || Loss = 203
+	Test Accuracy : 8138 / 10000
+Epoch: 85
+	Train Accuracy : 8965 /10000 || Loss = 211
+	Test Accuracy : 8247 / 10000
+Epoch: 86
+	Train Accuracy : 8961 /10000 || Loss = 207
+	Test Accuracy : 8320 / 10000
+Epoch: 87
+	Train Accuracy : 9016 /10000 || Loss = 199
+	Test Accuracy : 8140 / 10000
+Epoch: 88
+	Train Accuracy : 8946 /10000 || Loss = 205
+	Test Accuracy : 8043 / 10000
+Epoch: 89
+	Train Accuracy : 8935 /10000 || Loss = 207
+	Test Accuracy : 8157 / 10000
+Epoch: 90
+	Train Accuracy : 8991 /10000 || Loss = 206
+	Test Accuracy : 7981 / 10000
+Epoch: 91
+	Train Accuracy : 8999 /10000 || Loss = 203
+	Test Accuracy : 8150 / 10000
+Epoch: 92
+	Train Accuracy : 9020 /10000 || Loss = 197
+	Test Accuracy : 8156 / 10000
+Epoch: 93
+	Train Accuracy : 8968 /10000 || Loss = 203
+	Test Accuracy : 8116 / 10000
+Epoch: 94
+	Train Accuracy : 8974 /10000 || Loss = 204
+	Test Accuracy : 8194 / 10000
+Epoch: 95
+	Train Accuracy : 8895 /10000 || Loss = 214
+	Test Accuracy : 8209 / 10000
+Epoch: 96
+	Train Accuracy : 8956 /10000 || Loss = 205
+	Test Accuracy : 7942 / 10000
+Epoch: 97
+	Train Accuracy : 9026 /10000 || Loss = 200
+	Test Accuracy : 8094 / 10000
+Epoch: 98
+	Train Accuracy : 8972 /10000 || Loss = 199
+	Test Accuracy : 8306 / 10000
+Epoch: 99
+	Train Accuracy : 8944 /10000 || Loss = 204
+	Test Accuracy : 8179 / 10000
+Epoch: 100
+	Train Accuracy : 8969 /10000 || Loss = 200
+	Test Accuracy : 8053 / 10000
+Test for scale by 1.000
+	Test Accuracy : 8825 / 10000
+Test for scale by 0.909
+	Test Accuracy : 9016 / 10000
+Test for scale by 0.667
+	Test Accuracy : 8608 / 10000
+Test for scale by 0.500
+	Test Accuracy : 7830 / 10000
+Test for scale by 0.400
+	Test Accuracy : 6191 / 10000
+Test for scale by 0.333
+	Test Accuracy : 5291 / 10000
+Average time taken for one epoch = 41.35799266576767
+Launch Tensorboard with file:///mnt/lustre/parkchanho/equivariance-project/dss/mlruns/0/cb8be0d189fb4ecabe46ef167c0ed828/artifacts/events
+MNIST 16 dss_v2 1.5 [4, 4] 4 1 16 100 0.01 0 0.5 20 models/dss_v2_MNIST_1_16_4_4_seg.th ===========
+Bessel scales: [0.3125     1.015625   2.59765625]
+Writing TensorBoard events locally to /tmp/tmpxmydnwyw
+
+DataParallel(
+  (module): DSS_plain_2(
+    (dconv1): DataParallel(
+      (module): Dconv2d_2(1->16, 1, [3, 3], downscale=[1, 1, 2, 3], pad_mode=constant)
+    )
+    (dconv2): DataParallel(
+      (module): Dconv2d_2(16->16, 1, [3, 3], downscale=[1, 1, 2, 3], pad_mode=constant)
+    )
+    (avg_pool1): AvgPool2d(kernel_size=(2, 2), stride=2, padding=0)
+    (bn1): DataParallel(
+      (module): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): DataParallel(
+      (module): Linear(in_features=16, out_features=10, bias=True)
+    )
+  )
+)
+Number of parameters =  2650
+Epoch: 1
+	Train Accuracy : 2692 /10000 || Loss = 1279
+	Test Accuracy : 3959 / 10000
+Epoch: 2
+	Train Accuracy : 4256 /10000 || Loss = 1041

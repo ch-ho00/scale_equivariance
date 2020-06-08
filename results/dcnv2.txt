@@ -1,0 +1,35 @@
+
+Test set: Average loss: 2.3027, Accuracy: 958/10000 (9.00%)
+
+Train Epoch: 0	Loss: 1.473243
+
+Test set: Average loss: 1.5139, Accuracy: 9532/10000 (95.00%)
+
+Train Epoch: 1	Loss: 1.468889
+
+Test set: Average loss: 1.4981, Accuracy: 9669/10000 (96.00%)
+
+Train Epoch: 2	Loss: 1.533677
+
+Test set: Average loss: 1.4936, Accuracy: 9693/10000 (96.00%)
+
+Train Epoch: 3	Loss: 1.515182
+
+Test set: Average loss: 1.4933, Accuracy: 9689/10000 (96.00%)
+
+Train Epoch: 4	Loss: 1.462419
+
+Test set: Average loss: 1.4908, Accuracy: 9720/10000 (97.00%)
+
+Train Epoch: 5	Loss: 1.544891
+
+Test set: Average loss: 1.4921, Accuracy: 9712/10000 (97.00%)
+
+Train Epoch: 6	Loss: 1.493329
+
+
+Evaluate  DCN
+	Average time taken for one epoch = 39.186871017728535
+
+Test set: Average loss: 1.4916, Accuracy: 9709/10000 (97.00%)
+

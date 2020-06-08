@@ -1,0 +1,86 @@
+
+Test set: Average loss: 2.3027, Accuracy: 958/10000 (9.00%)
+
+Train Epoch: 0	Loss: 1.512917
+
+Test set: Average loss: 1.5046, Accuracy: 9604/10000 (96.00%)
+
+Train Epoch: 1	Loss: 1.497533
+
+Test set: Average loss: 1.4963, Accuracy: 9686/10000 (96.00%)
+
+Train Epoch: 2	Loss: 1.515698
+
+Test set: Average loss: 1.5020, Accuracy: 9616/10000 (96.00%)
+
+Train Epoch: 3	Loss: 1.487404
+
+Test set: Average loss: 1.4966, Accuracy: 9664/10000 (96.00%)
+
+Train Epoch: 4	Loss: 1.468153
+
+
+Evaluate  DCN
+	Average time taken for one epoch = 55.28101425170898
+
+Test set: Average loss: 1.4915, Accuracy: 9714/10000 (97.00%)
+
+Test on images scaled by = 0.833
+
+Test set: Average loss: 1.5038, Accuracy: 9648/10000 (96.00%)
+
+Test on images scaled by = 0.667
+
+Test set: Average loss: 1.6251, Accuracy: 8711/10000 (87.00%)
+
+Test on images scaled by = 0.500
+
+Test set: Average loss: 1.9935, Accuracy: 5004/10000 (50.00%)
+
+Test on images scaled by = 0.333
+
+Test set: Average loss: 2.2997, Accuracy: 1477/10000 (14.00%)
+
+
+Test set: Average loss: 2.3028, Accuracy: 958/10000 (9.00%)
+
+Train Epoch: 0	Loss: 1.505655
+
+Test set: Average loss: 1.5330, Accuracy: 9391/10000 (93.00%)
+
+Train Epoch: 1	Loss: 1.530821
+
+Test set: Average loss: 1.5178, Accuracy: 9500/10000 (95.00%)
+
+Train Epoch: 2	Loss: 1.496679
+
+Test set: Average loss: 1.5152, Accuracy: 9506/10000 (95.00%)
+
+Train Epoch: 3	Loss: 1.491682
+
+Test set: Average loss: 1.5073, Accuracy: 9568/10000 (95.00%)
+
+Train Epoch: 4	Loss: 1.472430
+
+
+Evaluate  DCN
+	Average time taken for one epoch = 12.119111680984497
+
+Test set: Average loss: 1.5024, Accuracy: 9609/10000 (96.00%)
+
+Test on images scaled by = 0.833
+
+Test set: Average loss: 1.5229, Accuracy: 9496/10000 (94.00%)
+
+Test on images scaled by = 0.667
+
+Test set: Average loss: 1.6658, Accuracy: 8155/10000 (81.00%)
+
+Test on images scaled by = 0.500
+
+Test set: Average loss: 2.1254, Accuracy: 3131/10000 (31.00%)
+
+Test on images scaled by = 0.333
+
+Test set: Average loss: 2.3446, Accuracy: 1137/10000 (11.00%)
+

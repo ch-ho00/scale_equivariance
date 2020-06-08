@@ -1,0 +1,772 @@
+['/home/psbhchan/equivariance-project/dss', '/usr/lib/python35.zip', '/usr/lib/python3.5', '/usr/lib/python3.5/plat-x86_64-linux-gnu', '/usr/lib/python3.5/lib-dynload', '/home/psbhchan/.local/lib/python3.5/site-packages', '/usr/local/lib/python3.5/dist-packages', '/usr/lib/python3/dist-packages']
+Bessel scales: [0.3125     1.015625   2.59765625]
+Shape of test dataset =  (10000, 28, 28, 1)
+Shape of train dataset =  (10000, 28, 28, 1)
+===================== 4 2
+Number of parameters =  7008
+Epoch 0
+	Train Accuracy : 6879 /10000 || Loss = 315
+	Test Accuracy = 0.8031
+Epoch 1
+	Train Accuracy : 8217 /10000 || Loss = 179
+	Test Accuracy = 0.8353
+Epoch 2
+	Train Accuracy : 8506 /10000 || Loss = 152
+	Test Accuracy = 0.8662
+Epoch 3
+	Train Accuracy : 8661 /10000 || Loss = 136
+	Test Accuracy = 0.882
+Epoch 4
+	Train Accuracy : 8838 /10000 || Loss = 117
+	Test Accuracy = 0.8664
+Epoch 5
+	Train Accuracy : 8973 /10000 || Loss = 101
+	Test Accuracy = 0.9
+Epoch 6
+	Train Accuracy : 9026 /10000 || Loss = 95
+	Test Accuracy = 0.8993
+Epoch 7
+	Train Accuracy : 9129 /10000 || Loss = 87
+	Test Accuracy = 0.9139
+Epoch 8
+	Train Accuracy : 9182 /10000 || Loss = 81
+	Test Accuracy = 0.9116
+Epoch 9
+	Train Accuracy : 9229 /10000 || Loss = 76
+	Test Accuracy = 0.9198
+Epoch 10
+	Train Accuracy : 9266 /10000 || Loss = 73
+	Test Accuracy = 0.9129
+Epoch 11
+	Train Accuracy : 9290 /10000 || Loss = 70
+	Test Accuracy = 0.9246
+Epoch 12
+	Train Accuracy : 9334 /10000 || Loss = 66
+	Test Accuracy = 0.9264
+Epoch 13
+	Train Accuracy : 9311 /10000 || Loss = 63
+	Test Accuracy = 0.9229
+Epoch 14
+	Train Accuracy : 9341 /10000 || Loss = 63
+	Test Accuracy = 0.9333
+Epoch 15
+	Train Accuracy : 9366 /10000 || Loss = 63
+	Test Accuracy = 0.926
+Epoch 16
+	Train Accuracy : 9378 /10000 || Loss = 60
+	Test Accuracy = 0.9333
+Epoch 17
+	Train Accuracy : 9401 /10000 || Loss = 54
+	Test Accuracy = 0.9297
+Epoch 18
+	Train Accuracy : 9360 /10000 || Loss = 59
+	Test Accuracy = 0.9287
+Epoch 19
+	Train Accuracy : 9422 /10000 || Loss = 54
+	Test Accuracy = 0.9383
+Average time taken for one epoch = -10.239932012557983
+Final test accuracy = 0.9383
+===================== 4 3
+Number of parameters =  7017
+Epoch 0
+	Train Accuracy : 6582 /10000 || Loss = 334
+	Test Accuracy = 0.786
+Epoch 1
+	Train Accuracy : 8295 /10000 || Loss = 172
+	Test Accuracy = 0.8471
+Epoch 2
+	Train Accuracy : 8594 /10000 || Loss = 142
+	Test Accuracy = 0.8314
+Epoch 3
+	Train Accuracy : 8727 /10000 || Loss = 126
+	Test Accuracy = 0.8811
+Epoch 4
+	Train Accuracy : 8870 /10000 || Loss = 114
+	Test Accuracy = 0.8873
+Epoch 5
+	Train Accuracy : 8945 /10000 || Loss = 105
+	Test Accuracy = 0.8861
+Epoch 6
+	Train Accuracy : 9007 /10000 || Loss = 98
+	Test Accuracy = 0.8889
+Epoch 7
+	Train Accuracy : 9042 /10000 || Loss = 95
+	Test Accuracy = 0.9102
+Epoch 8
+	Train Accuracy : 9116 /10000 || Loss = 86
+	Test Accuracy = 0.916
+Epoch 9
+	Train Accuracy : 9162 /10000 || Loss = 80
+	Test Accuracy = 0.9065
+Epoch 10
+	Train Accuracy : 9196 /10000 || Loss = 77
+	Test Accuracy = 0.9185
+Epoch 11
+	Train Accuracy : 9228 /10000 || Loss = 76
+	Test Accuracy = 0.9004
+Epoch 12
+	Train Accuracy : 9322 /10000 || Loss = 67
+	Test Accuracy = 0.9245
+Epoch 13
+	Train Accuracy : 9297 /10000 || Loss = 69
+	Test Accuracy = 0.9157
+Epoch 14
+	Train Accuracy : 9297 /10000 || Loss = 66
+	Test Accuracy = 0.9292
+Epoch 15
+	Train Accuracy : 9352 /10000 || Loss = 64
+	Test Accuracy = 0.9294
+Epoch 16
+	Train Accuracy : 9373 /10000 || Loss = 61
+	Test Accuracy = 0.9332
+Epoch 17
+	Train Accuracy : 9350 /10000 || Loss = 61
+	Test Accuracy = 0.9314
+Epoch 18
+	Train Accuracy : 9426 /10000 || Loss = 55
+	Test Accuracy = 0.933
+Epoch 19
+	Train Accuracy : 9396 /10000 || Loss = 57
+	Test Accuracy = 0.9322
+Average time taken for one epoch = -10.204479956626892
+Final test accuracy = 0.9322
+===================== 4 4
+Number of parameters =  7026
+Epoch 0
+	Train Accuracy : 6826 /10000 || Loss = 318
+	Test Accuracy = 0.8149
+Epoch 1
+	Train Accuracy : 8380 /10000 || Loss = 165
+	Test Accuracy = 0.857
+Epoch 2
+	Train Accuracy : 8705 /10000 || Loss = 132
+	Test Accuracy = 0.8867
+Epoch 3
+	Train Accuracy : 8909 /10000 || Loss = 111
+	Test Accuracy = 0.8914
+Epoch 4
+	Train Accuracy : 9027 /10000 || Loss = 98
+	Test Accuracy = 0.9003
+Epoch 5
+	Train Accuracy : 9166 /10000 || Loss = 86
+	Test Accuracy = 0.9164
+Epoch 6
+	Train Accuracy : 9223 /10000 || Loss = 78
+	Test Accuracy = 0.9165
+Epoch 7
+	Train Accuracy : 9258 /10000 || Loss = 73
+	Test Accuracy = 0.9242
+Epoch 8
+	Train Accuracy : 9313 /10000 || Loss = 67
+	Test Accuracy = 0.9247
+Epoch 9
+	Train Accuracy : 9336 /10000 || Loss = 64
+	Test Accuracy = 0.9211
+Epoch 10
+	Train Accuracy : 9353 /10000 || Loss = 63
+	Test Accuracy = 0.9223
+Epoch 11
+	Train Accuracy : 9363 /10000 || Loss = 61
+	Test Accuracy = 0.9332
+Epoch 12
+	Train Accuracy : 9426 /10000 || Loss = 56
+	Test Accuracy = 0.936
+Epoch 13
+	Train Accuracy : 9437 /10000 || Loss = 55
+	Test Accuracy = 0.9388
+Epoch 14
+	Train Accuracy : 9446 /10000 || Loss = 52
+	Test Accuracy = 0.923
+Epoch 15
+	Train Accuracy : 9437 /10000 || Loss = 55
+	Test Accuracy = 0.937
+Epoch 16
+	Train Accuracy : 9466 /10000 || Loss = 50
+	Test Accuracy = 0.9369
+Epoch 17
+	Train Accuracy : 9496 /10000 || Loss = 49
+	Test Accuracy = 0.9384
+Epoch 18
+	Train Accuracy : 9501 /10000 || Loss = 48
+	Test Accuracy = 0.939
+Epoch 19
+	Train Accuracy : 9495 /10000 || Loss = 47
+	Test Accuracy = 0.941
+Average time taken for one epoch = -10.1975159684817
+Final test accuracy = 0.941
+===================== 4 5
+Number of parameters =  7035
+Epoch 0
+	Train Accuracy : 6765 /10000 || Loss = 308
+	Test Accuracy = 0.8189
+Epoch 1
+	Train Accuracy : 8453 /10000 || Loss = 156
+	Test Accuracy = 0.8463
+Epoch 2
+	Train Accuracy : 8792 /10000 || Loss = 123
+	Test Accuracy = 0.8903
+Epoch 3
+	Train Accuracy : 8972 /10000 || Loss = 105
+	Test Accuracy = 0.909
+Epoch 4
+	Train Accuracy : 9167 /10000 || Loss = 84
+	Test Accuracy = 0.9138
+Epoch 5
+	Train Accuracy : 9165 /10000 || Loss = 85
+	Test Accuracy = 0.9118
+Epoch 6
+	Train Accuracy : 9237 /10000 || Loss = 75
+	Test Accuracy = 0.9235
+Epoch 7
+	Train Accuracy : 9313 /10000 || Loss = 66
+	Test Accuracy = 0.9206
+Epoch 8
+	Train Accuracy : 9346 /10000 || Loss = 65
+	Test Accuracy = 0.9076
+Epoch 9
+	Train Accuracy : 9340 /10000 || Loss = 63
+	Test Accuracy = 0.9325
+Epoch 10
+	Train Accuracy : 9388 /10000 || Loss = 61
+	Test Accuracy = 0.9278
+Epoch 11
+	Train Accuracy : 9407 /10000 || Loss = 57
+	Test Accuracy = 0.9391
+Epoch 12
+	Train Accuracy : 9406 /10000 || Loss = 58
+	Test Accuracy = 0.9363
+Epoch 13
+	Train Accuracy : 9442 /10000 || Loss = 53
+	Test Accuracy = 0.9299
+Epoch 14
+	Train Accuracy : 9452 /10000 || Loss = 52
+	Test Accuracy = 0.9409
+Epoch 15
+	Train Accuracy : 9470 /10000 || Loss = 51
+	Test Accuracy = 0.9414
+Epoch 16
+	Train Accuracy : 9458 /10000 || Loss = 50
+	Test Accuracy = 0.9358
+Epoch 17
+	Train Accuracy : 9509 /10000 || Loss = 46
+	Test Accuracy = 0.9412
+Epoch 18
+	Train Accuracy : 9516 /10000 || Loss = 46
+	Test Accuracy = 0.9389
+Epoch 19
+	Train Accuracy : 9469 /10000 || Loss = 48
+	Test Accuracy = 0.9428
+Average time taken for one epoch = -10.219009348750115
+Final test accuracy = 0.9428
+===================== 8 2
+Number of parameters =  20052
+Epoch 0
+	Train Accuracy : 7276 /10000 || Loss = 276
+	Test Accuracy = 0.8314
+Epoch 1
+	Train Accuracy : 8581 /10000 || Loss = 142
+	Test Accuracy = 0.8723
+Epoch 2
+	Train Accuracy : 8891 /10000 || Loss = 115
+	Test Accuracy = 0.8795
+Epoch 3
+	Train Accuracy : 9030 /10000 || Loss = 97
+	Test Accuracy = 0.9089
+Epoch 4
+	Train Accuracy : 9129 /10000 || Loss = 90
+	Test Accuracy = 0.9155
+Epoch 5
+	Train Accuracy : 9237 /10000 || Loss = 75
+	Test Accuracy = 0.924
+Epoch 6
+	Train Accuracy : 9292 /10000 || Loss = 70
+	Test Accuracy = 0.9329
+Epoch 7
+	Train Accuracy : 9284 /10000 || Loss = 67
+	Test Accuracy = 0.9273
+Epoch 8
+	Train Accuracy : 9384 /10000 || Loss = 61
+	Test Accuracy = 0.919
+Epoch 9
+	Train Accuracy : 9412 /10000 || Loss = 56
+	Test Accuracy = 0.9374
+Epoch 10
+	Train Accuracy : 9449 /10000 || Loss = 53
+	Test Accuracy = 0.9424
+Epoch 11
+	Train Accuracy : 9457 /10000 || Loss = 54
+	Test Accuracy = 0.9299
+Epoch 12
+	Train Accuracy : 9462 /10000 || Loss = 51
+	Test Accuracy = 0.9433
+Epoch 13
+	Train Accuracy : 9496 /10000 || Loss = 47
+	Test Accuracy = 0.939
+Epoch 14
+	Train Accuracy : 9498 /10000 || Loss = 47
+	Test Accuracy = 0.9481
+Epoch 15
+	Train Accuracy : 9530 /10000 || Loss = 43
+	Test Accuracy = 0.9389
+Epoch 16
+	Train Accuracy : 9546 /10000 || Loss = 44
+	Test Accuracy = 0.9438
+Epoch 17
+	Train Accuracy : 9550 /10000 || Loss = 42
+	Test Accuracy = 0.9465
+Epoch 18
+	Train Accuracy : 9566 /10000 || Loss = 39
+	Test Accuracy = 0.9437
+Epoch 19
+	Train Accuracy : 9557 /10000 || Loss = 39
+	Test Accuracy = 0.9475
+Average time taken for one epoch = -10.337604148387909
+Final test accuracy = 0.9475
+===================== 8 3
+Number of parameters =  20069
+Epoch 0
+	Train Accuracy : 7284 /10000 || Loss = 263
+	Test Accuracy = 0.8155
+Epoch 1
+	Train Accuracy : 8387 /10000 || Loss = 164
+	Test Accuracy = 0.8557
+Epoch 2
+	Train Accuracy : 8671 /10000 || Loss = 130
+	Test Accuracy = 0.888
+Epoch 3
+	Train Accuracy : 8885 /10000 || Loss = 112
+	Test Accuracy = 0.8993
+Epoch 4
+	Train Accuracy : 9060 /10000 || Loss = 94
+	Test Accuracy = 0.9007
+Epoch 5
+	Train Accuracy : 9130 /10000 || Loss = 84
+	Test Accuracy = 0.9099
+Epoch 6
+	Train Accuracy : 9210 /10000 || Loss = 79
+	Test Accuracy = 0.9121
+Epoch 7
+	Train Accuracy : 9263 /10000 || Loss = 70
+	Test Accuracy = 0.9259
+Epoch 8
+	Train Accuracy : 9301 /10000 || Loss = 66
+	Test Accuracy = 0.9269
+Epoch 9
+	Train Accuracy : 9384 /10000 || Loss = 61
+	Test Accuracy = 0.9286
+Epoch 10
+	Train Accuracy : 9422 /10000 || Loss = 57
+	Test Accuracy = 0.9346
+Epoch 11
+	Train Accuracy : 9413 /10000 || Loss = 56
+	Test Accuracy = 0.9336
+Epoch 12
+	Train Accuracy : 9458 /10000 || Loss = 53
+	Test Accuracy = 0.9437
+Epoch 13
+	Train Accuracy : 9486 /10000 || Loss = 51
+	Test Accuracy = 0.9307
+Epoch 14
+	Train Accuracy : 9516 /10000 || Loss = 47
+	Test Accuracy = 0.9401
+Epoch 15
+	Train Accuracy : 9497 /10000 || Loss = 49
+	Test Accuracy = 0.9472
+Epoch 16
+	Train Accuracy : 9519 /10000 || Loss = 44
+	Test Accuracy = 0.9437
+Epoch 17
+	Train Accuracy : 9536 /10000 || Loss = 44
+	Test Accuracy = 0.9474
+Epoch 18
+	Train Accuracy : 9579 /10000 || Loss = 39
+	Test Accuracy = 0.9428
+Epoch 19
+	Train Accuracy : 9529 /10000 || Loss = 45
+	Test Accuracy = 0.9433
+Average time taken for one epoch = -10.422592395544052
+Final test accuracy = 0.9433
+===================== 8 4
+Number of parameters =  20086
+Epoch 0
+	Train Accuracy : 7221 /10000 || Loss = 272
+	Test Accuracy = 0.8371
+Epoch 1
+	Train Accuracy : 8542 /10000 || Loss = 148
+	Test Accuracy = 0.8697
+Epoch 2
+	Train Accuracy : 8861 /10000 || Loss = 113
+	Test Accuracy = 0.8921
+Epoch 3
+	Train Accuracy : 9042 /10000 || Loss = 95
+	Test Accuracy = 0.9072
+Epoch 4
+	Train Accuracy : 9175 /10000 || Loss = 82
+	Test Accuracy = 0.9207
+Epoch 5
+	Train Accuracy : 9245 /10000 || Loss = 75
+	Test Accuracy = 0.9228
+Epoch 6
+	Train Accuracy : 9344 /10000 || Loss = 66
+	Test Accuracy = 0.9331
+Epoch 7
+	Train Accuracy : 9411 /10000 || Loss = 59
+	Test Accuracy = 0.9293
+Epoch 8
+	Train Accuracy : 9412 /10000 || Loss = 61
+	Test Accuracy = 0.9353
+Epoch 9
+	Train Accuracy : 9395 /10000 || Loss = 59
+	Test Accuracy = 0.9363
+Epoch 10
+	Train Accuracy : 9487 /10000 || Loss = 50
+	Test Accuracy = 0.9406
+Epoch 11
+	Train Accuracy : 9452 /10000 || Loss = 53
+	Test Accuracy = 0.9427
+Epoch 12
+	Train Accuracy : 9503 /10000 || Loss = 49
+	Test Accuracy = 0.9369
+Epoch 13
+	Train Accuracy : 9534 /10000 || Loss = 44
+	Test Accuracy = 0.9449
+Epoch 14
+	Train Accuracy : 9513 /10000 || Loss = 45
+	Test Accuracy = 0.9414
+Epoch 15
+	Train Accuracy : 9532 /10000 || Loss = 44
+	Test Accuracy = 0.9411
+Epoch 16
+	Train Accuracy : 9560 /10000 || Loss = 40
+	Test Accuracy = 0.9501
+Epoch 17
+	Train Accuracy : 9545 /10000 || Loss = 41
+	Test Accuracy = 0.9517
+Epoch 18
+	Train Accuracy : 9602 /10000 || Loss = 39
+	Test Accuracy = 0.9407
+Epoch 19
+	Train Accuracy : 9603 /10000 || Loss = 37
+	Test Accuracy = 0.9507
+Average time taken for one epoch = -10.421114873886108
+Final test accuracy = 0.9507
+===================== 8 5
+Number of parameters =  20103
+Epoch 0
+	Train Accuracy : 7258 /10000 || Loss = 269
+	Test Accuracy = 0.8116
+Epoch 1
+	Train Accuracy : 8403 /10000 || Loss = 163
+	Test Accuracy = 0.8563
+Epoch 2
+	Train Accuracy : 8697 /10000 || Loss = 132
+	Test Accuracy = 0.861
+Epoch 3
+	Train Accuracy : 8901 /10000 || Loss = 109
+	Test Accuracy = 0.895
+Epoch 4
+	Train Accuracy : 9002 /10000 || Loss = 95
+	Test Accuracy = 0.8995
+Epoch 5
+	Train Accuracy : 9142 /10000 || Loss = 85
+	Test Accuracy = 0.9052
+Epoch 6
+	Train Accuracy : 9235 /10000 || Loss = 77
+	Test Accuracy = 0.9224
+Epoch 7
+	Train Accuracy : 9263 /10000 || Loss = 73
+	Test Accuracy = 0.9272
+Epoch 8
+	Train Accuracy : 9302 /10000 || Loss = 67
+	Test Accuracy = 0.9245
+Epoch 9
+	Train Accuracy : 9370 /10000 || Loss = 62
+	Test Accuracy = 0.9214
+Epoch 10
+	Train Accuracy : 9409 /10000 || Loss = 56
+	Test Accuracy = 0.934
+Epoch 11
+	Train Accuracy : 9362 /10000 || Loss = 61
+	Test Accuracy = 0.9393
+Epoch 12
+	Train Accuracy : 9453 /10000 || Loss = 53
+	Test Accuracy = 0.9437
+Epoch 13
+	Train Accuracy : 9486 /10000 || Loss = 49
+	Test Accuracy = 0.941
+Epoch 14
+	Train Accuracy : 9514 /10000 || Loss = 46
+	Test Accuracy = 0.9344
+Epoch 15
+	Train Accuracy : 9454 /10000 || Loss = 51
+	Test Accuracy = 0.9391
+Epoch 16
+	Train Accuracy : 9551 /10000 || Loss = 44
+	Test Accuracy = 0.9398
+Epoch 17
+	Train Accuracy : 9523 /10000 || Loss = 47
+	Test Accuracy = 0.9469
+Epoch 18
+	Train Accuracy : 9530 /10000 || Loss = 46
+	Test Accuracy = 0.9388
+Epoch 19
+	Train Accuracy : 9576 /10000 || Loss = 40
+	Test Accuracy = 0.9393
+Average time taken for one epoch = -10.413694708049297
+Final test accuracy = 0.9393
+===================== 16 2
+Number of parameters =  64284
+Epoch 0
+	Train Accuracy : 7378 /10000 || Loss = 258
+	Test Accuracy = 0.8527
+Epoch 1
+	Train Accuracy : 8695 /10000 || Loss = 132
+	Test Accuracy = 0.8913
+Epoch 2
+	Train Accuracy : 8993 /10000 || Loss = 100
+	Test Accuracy = 0.8848
+Epoch 3
+	Train Accuracy : 9169 /10000 || Loss = 84
+	Test Accuracy = 0.9203
+Epoch 4
+	Train Accuracy : 9286 /10000 || Loss = 71
+	Test Accuracy = 0.922
+Epoch 5
+	Train Accuracy : 9335 /10000 || Loss = 64
+	Test Accuracy = 0.9374
+Epoch 6
+	Train Accuracy : 9405 /10000 || Loss = 55
+	Test Accuracy = 0.9377
+Epoch 7
+	Train Accuracy : 9446 /10000 || Loss = 55
+	Test Accuracy = 0.9408
+Epoch 8
+	Train Accuracy : 9477 /10000 || Loss = 50
+	Test Accuracy = 0.9477
+Epoch 9
+	Train Accuracy : 9501 /10000 || Loss = 47
+	Test Accuracy = 0.9474
+Epoch 10
+	Train Accuracy : 9517 /10000 || Loss = 47
+	Test Accuracy = 0.94
+Epoch 11
+	Train Accuracy : 9563 /10000 || Loss = 40
+	Test Accuracy = 0.9461
+Epoch 12
+	Train Accuracy : 9559 /10000 || Loss = 41
+	Test Accuracy = 0.9533
+Epoch 13
+	Train Accuracy : 9607 /10000 || Loss = 35
+	Test Accuracy = 0.9454
+Epoch 14
+	Train Accuracy : 9606 /10000 || Loss = 39
+	Test Accuracy = 0.9425
+Epoch 15
+	Train Accuracy : 9626 /10000 || Loss = 34
+	Test Accuracy = 0.9502
+Epoch 16
+	Train Accuracy : 9613 /10000 || Loss = 34
+	Test Accuracy = 0.953
+Epoch 17
+	Train Accuracy : 9649 /10000 || Loss = 32
+	Test Accuracy = 0.9476
+Epoch 18
+	Train Accuracy : 9633 /10000 || Loss = 34
+	Test Accuracy = 0.951
+Epoch 19
+	Train Accuracy : 9676 /10000 || Loss = 31
+	Test Accuracy = 0.9544
+Average time taken for one epoch = -10.462192332744598
+Final test accuracy = 0.9544
+===================== 16 3
+Number of parameters =  64317
+Epoch 0
+	Train Accuracy : 7454 /10000 || Loss = 246
+	Test Accuracy = 0.8137
+Epoch 1
+	Train Accuracy : 8647 /10000 || Loss = 133
+	Test Accuracy = 0.8963
+Epoch 2
+	Train Accuracy : 8998 /10000 || Loss = 100
+	Test Accuracy = 0.9075
+Epoch 3
+	Train Accuracy : 9181 /10000 || Loss = 82
+	Test Accuracy = 0.903
+Epoch 4
+	Train Accuracy : 9208 /10000 || Loss = 76
+	Test Accuracy = 0.9165
+Epoch 5
+	Train Accuracy : 9292 /10000 || Loss = 64
+	Test Accuracy = 0.9255
+Epoch 6
+	Train Accuracy : 9363 /10000 || Loss = 63
+	Test Accuracy = 0.9353
+Epoch 7
+	Train Accuracy : 9450 /10000 || Loss = 53
+	Test Accuracy = 0.9345
+Epoch 8
+	Train Accuracy : 9426 /10000 || Loss = 52
+	Test Accuracy = 0.9446
+Epoch 9
+	Train Accuracy : 9486 /10000 || Loss = 50
+	Test Accuracy = 0.943
+Epoch 10
+	Train Accuracy : 9503 /10000 || Loss = 46
+	Test Accuracy = 0.9289
+Epoch 11
+	Train Accuracy : 9527 /10000 || Loss = 46
+	Test Accuracy = 0.9426
+Epoch 12
+	Train Accuracy : 9536 /10000 || Loss = 42
+	Test Accuracy = 0.9419
+Epoch 13
+	Train Accuracy : 9579 /10000 || Loss = 40
+	Test Accuracy = 0.937
+Epoch 14
+	Train Accuracy : 9556 /10000 || Loss = 40
+	Test Accuracy = 0.9456
+Epoch 15
+	Train Accuracy : 9562 /10000 || Loss = 41
+	Test Accuracy = 0.9487
+Epoch 16
+	Train Accuracy : 9598 /10000 || Loss = 36
+	Test Accuracy = 0.9515
+Epoch 17
+	Train Accuracy : 9574 /10000 || Loss = 37
+	Test Accuracy = 0.9484
+Epoch 18
+	Train Accuracy : 9662 /10000 || Loss = 31
+	Test Accuracy = 0.9509
+Epoch 19
+	Train Accuracy : 9625 /10000 || Loss = 34
+	Test Accuracy = 0.9488
+Average time taken for one epoch = -10.493476036787033
+Final test accuracy = 0.9488
+===================== 16 4
+Number of parameters =  64350
+Epoch 0
+	Train Accuracy : 7521 /10000 || Loss = 243
+	Test Accuracy = 0.8504
+Epoch 1
+	Train Accuracy : 8683 /10000 || Loss = 137
+	Test Accuracy = 0.8762
+Epoch 2
+	Train Accuracy : 8876 /10000 || Loss = 113
+	Test Accuracy = 0.9057
+Epoch 3
+	Train Accuracy : 9068 /10000 || Loss = 93
+	Test Accuracy = 0.9062
+Epoch 4
+	Train Accuracy : 9216 /10000 || Loss = 77
+	Test Accuracy = 0.9201
+Epoch 5
+	Train Accuracy : 9283 /10000 || Loss = 71
+	Test Accuracy = 0.9213
+Epoch 6
+	Train Accuracy : 9320 /10000 || Loss = 68
+	Test Accuracy = 0.9383
+Epoch 7
+	Train Accuracy : 9372 /10000 || Loss = 59
+	Test Accuracy = 0.9384
+Epoch 8
+	Train Accuracy : 9417 /10000 || Loss = 56
+	Test Accuracy = 0.9358
+Epoch 9
+	Train Accuracy : 9475 /10000 || Loss = 49
+	Test Accuracy = 0.9449
+Epoch 10
+	Train Accuracy : 9503 /10000 || Loss = 48
+	Test Accuracy = 0.9329
+Epoch 11
+	Train Accuracy : 9519 /10000 || Loss = 46
+	Test Accuracy = 0.9485
+Epoch 12
+	Train Accuracy : 9532 /10000 || Loss = 43
+	Test Accuracy = 0.9447
+Epoch 13
+	Train Accuracy : 9572 /10000 || Loss = 40
+	Test Accuracy = 0.9459
+Epoch 14
+	Train Accuracy : 9526 /10000 || Loss = 42
+	Test Accuracy = 0.954
+Epoch 15
+	Train Accuracy : 9628 /10000 || Loss = 35
+	Test Accuracy = 0.9512
+Epoch 16
+	Train Accuracy : 9637 /10000 || Loss = 35
+	Test Accuracy = 0.9516
+Epoch 17
+	Train Accuracy : 9620 /10000 || Loss = 33
+	Test Accuracy = 0.9465
+Epoch 18
+	Train Accuracy : 9606 /10000 || Loss = 36
+	Test Accuracy = 0.9518
+Epoch 19
+	Train Accuracy : 9657 /10000 || Loss = 31
+	Test Accuracy = 0.9543
+Average time taken for one epoch = -10.629893211884932
+Final test accuracy = 0.9543
+===================== 16 5
+Number of parameters =  64383
+Epoch 0
+	Train Accuracy : 7524 /10000 || Loss = 251
+	Test Accuracy = 0.8338
+Epoch 1
+	Train Accuracy : 8621 /10000 || Loss = 136
+	Test Accuracy = 0.8763
+Epoch 2
+	Train Accuracy : 8939 /10000 || Loss = 106
+	Test Accuracy = 0.9152
+Epoch 3
+	Train Accuracy : 9177 /10000 || Loss = 84
+	Test Accuracy = 0.903
+Epoch 4
+	Train Accuracy : 9276 /10000 || Loss = 72
+	Test Accuracy = 0.9221
+Epoch 5
+	Train Accuracy : 9360 /10000 || Loss = 68
+	Test Accuracy = 0.9341
+Epoch 6
+	Train Accuracy : 9375 /10000 || Loss = 60
+	Test Accuracy = 0.9326
+Epoch 7
+	Train Accuracy : 9395 /10000 || Loss = 58
+	Test Accuracy = 0.9381
+Epoch 8
+	Train Accuracy : 9474 /10000 || Loss = 51
+	Test Accuracy = 0.9432
+Epoch 9
+	Train Accuracy : 9474 /10000 || Loss = 50
+	Test Accuracy = 0.9435
+Epoch 10
+	Train Accuracy : 9541 /10000 || Loss = 42
+	Test Accuracy = 0.9423
+Epoch 11
+	Train Accuracy : 9496 /10000 || Loss = 48
+	Test Accuracy = 0.9453
+Epoch 12
+	Train Accuracy : 9575 /10000 || Loss = 40
+	Test Accuracy = 0.9436
+Epoch 13
+	Train Accuracy : 9569 /10000 || Loss = 40
+	Test Accuracy = 0.9468
+Epoch 14
+	Train Accuracy : 9581 /10000 || Loss = 38
+	Test Accuracy = 0.9504
+Epoch 15
+	Train Accuracy : 9603 /10000 || Loss = 37
+	Test Accuracy = 0.9525
+Epoch 16
+	Train Accuracy : 9603 /10000 || Loss = 36
+	Test Accuracy = 0.952
+Epoch 17
+	Train Accuracy : 9633 /10000 || Loss = 33
+	Test Accuracy = 0.9534
+Epoch 18
+	Train Accuracy : 9627 /10000 || Loss = 34
+	Test Accuracy = 0.9545
+Epoch 19
+	Train Accuracy : 9650 /10000 || Loss = 32
+	Test Accuracy = 0.9567
+Average time taken for one epoch = -10.731809990604718
+Final test accuracy = 0.9567
