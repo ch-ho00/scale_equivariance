@@ -1,6 +1,7 @@
 # Scale Equivariance
 Analysis of equivariance under scale transformation in CNN.
 For definitions and details relating to the models and ideas being incorporated, please refer to the appendix.
+Furthermore [document](https://github.com/chanhopark00/scale_equivariance/blob/master/Scale_Equivariance_Chan_Ho_park.pdf) is made to compare different models that achieve scale equivariance please refer if one wishes to see more ideas on scale equivariance. 
 
 ## 1. Aim
 
@@ -30,13 +31,13 @@ A model that achieves scale equivariance, Deep Scale Space (DSS), involves a sca
 
 An demonstration of applying the kernel is as such:
 
-<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/dss2.png" width="200">
+<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/dss.PNG" width="200">
 
 Then a dilated convolution is applied in a way such that depending on the scale level that we are considering. The higher the scale level, the more dilation onto the kernel. With the bandlimitting through gaussian kernel, we can see this as a way to ensure that features can be extracted regardless of the scale of the instance. 
 
 Note that the kernel applied in each k=0 , k=1 and k=2 are all tied weights.
 
-<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/dss.png" >
+<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/dss2.PNG" >
 
 Lastly before the task-specific convolution or fully connected layer, the model applies a scale pooling which is an average pooling opertaion across the scale dimension. After scale pooling the dimensionality of the feature map becomes [#images, #channels, width, height]
 
@@ -56,7 +57,7 @@ Keeping the convolution structure of the original DSS, we add a parallel convolu
 
 Before proceeding to the new methodologies, we first set out baseline through the experiments on existing models. In order to check in which extent scale equivariance is achieved, we make use of the formula,
 
-<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/equivariance_error.png" >
+<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/img/equivariance_error.PNG" >
 
 Here, Φ implies the composition of convolutions in the model, f is the map from base space (x,y coordinate) to the input image and Ls implies the scale transformation. The following graph states the performance of different models on scale-MNIST classifcation task. 
 
@@ -91,7 +92,7 @@ The following table is to find out the effect of hyperparameters on scale-CIFAR1
 
 2. Result of new methods
 
-<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/results/graph/DSS2_MNIST_acc.png" width="350">   <img src="https://github.com/chanhopark00/scale_equivariance/blob/master/results/graph/DSS2_MNIST_equiv.PNG" width="350">
+<img src="https://github.com/chanhopark00/scale_equivariance/blob/master/results/graph/DSS2_MNIST_acc.PNG" width="350">   <img src="https://github.com/chanhopark00/scale_equivariance/blob/master/results/graph/DSS2_MNIST_equiv.PNG" width="350">
 
 In the graph, blue, green and orange each represent DSS v1, DSSv2 and deformable DSS.
 
