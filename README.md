@@ -1,7 +1,10 @@
 # Scale Equivariance
 Analysis of equivariance under scale transformation in CNN.
 For definitions and details relating to the models and ideas being incorporated, please refer to the appendix.
+
 Furthermore [document](https://github.com/chanhopark00/scale_equivariance/blob/master/Scale_Equivariance_Chan_Ho_park.pdf) is made to compare different models that achieve scale equivariance please refer if one wishes to see more ideas on scale equivariance. 
+
+To run the code, refer to build_classification.py and equivariance_test.py.
 
 ## 1. Aim
 
