@@ -12,7 +12,7 @@ To propose a convolution where scale equivariance is preserved to an extent thro
 
 ### 1.1. Scale Invariance
 
-Scale invariance is generally achieved through the decreasing size of the feature map through max pooling and data augmentation. An example of this would be models like ResNet where there are 3 max pooling operations after several number of blocks. This can be intuitively seen as the orientation of features of a particular object being preserved regardless of scale of the instance. Similar ideas can be found in Feature Pyramid Network (FPN) where the decreasing size of feature maps leads to scale invariance.
+Scale invariance is generally achieved through the decreasing size of the feature map through max pooling and data augmentation. An example of this would be models like ResNet reduces the dimension of feature map through where max pooling and increasing stride from 1 to 2 after for each begining of layers. This can be intuitively seen as the orientation of features of a particular object being preserved regardless of scale of the instance. Similar ideas can be found in Feature Pyramid Network (FPN) where the decreasing size of feature maps leads to scale invariance.
  
 ### 1.2. Deformable Convolution
 
